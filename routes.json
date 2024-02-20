@@ -743,7 +743,7 @@
                "metadata":{
                   "left-right-seq":"",
                   "parent-lnglat":[1.3614, 103.7723],
-                  "parent-sector":"Dairy Farm",
+                  "parent-sector":"Boring and Meaningless",
                   "mp-route-id":"650200001",
                   "mp-sector-id":"650500001"
                },
@@ -772,9 +772,9 @@
                "metadata":{
                   "left-right-seq":"",
                   "parent-lnglat":[1.36190, 103.77252],
-                  "parent-sector":"Dairy Farm",
+                  "parent-sector":"Third Kid",
                   "mp-route-id":"650200002",
-                  "mp-sector-id":"650500001"
+                  "mp-sector-id":"650500002"
                },
                "images": [
                   "https://image.thecrag.com/240x320/f9/cb/f9cb44726bc5bd72aa1a8c3d98b775287cfd10d8"
@@ -800,9 +800,9 @@
                "metadata":{
                   "left-right-seq":"",
                   "parent-lnglat":[1.36176, 103.77285],
-                  "parent-sector":"Dairy Farm",
+                  "parent-sector":"Direct",
                   "mp-route-id":"650200003",
-                  "mp-sector-id":"650500001"
+                  "mp-sector-id":"650500003"
                },
                "images": [
                   "https://image.thecrag.com/213x320/26/04/2604034098af723f13987aa84896b43a186b540c"
@@ -821,21 +821,325 @@
                   "traditional":true
                },
                "route-setter":"",
-               "first-ascent":"Lawrence Lee & Anthony Seah",
-               "description":"Can be climbed with slight variations. As noted in the 'Climb Singapore' guidebook, the bolts were originally placed as a 'secondary protection' to help beginners learn to how to place traditional protection. This explains why the 2 separate lines of bolts are everywhere but where you need them.",
+               "first-ascent":"Peter Terbush, 1994",
+               "description":"Starts right on the slab and traverses up and left to the crack, then up and over the obvious flake to the anchor. Since rockfall to the right opened the canopy the lower half of this climb is now overrun with vines.",
                "location":"Walk past 'Boring and Meaningless', the 'Third Kid,' and then arrive at the 'Direct Section' and 'Razor's Edge' as the wall/side of the depression tilts to the SouthEast, just before a corner.",
-               "protection":"5 bolts/clips (excluding anchor)",
+               "protection":"",
                "metadata":{
                   "left-right-seq":"",
-                  "parent-lnglat":[1.36176, 103.77285],
-                  "parent-sector":"Dairy Farm",
-                  "mp-route-id":"650200003",
-                  "mp-sector-id":"650500001"
+                  "parent-lnglat":[1.36179, 103.77305],
+                  "parent-sector":"Razor's Edge",
+                  "mp-route-id":"650200004",
+                  "mp-sector-id":"650500004"
                },
                "images": [
-                  "https://image.thecrag.com/213x320/26/04/2604034098af723f13987aa84896b43a186b540c"
+                  "https://image.thecrag.com/240x320/6a/93/6a934b86ebdc5665d27a2bab3545a0f9f397a4b3"
                ]
-            }   
+            },
+            {
+               "route-name":"Chicken Shit",
+               "grade":{
+                  "YDS":"5.10a",
+                  "French":"6a",
+                  "Ewbanks":"18",
+                  "British":"5a"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "traditional":true
+               },
+               "route-setter":"",
+               "first-ascent":"",
+               "description":"50ft to the right of the Direct buttress/Razors Edge are three short climbs (25ft tops) that are on OK rock with an easy approach. The base is often wet and muddy with more mosquitoes than some of the more open areas.",
+               "location":"Approach through any of the openings just right of the Direct.",
+               "protection":"",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36198, 103.77345],
+                  "parent-sector":"Chicken Shit",
+                  "mp-route-id":"650200005",
+                  "mp-sector-id":"650500005"
+               },
+               "images": [
+                  "https://image.thecrag.com/213x320/64/68/64682bef2bf79e7bf61afd065fe32cbfb11eaa56"
+               ]
+            },
+            {
+               "route-name":"No Pokemon Up Here",
+               "grade":{
+                  "YDS":"5.9",
+                  "French":"5b",
+                  "Ewbanks":"16",
+                  "British":"4c"
+               },
+               "safety":"Warning - this route has lots of loose rock and failure to bear right will lead to dangerous rock.",
+               "type":{
+                  "traditional":true
+               },
+               "route-setter":"Kahlil Lawless",
+               "first-ascent":"Kahlil Lawless",
+               "description":"From the far left of the step go up a set of twin cracks then bear right onto cleaner rock before going straight up to the anchors.",
+               "location":"To approach, stay left in the main area of the dairy farm, keeping on the left side path after Boring and Meaningless and continuing beyond 3rd Kid and the Direct Section. After rounding a second corner to the left, you will pop out below a Large chunk of rock.",
+               "protection":"",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36222, 103.77375],
+                  "parent-sector":"ABCD",
+                  "mp-route-id":"650200006",
+                  "mp-sector-id":"650500006"
+               },
+               "images": [
+                  "https://image.thecrag.com/427x320/d2/ff/d2ff8a77d4ae1510c680ade060698d3753187ec0"
+               ]
+            },
+            {
+               "route-name":"Homage / Homage to Gullich Sport",
+               "grade":{
+                  "YDS":"5.10d",
+                  "French":"6b+",
+                  "Ewbanks":"21",
+                  "British":"5c"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "lead":true
+               },
+               "route-setter":"Peter Ong & Lim Song Huat",
+               "first-ascent":"Peter Ong & Lim Song Huat, 1998",
+               "description":"In remembrance of Wolfgang Güllich †.",
+               "location":"From the American Pie section continue further back to the end, passing the big dead tree and scramble down some mossy rock to the cave-like base of the next wall, which is the Homage wall.",
+               "protection":"10 bolts/clips (excluding anchor)",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36246, 103.77428],
+                  "parent-sector":"Homage",
+                  "mp-route-id":"650200007",
+                  "mp-sector-id":"650500007"
+               },
+               "images": [
+                  "https://image.thecrag.com/569x320/c0/09/c009aa78a3227d03f1e4b89a8dc7b0fed7cf739f"
+               ]
+            },
+            {
+               "route-name":"American Pie",
+               "grade":{
+                  "YDS":"5.10a",
+                  "French":"5c",
+                  "Ewbanks":"17",
+                  "British":"5a"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "lead":true
+               },
+               "route-setter":"Peter Terbush & Scottie Nelson",
+               "first-ascent":"Peter Terbush & Scottie Nelson",
+               "description":"Keep to the right side of the hangars and use the corner. The variation which just goes directly up the face is 6b+.",
+               "location":"Continue past The ABCD area and drop into a more bare dirt area with some large slopes at the base of a fairly large corner. On the right side there is a distinctive set of cracks and flakes splitting the south-facing wall. This is Supercrack.",
+               "protection":"9 bolts/clips (excluding anchor)",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36259, 103.77420],
+                  "parent-sector":"American Pie",
+                  "mp-route-id":"650200008",
+                  "mp-sector-id":"650500008"
+               },
+               "images": [
+                  "https://image.thecrag.com/569x320/67/3d/673d378ab6d12b2c21e7c9893e794adebf869a33",
+                  "https://image.thecrag.com/213x320/b6/b9/b6b95ebd28cd3de6e173c280afa9da45bdb6708f"
+               ]
+            },
+            {
+               "route-name":"River Crossing",
+               "grade":{
+                  "YDS":"5.11c",
+                  "French":"6c+",
+                  "Ewbanks":"22",
+                  "British":"5c"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "lead":true
+               },
+               "route-setter":"",
+               "first-ascent":"",
+               "description":"There are three bolted climbs here, mostly quite difficult.",
+               "location":"Duck left off the MTB track just south of homage.",
+               "protection":"4 bolts/clips (excluding anchor)",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36275, 103.77474],
+                  "parent-sector":"Lost World",
+                  "mp-route-id":"650200009",
+                  "mp-sector-id":"650500009"
+               },
+               "images": [
+                  "https://image.thecrag.com/240x320/fc/99/fc997a1b69ecb83c0321b6b46639601138d4f29a"
+               ]
+            },
+            {
+               "route-name":"Baby Star",
+               "grade":{
+                  "YDS":"5.12a",
+                  "French":"7a+",
+                  "Ewbanks":"24",
+                  "British":"6a"
+               },
+               "safety":"Be aware that in the gully above 'Short and Sweet' and 'Slash isn't real' there is a lot of loose rock held together with not much but sand and mud. Real chance of pulling down big chunks of rock here, so be very careful.",
+               "type":{
+                  "lead":true
+               },
+               "route-setter":"",
+               "first-ascent":"",
+               "description":"",
+               "location":"",
+               "protection":"9 bolts/clips (excluding anchor)",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36123, 103.77382],
+                  "parent-sector":"Rock Star",
+                  "mp-route-id":"650200010",
+                  "mp-sector-id":"650500010"
+               },
+               "images": [
+                  "https://image.thecrag.com/320x213/filters:rotate(270)/db/3d/db3ddc6a799fc930b10b673966b6a520ae98eee9"
+               ]
+            },
+            {
+               "route-name":"Pigs In Space",
+               "grade":{
+                  "YDS":"5.10c",
+                  "French":"6b",
+                  "Ewbanks":"20",
+                  "British":"5b"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "top-rope":true
+               },
+               "route-setter":"",
+               "first-ascent":"",
+               "description":"Alternate route for second pitch of first blood. From the stance goes right past the tree and runs straight up from there to the same anchor as first blood. Trad protection is scant, so best on top rope after leading first blood.",
+               "location":"Same approach as the other areas for the Dairy Farm. When you reach the clearing you will see the Nose on the right side of the quarry near some tall trees.",
+               "protection":"",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36099, 103.77320],
+                  "parent-sector":"The Nose",
+                  "mp-route-id":"650200011",
+                  "mp-sector-id":"650500011"
+               },
+               "images": [
+                  "https://image.thecrag.com/195x320/bc/f8/bcf87c12dcfc49437fe20899a373ec634e3389eb"
+               ]
+            },
+            {
+               "route-name":"Dragon Shit",
+               "grade":{
+                  "YDS":"5.9",
+                  "French":"5b",
+                  "Ewbanks":"16",
+                  "British":"4c"
+               },
+               "safety":"This route has a lot of loose rock! Lead climber must be careful not to pull loose rocks down onto the belayer. When placing gear in the crack be aware that in places the rock had softened due to water ingress.",
+               "type":{
+                  "traditional":true
+               },
+               "route-setter":"",
+               "first-ascent":"",
+               "description":"Has a chain anchor at the top.",
+               "location":"Access is through several openings in the dense foliage guarding the base. Many times you'll find that walking along the cliff base is difficult and it's best to return to the open Meadow and find another approach when accessing a new climb.",
+               "protection":"",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36081, 103.77308],
+                  "parent-sector":"The Nose Right",
+                  "mp-route-id":"650200012",
+                  "mp-sector-id":"650500012"
+               },
+               "images": [
+                  "https://image.thecrag.com/240x320/9f/6d/9f6db45513d20be6448856f3d468d697ffc65b08",
+                  "https://image.thecrag.com/427x320/7c/b9/7cb9c9f67e25ba0a9a68b8f59c09cd36f7b26bf7"
+               ]
+            },
+            {
+               "route-name":"Atlantis",
+               "grade":{
+                  "BLDV":"V5",
+                  "FB":"6C"
+               },
+               "safety":"",
+               "type":{
+                  "boulder":true
+               },
+               "route-setter":"Nathaniel Soon",
+               "first-ascent":"Peter Zhang, 2021",
+               "description":"Fun compression with some big but easy moves to top.",
+               "location":"",
+               "protection":"",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.39239, 103.97672],
+                  "parent-sector":"Batu Puteh",
+                  "mp-route-id":"650200013",
+                  "mp-sector-id":"650500013"
+               },
+               "images": [
+                  "https://image.thecrag.com/320x286/filters:rotate(90)/5d/74/5d74315592ed16b5e767ff3312a1bf09f3ab5177"
+               ]
+            },
+            {
+               "route-name":"Heritage Crack",
+               "grade":{
+                  "BLDV":"V4",
+                  "FB":"6A+"
+               },
+               "safety":"",
+               "type":{
+                  "boulder":true
+               },
+               "route-setter":"Nathaniel Soon",
+               "first-ascent":"Nathaniel Soon, 2021",
+               "description":"Climb the obvious jug rail.",
+               "location":"",
+               "protection":"",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.40344, 103.97333],
+                  "parent-sector":"Pulau Ubin",
+                  "mp-route-id":"650200014",
+                  "mp-sector-id":"650500014"
+               },
+               "images": [
+                  "https://image.thecrag.com/240x320/85/c7/85c7642ecbdf9dd02bb0254b30227ff2bd4c17e9"
+               ]
+            },
+            {
+               "route-name":"Bukit Ciambi",
+               "grade":{
+                  "BLDV":"V3",
+                  "FB":"5C+"
+               },
+               "safety":"",
+               "type":{
+                  "boulder":true
+               },
+               "route-setter":"Davide Rota",
+               "first-ascent":"Davide Rota, 2021",
+               "description":"Keep your centre of gravity low for the proper challenge. It can be done from left to right, and vice-versa.",
+               "location":"",
+               "protection":"",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.32748, 103.78327],
+                  "parent-sector":"Bukit Ciambi",
+                  "mp-route-id":"650200015",
+                  "mp-sector-id":"650500015"
+               },
+               "images": [
+                  "https://image.thecrag.com/1280x960/fc/ce/fcce14535bc97b71b7c213ef6563271b1e8b8878"
+               ]
+            }             
          ]
       },
       "united-states": {
@@ -892,9 +1196,9 @@
                },
                "safety":"",
                "type":{
-                  "trad":true
+                  "traditional":true
                },
-               "fa":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
+               "first-ascent":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
                "description": "Epinephrine is the Red Rocks classic. The route is long, varied, and has consistently good rock. The first half of the climb follows a spectacular chimney system. The second half ascends steep faces, cracks, and dihedrals.",
                "location": "From the parking area near the mouth of Black Velvet Canyon, hike up the old dirt road for a couple hundred yards, the take the trail that heads to the right. Follow this into the canyon. After a little less than a half-mile, a trail will drop down into the wash. Take it. Follow the wash for another half-mile or so. When your path is blocked by a waterfall (usually dry), head up and left on Class 3 terrain. Or, you can do a little 5.easy climbing up the waterfall. The start of the climb is about 50m up the canyon from here.",
                "protection": "You don't need anything bigger than a #4 camalot in the chimney pitches. A 3, 3.5, and 4 camalot and perhaps a #11 hex, combined with the existing fixed gear, should get you up the chimney without much mental stress.",
