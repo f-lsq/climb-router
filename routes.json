@@ -1,40 +1,112 @@
 [
-  {
-    "route_name":"Epinephrine",
-    "grade":{
-       "YDS":"5.9",
-       "French":"5c",
-       "Ewbanks":"17",
-       "UIAA":"VI",
-       "ZA":"17",
-       "British":"HVS 5a"
-    },
-    "safety":"",
-    "type":{
-       "trad":true
-    },
-    "fa":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
-    "description":[
-       "This is it. THE classic red rocks route. And it's just as good as everyone says it is.",
-       "",
-       "Approach as for the Black Velvet wall. After climbing around the chockstone, return to the stream bed and walk another minute or two upstream. The bolts on the first pitch will be easily spotted on the left.",
-       "",
-       "This route has lost some of the original seriousness now that bolted anchors have been placed all the way up. This speeds things up considerably and provides an easy retreat if needed. You'll need two ropes if you intend to rap the route.",
-       ""
-    ],
-    "location":"",
-    "protection":[
-       "You don't need anything bigger than a #4 camalot in the chimney pitches. A 3, 3.5, and 4 camalot and perhaps a #11 hex, combined with the existing fixed gear, should get you up the chimney without much mental stress."
-    ],
-    "metadata":{
-       "left_right_seq":"23",
-       "parent_lnglat":[
-          -115.46652,
-          36.03518
-       ],
-       "parent_sector":"Black Velvet Wall",
-       "mp_route_id":"105732422",
-       "mp_sector_id":"105732162"
-    }
- }
+   {
+      "singapore": {
+         "climbing-gym": [{
+            "name": "Adventure HQ",
+            "address": "2 Yishun Walk, Singapore 767944",
+            "coordinates": [1.4145840167232775, 103.8311410511582],
+            "opening-hours": {
+               "monday": "Closed",
+               "tuesday": "2PM to 5:30PM",
+               "wednesday": "2PM to 9:30PM",
+               "thursday": "2PM to 9:30PM",
+               "friday": "2PM to 9:30PM",
+               "saturday": "10AM to 9:30PM",
+               "sunday": "10AM to 9:30PM"
+            },
+            "contact": "6705 9420",
+            "prices": {
+               "single-entry": ["$32 to $68 (Tuesday-Friday)", "$35 to $78 (Saturday-Sunday)"],
+               "multi-pass-5": "$180 to $350",
+               "multi-pass-10": "Nil",
+               "monthly-pass": "Nil"
+            },
+            "remarks": "For exact breakdown of prices, refer to gym website.",
+            "link": "https://www.hometeamns.sg/khatib/adventurehq/",
+            "images": [
+               "https://static.mothership.sg/1/2020/10/boulder1.jpg",
+               "https://static.mothership.sg/1/2020/10/wall1.jpg"
+            ],
+            "type": {
+               "lead": false,
+               "boulder": true,
+               "top-rope": true,
+               "traditional": false
+            }
+         }, 
+         {
+            "name": "Arête (By Upwall)",
+            "address": "5 Changi Business Park Central 1, #02 14/15/16, Singapore 486038",
+            "coordinates": [1.3341051912953432, 103.96250526835503],
+            "opening-hours": {
+               "monday": "1PM to 9:30PM",
+               "tuesday": "1PM to 9:30PM",
+               "wednesday": "1PM to 9:30PM",
+               "thursday": "1PM to 9:30PM",
+               "friday": "1PM to 9:30PM",
+               "saturday": "9:30AM to 9:30PM",
+               "sunday": "9:30AM to 8:30PM",
+            },
+            "contact": "6705 9420",
+            "prices": {
+               "single-entry": ["$32 to $68 (Tuesday-Friday)", "$35 to $78 (Saturday-Sunday)"],
+               "multi-pass-5": "$180 to $350",
+               "multi-pass-10": "Nil",
+               "monthly-pass": "Nil"
+            },
+            "remarks": "For exact breakdown of prices, refer to gym website.",
+            "link": "https://www.hometeamns.sg/khatib/adventurehq/",
+            "type": {
+               "lead": false,
+               "boulder": true,
+               "top-rope": true,
+               "traditional": false
+            }
+         }],
+         "climbing-routes": {}
+      },
+      "united-states": {
+         "climbing-gym": {},
+         "climbing-routes": {
+            {
+               "route_name":"Epinephrine",
+               "grade":{
+                  "YDS":"5.9",
+                  "French":"5c",
+                  "Ewbanks":"17",
+                  "UIAA":"VI",
+                  "ZA":"17",
+                  "British":"HVS 5a"
+               },
+               "safety":"",
+               "type":{
+                  "trad":true
+               },
+               "fa":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
+               "description":[
+                  "This is it. THE classic red rocks route. And it's just as good as everyone says it is.",
+                  "",
+                  "Approach as for the Black Velvet wall. After climbing around the chockstone, return to the stream bed and walk another minute or two upstream. The bolts on the first pitch will be easily spotted on the left.",
+                  "",
+                  "This route has lost some of the original seriousness now that bolted anchors have been placed all the way up. This speeds things up considerably and provides an easy retreat if needed. You'll need two ropes if you intend to rap the route.",
+                  ""
+               ],
+               "location":"",
+               "protection":[
+                  "You don't need anything bigger than a #4 camalot in the chimney pitches. A 3, 3.5, and 4 camalot and perhaps a #11 hex, combined with the existing fixed gear, should get you up the chimney without much mental stress."
+               ],
+               "metadata":{
+                  "left_right_seq":"23",
+                  "parent_lnglat":[
+                     -115.46652,
+                     36.03518
+                  ],
+                  "parent_sector":"Black Velvet Wall",
+                  "mp_route_id":"105732422",
+                  "mp_sector_id":"105732162"
+               }
+            }
+         }
+      }
+   }
 ]
