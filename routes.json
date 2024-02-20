@@ -468,6 +468,258 @@
                "mp-gym-id":"650100013",
                "mp-sector-id":""
             }
+         },
+         {
+            "gym-name": "Boulder Planet Sembawang",
+            "address": "604 Sembawang Rd, #B1-22/23 Sembawang Shopping Centre, Singapore 758459",
+            "opening-hours": {
+               "monday": "1000 to 2200",
+               "tuesday": "1000 to 2200",
+               "wednesday": "1000 to 2200",
+               "thursday": "1000 to 2200",
+               "friday": "1000 to 2200",
+               "saturday": "1000 to 2100",
+               "sunday": "1000 to 2100"
+            },
+            "contact": "+65 9469 2386",
+            "prices": {
+               "single-entry": "SGD 33",
+               "multi-pass-5": "SGD 135",
+               "multi-pass-10": "SGD 220",
+               "monthly-pass": "SGD 121"
+            },
+            "remarks": "SGD 98 initiation fee for Monthly Pass.",
+            "link": "https://www.boulderplanet.sg/",
+            "images": [
+               "https://static.wixstatic.com/media/8b92f2_5205b52bb4c1416788cb4e566412f889~mv2.jpg/v1/fill/w_656,h_782,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8b92f2_5205b52bb4c1416788cb4e566412f889~mv2.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.4421998309940733, 103.82497113581393],
+               "parent-sector":"",
+               "mp-gym-id":"650100014",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Boulder Planet Tai Seng",
+            "address": "601 MacPherson Rd, #02-07 Grantral Mall/Grantral Complex@Macpherson, Singapore 368242",
+            "opening-hours": {
+               "monday": "1000 to 2230",
+               "tuesday": "1000 to 2230",
+               "wednesday": "1000 to 2230",
+               "thursday": "1000 to 2230",
+               "friday": "1000 to 2230",
+               "saturday": "1000 to 2100",
+               "sunday": "1000 to 2100"
+            },
+            "contact": "+65 9469 2386",
+            "prices": {
+               "single-entry": "SGD 33",
+               "multi-pass-5": "SGD 135",
+               "multi-pass-10": "SGD 220",
+               "monthly-pass": "SGD 121"
+            },
+            "remarks": "SGD 98 initiation fee for Monthly Pass.",
+            "link": "https://www.boulderplanet.sg/",
+            "images": [
+               "https://static.wixstatic.com/media/8b92f2_4d2e12b939b04ba09c37b823dbf7e6de~mv2.jpg/v1/fill/w_640,h_427,q_90/8b92f2_4d2e12b939b04ba09c37b823dbf7e6de~mv2.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3341694624070695, 103.88844374623275],
+               "parent-sector":"",
+               "mp-gym-id":"650100015",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Boulder World",
+            "address": "290 Orchard Rd, #06-25/26 Paragon Shopping Centre, Singapore 238859",
+            "opening-hours": {
+               "monday": "0900 to 2230",
+               "tuesday": "0900 to 2230",
+               "wednesday": "0900 to 2230",
+               "thursday": "0900 to 2230",
+               "friday": "0900 to 2230",
+               "saturday": "1300 to 2100",
+               "sunday": "0900 to 2100"
+            },
+            "contact": "+65 6610 5464",
+            "prices": {
+               "single-entry": "SGD 25",
+               "multi-pass-5": "SGD 120",
+               "multi-pass-10": "SGD 200",
+               "monthly-pass": "SGD 90"
+            },
+            "remarks": "SGD 90 initiation fee for Monthly Pass.",
+            "link": "https://www.boulderworld.com/",
+            "images": [
+               "https://assets-global.website-files.com/623c6a1bbc130c9bc9c1b4a8/64f80f280a8ce1f3a12d6ed8_Bouldering_Easy-min.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3042250933107284, 103.83564603254085],
+               "parent-sector":"",
+               "mp-gym-id":"650100016",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Boys' Town Adventure Centre",
+            "address": "624 Upper Bukit Timah Rd, Singapore 678212",
+            "opening-hours": {
+               "monday": "Closed",
+               "tuesday": "Closed",
+               "wednesday": "1800 to 2200",
+               "thursday": "1800 to 2200",
+               "friday": "Closed",
+               "saturday": "1400 to 2200",
+               "sunday": "Closed"
+            },
+            "contact": "+65 6690 5420",
+            "prices": {
+               "single-entry": "SGD 16",
+               "multi-pass-5": "Nil",
+               "multi-pass-10": "Nil",
+               "monthly-pass": "Nil"
+            },
+            "remarks": "Last entry at 2100 on Wednesday, Thursday and Saturday",
+            "link": "https://www.boystown.org.sg/adventure-centre/",
+            "images": [
+               "https://lh3.googleusercontent.com/p/AF1QipMFsaBfbtOtS8V5K2RTF1HNzyNBOVOkfrCR3Hbv=s1360-w1360-h1020"
+            ],
+            "type": {
+               "lead": true,
+               "boulder": true,
+               "top-rope": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3698955717318235, 103.7679612395189],
+               "parent-sector":"",
+               "mp-gym-id":"650100017",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Climb@T3",
+            "address": "Changi Airport Terminal 3, 65 Airport Blvd., B3-01/02 Public Area, 819663",
+            "opening-hours": {
+               "monday": "1430 to 2130",
+               "tuesday": "1430 to 2130",
+               "wednesday": "1430 to 2130",
+               "thursday": "1430 to 2130",
+               "friday": "1430 to 2130",
+               "saturday": "1200 to 2130",
+               "sunday": "1200 to 2130"
+            },
+            "contact": "+65 8040 9515",
+            "prices": {
+               "single-entry": "SGD 19",
+               "multi-pass-5": "SGD 85",
+               "multi-pass-10": "Nil",
+               "monthly-pass": "Nil"
+            },
+            "remarks": "",
+            "link": "https://www.climbt3.sg/",
+            "images": [
+               "https://media.timeout.com/images/105984745/image.jpg",
+               "https://media.timeout.com/images/105984746/750/422/image.jpg"
+            ],
+            "type": {
+               "boulder": true,
+               "auto-belay": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.357163637691629, 103.98761462417467],
+               "parent-sector":"",
+               "mp-gym-id":"650100018",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Climba Gym",
+            "address": "61 Robinson Rd, #05-03/04, Singapore 068893",
+            "opening-hours": {
+               "monday": "1100 to 2200",
+               "tuesday": "1100 to 2200",
+               "wednesday": "1100 to 2200",
+               "thursday": "1100 to 2200",
+               "friday": "1100 to 2200",
+               "saturday": "1000 to 1800",
+               "sunday": "Closed"
+            },
+            "contact": "+65 8040 6534",
+            "prices": {
+               "single-entry": "SGD 28",
+               "multi-pass-5": "Nil",
+               "multi-pass-10": "SGD 220",
+               "monthly-pass": "SGD 120"
+            },
+            "remarks": "SGD 80 initiation fee for Monthly Pass.",
+            "link": "https://climba.sg/",
+            "images": [
+               "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/djb8sgusvgalffuogkgi.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.2794404219474051, 103.84947968555174],
+               "parent-sector":"",
+               "mp-gym-id":"650100019",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Climb Central Katong",
+            "address": "E Coast Rd, #04-01/02 112, Singapore 428802",
+            "opening-hours": {
+               "monday": "1100 to 2300",
+               "tuesday": "1100 to 2300",
+               "wednesday": "1100 to 2300",
+               "thursday": "1100 to 2300",
+               "friday": "1100 to 2300",
+               "saturday": "0900 to 2100",
+               "sunday": "0900 to 2100"
+            },
+            "contact": "+65 6990 0702",
+            "prices": {
+               "single-entry": "SGD 27.25",
+               "multi-pass-5": "SGD 114.45",
+               "multi-pass-10": "SGD 207.10",
+               "monthly-pass": "SGD 196.20"
+            },
+            "remarks": "Prices Updated with 9% GST from 1st Jan 2024.",
+            "link": "https://www.climbcentral.sg/",
+            "images": [
+               "https://cdn.shopify.com/s/files/1/1301/6863/files/CC_Katong_2_480x480.jpg?v=1656481858"
+            ],
+            "type": {
+               "lead": true,
+               "boulder": true,
+               "top-rope": true,
+               "auto-belay": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.305508433151937, 103.90495011068293],
+               "parent-sector":"",
+               "mp-gym-id":"650100020",
+               "mp-sector-id":""
+            }
          }
       ],
          "climbing-routes": [
@@ -475,17 +727,16 @@
                "route-name":"Boring and Meaningless",
                "grade":{
                   "YDS":"5.9",
-                  "French":"5c",
-                  "Ewbanks":"17",
-                  "UIAA":"VI",
-                  "ZA":"17",
-                  "British":"HVS 5a"
+                  "French":"5b",
+                  "Ewbanks":"16",
+                  "British":"4c"
                },
-               "safety":"",
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
                "type":{
-                  "traditional":true
+                  "lead":true
                },
-               "fa":"Lawrence Lee & Tan Tien Chye, 1991",
+               "route-setter":"Lawrence Lee & Tan Tien Chye",
+               "first-ascent":"Lawrence Lee & Tan Tien Chye, 1991",
                "description":"Boring And Meaningless is named after one of the most popular climbs on the wall, somewhat of an ironic happening and a measured compliment. Even by local standards it is quite short, being only about 30 to 35 feet tall.",
                "location":"From the entrance to the open area with all of the crags surrounding it, stay left and follow the steep, vegetated quarry wall to the first bare area. This is Boring and Meaningless.",
                "protection":"4 bolts/clips (excluding anchor)",
@@ -495,8 +746,96 @@
                   "parent-sector":"Dairy Farm",
                   "mp-route-id":"650200001",
                   "mp-sector-id":"650500001"
-               }
-            }
+               },
+               "images": [
+                  "https://image.thecrag.com/480x320/4c/f5/4cf5bf05023379c3b810c38a06cd77f3f88d40ee",
+                  "https://image.thecrag.com/960x1280/35/5a/355acc0f901d7d4ca0f813b5cbb578fbccdaf391"
+               ]
+            },
+            {
+               "route-name":"Third Kid",
+               "grade":{
+                  "YDS":"5.10d",
+                  "French":"6b+",
+                  "Ewbanks":"21",
+                  "British":"5c"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "lead":true
+               },
+               "route-setter":"Chiew Sien Chew & KF. Tham",
+               "first-ascent":"Jeffrey Neo, 2001",
+               "description":"Scramble start to a line that follows two parallel weaknesses in the rock. Work up to a natural break with two obvious (suspiciously perfect) handholds. Move right and mount the protrusion. Staying left, insecure moves bring you a large ledge. From here some powerful moves to reach the anchor.",
+               "location":"Stay left on the main trail passing 'Boring And Meaningless' by a few meters and look for the next distinct section of Rock. The left side of this is the chossy 'Rappelling Wall' and the right side is called 'Third Kid.' Two natural lines are on the left side of this (5.7, 5.8) and two bolted lines are on the right side (10d, 11a).",
+               "protection":"8 bolts/clips (excluding anchor)",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36190, 103.77252],
+                  "parent-sector":"Dairy Farm",
+                  "mp-route-id":"650200002",
+                  "mp-sector-id":"650500001"
+               },
+               "images": [
+                  "https://image.thecrag.com/240x320/f9/cb/f9cb44726bc5bd72aa1a8c3d98b775287cfd10d8"
+               ]
+            },
+            {
+               "route-name":"Direct",
+               "grade":{
+                  "YDS":"5.7",
+                  "French":"5a",
+                  "Ewbanks":"16",
+                  "British":"4c"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "lead":true
+               },
+               "route-setter":"",
+               "first-ascent":"Lawrence Lee & Anthony Seah, 1987",
+               "description":"Can be climbed with slight variations. As noted in the 'Climb Singapore' guidebook, the bolts were originally placed as a 'secondary protection' to help beginners learn to how to place traditional protection. This explains why the 2 separate lines of bolts are everywhere but where you need them.",
+               "location":"Walk past 'Boring and Meaningless', the 'Third Kid,' and then arrive at the 'Direct Section' and 'Razor's Edge' as the wall/side of the depression tilts to the SouthEast, just before a corner.",
+               "protection":"5 bolts/clips (excluding anchor)",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36176, 103.77285],
+                  "parent-sector":"Dairy Farm",
+                  "mp-route-id":"650200003",
+                  "mp-sector-id":"650500001"
+               },
+               "images": [
+                  "https://image.thecrag.com/213x320/26/04/2604034098af723f13987aa84896b43a186b540c"
+               ]
+            },
+            {
+               "route-name":"Razor's Edge",
+               "grade":{
+                  "YDS":"5.10a",
+                  "French":"6a",
+                  "Ewbanks":"18",
+                  "British":"5a"
+               },
+               "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+               "type":{
+                  "traditional":true
+               },
+               "route-setter":"",
+               "first-ascent":"Lawrence Lee & Anthony Seah",
+               "description":"Can be climbed with slight variations. As noted in the 'Climb Singapore' guidebook, the bolts were originally placed as a 'secondary protection' to help beginners learn to how to place traditional protection. This explains why the 2 separate lines of bolts are everywhere but where you need them.",
+               "location":"Walk past 'Boring and Meaningless', the 'Third Kid,' and then arrive at the 'Direct Section' and 'Razor's Edge' as the wall/side of the depression tilts to the SouthEast, just before a corner.",
+               "protection":"5 bolts/clips (excluding anchor)",
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.36176, 103.77285],
+                  "parent-sector":"Dairy Farm",
+                  "mp-route-id":"650200003",
+                  "mp-sector-id":"650500001"
+               },
+               "images": [
+                  "https://image.thecrag.com/213x320/26/04/2604034098af723f13987aa84896b43a186b540c"
+               ]
+            }   
          ]
       },
       "united-states": {
