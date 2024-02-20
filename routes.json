@@ -1,7 +1,8 @@
 [
    {
       "singapore": {
-         "climbing-gym": [{
+         "climbing-gym": [
+            {
             "name": "Adventure HQ",
             "address": "2 Yishun Walk, Singapore 767944",
             "coordinates": [1.4145840167232775, 103.8311410511582],
@@ -16,8 +17,11 @@
             },
             "contact": "6705 9420",
             "prices": {
-               "single-entry": ["$32 to $68 (Tuesday-Friday)", "$35 to $78 (Saturday-Sunday)"],
-               "multi-pass-5": "$180 to $350",
+               "single-entry": [
+                  "SGD 32 to SGD 68 (Tuesday-Friday)", 
+                  "SGD 35 to SGD 78 (Saturday-Sunday)"
+               ],
+               "multi-pass-5": "SGD 180 to SGD 350",
                "multi-pass-10": "Nil",
                "monthly-pass": "Nil"
             },
@@ -28,16 +32,15 @@
                "https://static.mothership.sg/1/2020/10/wall1.jpg"
             ],
             "type": {
-               "lead": false,
                "boulder": true,
                "top-rope": true,
-               "traditional": false
+               "auto-belay": true
             }
          }, 
          {
             "name": "Arête (By Upwall)",
             "address": "5 Changi Business Park Central 1, #02 14/15/16, Singapore 486038",
-            "coordinates": [1.3341051912953432, 103.96250526835503],
+            "coordinates": [1.3340515616569568, 103.96245162417475],
             "opening-hours": {
                "monday": "1PM to 9:30PM",
                "tuesday": "1PM to 9:30PM",
@@ -45,31 +48,153 @@
                "thursday": "1PM to 9:30PM",
                "friday": "1PM to 9:30PM",
                "saturday": "9:30AM to 9:30PM",
-               "sunday": "9:30AM to 8:30PM",
+               "sunday": "9:30AM to 9:30PM"
             },
-            "contact": "6705 9420",
+            "contact": "8028 7028",
             "prices": {
-               "single-entry": ["$32 to $68 (Tuesday-Friday)", "$35 to $78 (Saturday-Sunday)"],
-               "multi-pass-5": "$180 to $350",
-               "multi-pass-10": "Nil",
-               "monthly-pass": "Nil"
+               "single-entry": "SGD 22",
+               "multi-pass-5": "SGD 100",
+               "multi-pass-10": "SGD 180",
+               "monthly-pass": "SGD 80"
             },
-            "remarks": "For exact breakdown of prices, refer to gym website.",
-            "link": "https://www.hometeamns.sg/khatib/adventurehq/",
+            "remarks": "Passes can be used at Upwall Climbing.",
+            "link": "https://upwallclimbing.sg/",
+            "images": [
+               "https://upwallclimbing.sg/wp-content/uploads/2023/09/arete-pic-on-google-768x512.jpg",
+               "https://upwallclimbing.sg/wp-content/uploads/2022/01/Upwall-Climbing-facility-768x512.jpg"
+            ],
             "type": {
-               "lead": false,
                "boulder": true,
                "top-rope": true,
-               "traditional": false
+               "auto-belay": true
             }
-         }],
-         "climbing-routes": {}
-      },
-      "united-states": {
-         "climbing-gym": {},
-         "climbing-routes": {
+         },
+         {
+            "name": "Ark Bloc",
+            "address": "6 Tebing Ln, #01-05, Singapore 828835",
+            "coordinates": [1.394466269033976, 103.91704974368331],
+            "opening-hours": {
+               "monday": "8AM to 12PM, 3PM to 10PM",
+               "tuesday": "8AM to 12PM, 3PM to 10PM",
+               "wednesday": "8AM to 12PM, 3PM to 10PM",
+               "thursday": "8AM to 12PM, 3PM to 10PM",
+               "friday": "8AM to 12PM, 3PM to 10PM",
+               "saturday": "10AM to 10PM",
+               "sunday": "10AM to 10PM"
+            },
+            "contact": "8022 1480",
+            "prices": {
+               "single-entry": "SGD 28",
+               "multi-pass-3": "SGD 58",
+               "multi-pass-10": "SGD 168",
+               "monthly-pass": "SGD 90"
+            },
+            "remarks": "Passes can be used at Upwall Climbing.",
+            "link": "https://arkbloc.com/",
+            "images": [
+               "https://arkbloc.com/wp-content/uploads/2023/01/Ark-Bloc-Climbing-Wall-2-768x768.jpeg",
+               "https://arkbloc.com/wp-content/uploads/2022/07/IMG_0455-2-768x432.jpg"
+            ],
+            "type": {
+               "boulder": true
+            }
+         },
+         {
+            "name": "BFF Climb Bendemeer",
+            "address": "2 Kallang Ave, #01-20 CT Hub @ Kallang, Singapore 339407",
+            "coordinates": [1.3137287755522833, 103.86384619461124],
+            "opening-hours": {
+               "monday": "9:30AM to 10:45PM",
+               "tuesday": "9:30AM to 10:45PM",
+               "wednesday": "9:30AM to 10:45PM",
+               "thursday": "9:30AM to 10:45PM",
+               "friday": "9:30AM to 10:45PM",
+               "saturday": "9:30AM to 10:45PM",
+               "sunday": "9:30AM to 10:45PM"
+            },
+            "contact": "9649 4145",
+            "prices": {
+               "single-entry": "SGD 27.25",
+               "multi-pass-5": "Any Outlet - SGD 119.90",
+               "multi-pass-10": "Any Outlet - SGD 207.10",
+               "monthly-pass": ["Any Outlet - SGD 141.70", "Bendemeer Outlet - SGD 109.00"]
+            },
+            "remarks": "$100 initiation fee for Monthly pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+            "link": "https://bffclimb.com/",
+            "images": [
+               "https://media.karousell.com/media/photos/products/2022/11/27/multi_gym_entry_pass_into_any__1669552176_dd7e40f0_progressive",
+               "https://www.littledayout.com/wp-content/uploads/08-BFF-Climb.jpg"
+            ],
+            "type": {
+               "boulder": true,
+               "auto-belay": true
+            }
+         },
+         {
+            "name": "BFF Climb Tampines Hub",
+            "address": "1 Tampines Walk, #02-81 Our Tampines Hub, Singapore 528523",
+            "coordinates": [1.380837308210486, 103.94203949496897],
+            "opening-hours": {
+               "monday": "9:30AM to 10:45PM",
+               "tuesday": "9:30AM to 10:45PM",
+               "wednesday": "9:30AM to 10:45PM",
+               "thursday": "9:30AM to 10:45PM",
+               "friday": "9:30AM to 10:45PM",
+               "saturday": "9:30AM to 10:45PM",
+               "sunday": "9:30AM to 10:45PM"
+            },
+            "contact": "8368 9214",
+            "prices": {
+               "single-entry": "SGD 23.98",
+               "multi-pass-5": ["Any Outlet - SGD 119.90", "Tampines Outlets - SGD 103.55"],
+               "multi-pass-10": ["Any Outlet - SGD 207.10", "Tampines Outlets - SGD 185.30"],
+               "monthly-pass": ["Any Outlet - SGD 141.70", "Tampines Outlets - SGD 98.10"]
+            },
+            "remarks": "$100 initiation fee for Monthly pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+            "link": "https://bffclimb.com/",
+            "images": [
+               "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
+            ],
+            "type": {
+               "lead": true,
+               "boulder": true,
+               "top-rope": true,
+               "auto-belay": true
+            }
+         },
+         {
+            "name": "BFF Climb Tampines Yoha",
+            "address": "6 Tampines Street 92, #03-06 yo:HA Commercial @ Tampines, Singapore 528893",
+            "coordinates": [1.3523265327240714, 103.94100376491768],
+            "opening-hours": {
+               "monday": "9:30AM to 10:45PM",
+               "tuesday": "9:30AM to 10:45PM",
+               "wednesday": "9:30AM to 10:45PM",
+               "thursday": "5PM to 10:45PM",
+               "friday": "9:30AM to 3:15AM",
+               "saturday": "9:30AM to 3:15AM",
+               "sunday": "9:30AM to 10:45PM"
+            },
+            "contact": "8691 9790",
+            "prices": {
+               "single-entry": "SGD 23.98",
+               "multi-pass-5": ["Any Outlet - SGD 119.90", "Tampines Outlets - SGD 103.55"],
+               "multi-pass-10": ["Any Outlet - SGD 207.10", "Tampines Outlets - SGD 185.30"],
+               "monthly-pass": ["Any Outlet - SGD 141.70", "Tampines Outlets - SGD 98.10"]
+            },
+            "remarks": "$100 initiation fee for Monthly pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+            "link": "https://bffclimb.com/",
+            "images": [
+               "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
+            ],
+            "type": {
+               "boulder": true
+            }
+         }
+      ],
+         "climbing-routes": [
             {
-               "route_name":"Epinephrine",
+               "route_name":"Boring and Meaningless",
                "grade":{
                   "YDS":"5.9",
                   "French":"5c",
@@ -80,33 +205,21 @@
                },
                "safety":"",
                "type":{
-                  "trad":true
+                  "traditional":true
                },
-               "fa":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
-               "description":[
-                  "This is it. THE classic red rocks route. And it's just as good as everyone says it is.",
-                  "",
-                  "Approach as for the Black Velvet wall. After climbing around the chockstone, return to the stream bed and walk another minute or two upstream. The bolts on the first pitch will be easily spotted on the left.",
-                  "",
-                  "This route has lost some of the original seriousness now that bolted anchors have been placed all the way up. This speeds things up considerably and provides an easy retreat if needed. You'll need two ropes if you intend to rap the route.",
-                  ""
-               ],
-               "location":"",
-               "protection":[
-                  "You don't need anything bigger than a #4 camalot in the chimney pitches. A 3, 3.5, and 4 camalot and perhaps a #11 hex, combined with the existing fixed gear, should get you up the chimney without much mental stress."
-               ],
+               "fa":"Lawrence Lee & Tan Tien Chye, 1991",
+               "description":"Boring And Meaningless is named after one of the most popular climbs on the wall, somewhat of an ironic happening and a measured compliment. Even by local standards it is quite short, being only about 30 to 35 feet tall.",
+               "location":"From the entrance to the open area with all of the crags surrounding it, stay left and follow the steep, vegetated quarry wall to the first bare area. This is Boring and Meaningless.",
+               "protection":"4 bolts/clips (excluding anchor)",
                "metadata":{
-                  "left_right_seq":"23",
-                  "parent_lnglat":[
-                     -115.46652,
-                     36.03518
-                  ],
-                  "parent_sector":"Black Velvet Wall",
-                  "mp_route_id":"105732422",
-                  "mp_sector_id":"105732162"
+                  "left_right_seq":"",
+                  "parent_lnglat":[1.3614, 103.7723],
+                  "parent_sector":"",
+                  "mp_route_id":"",
+                  "mp_sector_id":""
                }
             }
-         }
+         ]
       }
    }
 ]
