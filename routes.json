@@ -1,27 +1,23 @@
 [
    {
       "singapore": {
-         "climbing-gym": [
+         "climbing-gyms": [
             {
-            "name": "Adventure HQ",
+            "gym-name": "Adventure HQ",
             "address": "2 Yishun Walk, Singapore 767944",
-            "coordinates": [1.4145840167232775, 103.8311410511582],
             "opening-hours": {
                "monday": "Closed",
-               "tuesday": "2PM to 5:30PM",
-               "wednesday": "2PM to 9:30PM",
-               "thursday": "2PM to 9:30PM",
-               "friday": "2PM to 9:30PM",
-               "saturday": "10AM to 9:30PM",
-               "sunday": "10AM to 9:30PM"
+               "tuesday": "1400 to 1730",
+               "wednesday": "1400 to 2130",
+               "thursday": "1400 to 2130",
+               "friday": "1400 to 2130",
+               "saturday": "1000 to 2130",
+               "sunday": "1000 to 2130"
             },
-            "contact": "6705 9420",
+            "contact": "+65 6705 9420",
             "prices": {
-               "single-entry": [
-                  "SGD 32 to SGD 68 (Tuesday-Friday)", 
-                  "SGD 35 to SGD 78 (Saturday-Sunday)"
-               ],
-               "multi-pass-5": "SGD 180 to SGD 350",
+               "single-entry": "SGD 40.75 to SGD 69.27 (Tuesday-Friday), SGD 48.90 to SGD 79.46 (Saturday-Sunday)",
+               "multi-pass-5": "SGD 183.36 to SGD 313.76 (Tuesday-Friday), SGD 222.07 to SGD 356.54 (Saturday-Sunday)",
                "multi-pass-10": "Nil",
                "monthly-pass": "Nil"
             },
@@ -35,22 +31,28 @@
                "boulder": true,
                "top-rope": true,
                "auto-belay": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.4145840167232775, 103.8311410511582],
+               "parent-sector":"",
+               "mp-gym-id":"650100001",
+               "mp-sector-id":""
             }
          }, 
          {
-            "name": "Arête (By Upwall)",
+            "gym-name": "Arête (By Upwall)",
             "address": "5 Changi Business Park Central 1, #02 14/15/16, Singapore 486038",
-            "coordinates": [1.3340515616569568, 103.96245162417475],
             "opening-hours": {
-               "monday": "1PM to 9:30PM",
-               "tuesday": "1PM to 9:30PM",
-               "wednesday": "1PM to 9:30PM",
-               "thursday": "1PM to 9:30PM",
-               "friday": "1PM to 9:30PM",
-               "saturday": "9:30AM to 9:30PM",
-               "sunday": "9:30AM to 9:30PM"
+               "monday": "1300 to 2130",
+               "tuesday": "1300 to 2130",
+               "wednesday": "1300 to 2130",
+               "thursday": "1300 to 2130",
+               "friday": "1300 to 2130",
+               "saturday": "0930 to 2130",
+               "sunday": "0930 to 2130"
             },
-            "contact": "8028 7028",
+            "contact": "+65 8028 7028",
             "prices": {
                "single-entry": "SGD 22",
                "multi-pass-5": "SGD 100",
@@ -67,22 +69,28 @@
                "boulder": true,
                "top-rope": true,
                "auto-belay": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3340515616569568, 103.96245162417475],
+               "parent-sector":"",
+               "mp-gym-id":"650100002",
+               "mp-sector-id":""
             }
          },
          {
-            "name": "Ark Bloc",
+            "gym-name": "Ark Bloc",
             "address": "6 Tebing Ln, #01-05, Singapore 828835",
-            "coordinates": [1.394466269033976, 103.91704974368331],
             "opening-hours": {
-               "monday": "8AM to 12PM, 3PM to 10PM",
-               "tuesday": "8AM to 12PM, 3PM to 10PM",
-               "wednesday": "8AM to 12PM, 3PM to 10PM",
-               "thursday": "8AM to 12PM, 3PM to 10PM",
-               "friday": "8AM to 12PM, 3PM to 10PM",
-               "saturday": "10AM to 10PM",
-               "sunday": "10AM to 10PM"
+               "monday": "0800 to 1200, 1500 to 2200",
+               "tuesday": "0800 to 1200, 1500 to 2200",
+               "wednesday": "0800 to 1200, 1500 to 2200",
+               "thursday": "0800 to 1200, 1500 to 2200",
+               "friday": "0800 to 1200, 1500 to 2200",
+               "saturday": "1000 to 2200",
+               "sunday": "1000 to 2200"
             },
-            "contact": "8022 1480",
+            "contact": "+65 8022 1480",
             "prices": {
                "single-entry": "SGD 28",
                "multi-pass-3": "SGD 58",
@@ -97,29 +105,35 @@
             ],
             "type": {
                "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.394466269033976, 103.91704974368331],
+               "parent-sector":"",
+               "mp-gym-id":"650100003",
+               "mp-sector-id":""
             }
          },
          {
-            "name": "BFF Climb Bendemeer",
+            "gym-name": "BFF Climb Bendemeer",
             "address": "2 Kallang Ave, #01-20 CT Hub @ Kallang, Singapore 339407",
-            "coordinates": [1.3137287755522833, 103.86384619461124],
             "opening-hours": {
-               "monday": "9:30AM to 10:45PM",
-               "tuesday": "9:30AM to 10:45PM",
-               "wednesday": "9:30AM to 10:45PM",
-               "thursday": "9:30AM to 10:45PM",
-               "friday": "9:30AM to 10:45PM",
-               "saturday": "9:30AM to 10:45PM",
-               "sunday": "9:30AM to 10:45PM"
+               "monday": "0930 to 2245",
+               "tuesday": "0930 to 2245",
+               "wednesday": "0930 to 2245",
+               "thursday": "0930 to 2245",
+               "friday": "0930 to 2245",
+               "saturday": "0930 to 2245",
+               "sunday": "0930 to 2245"
             },
-            "contact": "9649 4145",
+            "contact": "+65 9649 4145",
             "prices": {
                "single-entry": "SGD 27.25",
-               "multi-pass-5": "Any Outlet - SGD 119.90",
-               "multi-pass-10": "Any Outlet - SGD 207.10",
-               "monthly-pass": ["Any Outlet - SGD 141.70", "Bendemeer Outlet - SGD 109.00"]
+               "multi-pass-5": "Any Outlet: SGD 119.90",
+               "multi-pass-10": "Any Outlet: SGD 207.10",
+               "monthly-pass": "Any Outlet: SGD 141.70, Bendemeer Outlet: SGD 109.00"
             },
-            "remarks": "$100 initiation fee for Monthly pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+            "remarks": "SGD 100 initiation fee for Monthly Pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
             "link": "https://bffclimb.com/",
             "images": [
                "https://media.karousell.com/media/photos/products/2022/11/27/multi_gym_entry_pass_into_any__1669552176_dd7e40f0_progressive",
@@ -128,29 +142,35 @@
             "type": {
                "boulder": true,
                "auto-belay": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3137287755522833, 103.86384619461124],
+               "parent-sector":"",
+               "mp-gym-id":"650100004",
+               "mp-sector-id":""
             }
          },
          {
-            "name": "BFF Climb Tampines Hub",
+            "gym-name": "BFF Climb Tampines Hub",
             "address": "1 Tampines Walk, #02-81 Our Tampines Hub, Singapore 528523",
-            "coordinates": [1.380837308210486, 103.94203949496897],
             "opening-hours": {
-               "monday": "9:30AM to 10:45PM",
-               "tuesday": "9:30AM to 10:45PM",
-               "wednesday": "9:30AM to 10:45PM",
-               "thursday": "9:30AM to 10:45PM",
-               "friday": "9:30AM to 10:45PM",
-               "saturday": "9:30AM to 10:45PM",
-               "sunday": "9:30AM to 10:45PM"
+               "monday": "0930 to 2245",
+               "tuesday": "0930 to 2245",
+               "wednesday": "0930 to 2245",
+               "thursday": "0930 to 2245",
+               "friday": "0930 to 2245",
+               "saturday": "0930 to 2245",
+               "sunday": "0930 to 2245"
             },
-            "contact": "8368 9214",
+            "contact": "+65 8368 9214",
             "prices": {
                "single-entry": "SGD 23.98",
-               "multi-pass-5": ["Any Outlet - SGD 119.90", "Tampines Outlets - SGD 103.55"],
-               "multi-pass-10": ["Any Outlet - SGD 207.10", "Tampines Outlets - SGD 185.30"],
-               "monthly-pass": ["Any Outlet - SGD 141.70", "Tampines Outlets - SGD 98.10"]
+               "multi-pass-5": "Any Outlet: SGD 119.90, Tampines Outlets: SGD 103.55",
+               "multi-pass-10": "Any Outlet: SGD 207.10, Tampines Outlets: SGD 185.30",
+               "monthly-pass": "Any Outlet: SGD 141.70, Tampines Outlets: SGD 98.10"
             },
-            "remarks": "$100 initiation fee for Monthly pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+            "remarks": "SGD 100 initiation fee for Monthly Pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
             "link": "https://bffclimb.com/",
             "images": [
                "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
@@ -160,41 +180,299 @@
                "boulder": true,
                "top-rope": true,
                "auto-belay": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.380837308210486, 103.94203949496897],
+               "parent-sector":"",
+               "mp-gym-id":"650100005",
+               "mp-sector-id":""
             }
          },
          {
-            "name": "BFF Climb Tampines Yoha",
+            "gym-name": "BFF Climb Tampines Yoha",
             "address": "6 Tampines Street 92, #03-06 yo:HA Commercial @ Tampines, Singapore 528893",
-            "coordinates": [1.3523265327240714, 103.94100376491768],
             "opening-hours": {
-               "monday": "9:30AM to 10:45PM",
-               "tuesday": "9:30AM to 10:45PM",
-               "wednesday": "9:30AM to 10:45PM",
-               "thursday": "5PM to 10:45PM",
-               "friday": "9:30AM to 3:15AM",
-               "saturday": "9:30AM to 3:15AM",
-               "sunday": "9:30AM to 10:45PM"
+               "monday": "0930 to 2245",
+               "tuesday": "0930 to 2245",
+               "wednesday": "0930 to 2245",
+               "thursday": "1700 to 2245",
+               "friday": "0930 to 0315",
+               "saturday": "0930 to 0315",
+               "sunday": "0930 to 2245"
             },
-            "contact": "8691 9790",
+            "contact": "+65 8691 9790",
             "prices": {
                "single-entry": "SGD 23.98",
-               "multi-pass-5": ["Any Outlet - SGD 119.90", "Tampines Outlets - SGD 103.55"],
-               "multi-pass-10": ["Any Outlet - SGD 207.10", "Tampines Outlets - SGD 185.30"],
-               "monthly-pass": ["Any Outlet - SGD 141.70", "Tampines Outlets - SGD 98.10"]
+               "multi-pass-5": "Any Outlet: SGD 119.90, Tampines Outlets: SGD 103.55",
+               "multi-pass-10": "Any Outlet: SGD 207.10, Tampines Outlets: SGD 185.30",
+               "monthly-pass": "Any Outlet: SGD 141.70, Tampines Outlets: SGD 98.10"
             },
-            "remarks": "$100 initiation fee for Monthly pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+            "remarks": "SGD 100 initiation fee for Monthly Pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
             "link": "https://bffclimb.com/",
             "images": [
                "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
             ],
             "type": {
                "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3523265327240714, 103.94100376491768],
+               "parent-sector":"",
+               "mp-gym-id":"650100006",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "boruda Climbing",
+            "address": "991A Alexandra Road #02-06/07 Singapore 119969",
+            "opening-hours": {
+               "monday": "1130 to 2230",
+               "tuesday": "1130 to 2230",
+               "wednesday": "1130 to 2230",
+               "thursday": "1130 to 2230",
+               "friday": "0900 to 2100",
+               "saturday": "0900 to 2100",
+               "sunday": "1330 to 2230"
+            },
+            "contact": "+65 6994 2325",
+            "prices": {
+               "single-entry": "SGD 33",
+               "multi-pass-5": "SGD 135",
+               "multi-pass-10": "SGD 220",
+               "monthly-pass": "SGD 121"
+            },
+            "remarks": "SGD 98 initiation fee for Monthly Pass.",
+            "link": "http://boruda.sg/",
+            "images": [
+               "https://static.wixstatic.com/media/c94d2d_12c604f212594dd38430db9efcf7508a~mv2.jpg/v1/fill/w_229,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSCF0755.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.2743941532889755, 103.80362657336593],
+               "parent-sector":"",
+               "mp-gym-id":"650100007",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Boulder Movement Bugis",
+            "address": "201 Victoria St, #05 - 07, Singapore 188067",
+            "opening-hours": {
+               "monday": "1730 to 2200",
+               "tuesday": "1100 to 1630, 1730 to 2200",
+               "wednesday": "1100 to 1630, 1730 to 2200",
+               "thursday": "1100 to 1630, 1730 to 2200",
+               "friday": "1100 to 1630, 1730 to 2200",
+               "saturday": "1000 to 2000",
+               "sunday": "1000 to 2000"
+            },
+            "contact": "+65 6993 9228",
+            "prices": {
+               "single-entry": "SGD 30",
+               "multi-pass-5": "SGD 135",
+               "multi-pass-10": "SGD 200",
+               "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+            },
+            "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+            "link": "http://www.boulderm.com/",
+            "images": [
+               "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3076318657691632, 103.85590114082866],
+               "parent-sector":"",
+               "mp-gym-id":"650100008",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Boulder Movement Downtown",
+            "address": "6A Shenton Way, #B1-03 Downtown Gallery, 068815",
+            "opening-hours": {
+               "monday": "1730 to 2200",
+               "tuesday": "1100 to 1630, 1730 to 2200",
+               "wednesday": "1100 to 1630, 1730 to 2200",
+               "thursday": "1100 to 1630, 1730 to 2200",
+               "friday": "1100 to 1630, 1730 to 2200",
+               "saturday": "1000 to 2000",
+               "sunday": "1000 to 2000"
+            },
+            "contact": "+65 6816 6001",
+            "prices": {
+               "single-entry": "SGD 30",
+               "multi-pass-5": "SGD 135",
+               "multi-pass-10": "SGD 200",
+               "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+            },
+            "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+            "link": "http://www.boulderm.com/",
+            "images": [
+               "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.2787479114977534, 103.84945039882241],
+               "parent-sector":"",
+               "mp-gym-id":"650100009",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Boulder Movement Tai Seng",
+            "address": "18 Tai Seng St, #01-09, Singapore 539775",
+            "opening-hours": {
+               "monday": "1730 to 2200",
+               "tuesday": "1100 to 1630, 1730 to 2200",
+               "wednesday": "1100 to 1630, 1730 to 2200",
+               "thursday": "1100 to 1630, 1730 to 2200",
+               "friday": "1100 to 1630, 1730 to 2200",
+               "saturday": "1000 to 2000",
+               "sunday": "1000 to 2000"
+            },
+            "contact": "+65 6816 6001",
+            "prices": {
+               "single-entry": "SGD 30",
+               "multi-pass-5": "SGD 135",
+               "multi-pass-10": "SGD 200",
+               "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+            },
+            "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+            "link": "http://www.boulderm.com/",
+            "images": [
+               "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3384394605278973, 103.88959120945803],
+               "parent-sector":"",
+               "mp-gym-id":"650100010",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "Boulder Movement Rochor",
+            "address": "2 Serangoon Rd, #02-12 Tekka Place, Singapore 218227",
+            "opening-hours": {
+               "monday": "1730 to 2200",
+               "tuesday": "1100 to 1630, 1730 to 2200",
+               "wednesday": "1100 to 1630, 1730 to 2200",
+               "thursday": "1100 to 1630, 1730 to 2200",
+               "friday": "1100 to 1630, 1730 to 2200",
+               "saturday": "1000 to 2000",
+               "sunday": "1000 to 2000"
+            },
+            "contact": "+65 6993 2100",
+            "prices": {
+               "single-entry": "SGD 30",
+               "multi-pass-5": "SGD 135",
+               "multi-pass-10": "SGD 200",
+               "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+            },
+            "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+            "link": "http://www.boulderm.com/",
+            "images": [
+               "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.306891891336752, 103.8517211430051],
+               "parent-sector":"",
+               "mp-gym-id":"650100011",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "boulder+ Aperia",
+            "address": "12 Kallang Ave, #03-17 The Aperia Mall, Singapore 339511",
+            "opening-hours": {
+               "monday": "1700 to 2230",
+               "tuesday": "0900 to 2230",
+               "wednesday": "0900 to 2230",
+               "thursday": "0900 to 2230",
+               "friday": "0900 to 2230",
+               "saturday": "0900 to 2100",
+               "sunday": "0900 to 2100"
+            },
+            "contact": "+65 6282 7530",
+            "prices": {
+               "single-entry": "SGD 28",
+               "multi-pass-5": "Nil",
+               "multi-pass-10": "SGD 200",
+               "monthly-pass": "SGD 110"
+            },
+            "remarks": "SGD 100 activation fee to be incurred for Monthly Pass",
+            "link": "http://www.boulderplusclimbing.com/",
+            "images": [
+               "https://thesmartlocal.com/wp-content/uploads/2023/07/rock-climbing-and-bouldering-gyms-boulder-plus.png"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3103404042643298, 103.8645792026007],
+               "parent-sector":"",
+               "mp-gym-id":"650100012",
+               "mp-sector-id":""
+            }
+         },
+         {
+            "gym-name": "boulder+ Chevrons",
+            "address": "48 Boon Lay Wy, #04-01 THE CHEVRONS, Singapore 609961",
+            "opening-hours": {
+               "monday": "1300 to 2230",
+               "tuesday": "0900 to 2230",
+               "wednesday": "0900 to 2230",
+               "thursday": "0900 to 2230",
+               "friday": "0900 to 2230",
+               "saturday": "0900 to 2100",
+               "sunday": "0900 to 2100"
+            },
+            "contact": "+65 6970 0116",
+            "prices": {
+               "single-entry": "SGD 28",
+               "multi-pass-5": "Nil",
+               "multi-pass-10": "SGD 200",
+               "monthly-pass": "SGD 110"
+            },
+            "remarks": "SGD 100 activation fee to be incurred for Monthly Pass",
+            "link": "http://www.boulderplusclimbing.com/",
+            "images": [
+               "https://thesmartlocal.com/wp-content/uploads/2023/07/rock-climbing-and-bouldering-gyms-boulder-plus-overhang-wall-750x500.png"
+            ],
+            "type": {
+               "boulder": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[1.3311388964366422, 103.74826910674517],
+               "parent-sector":"",
+               "mp-gym-id":"650100013",
+               "mp-sector-id":""
             }
          }
       ],
          "climbing-routes": [
             {
-               "route_name":"Boring and Meaningless",
+               "route-name":"Boring and Meaningless",
                "grade":{
                   "YDS":"5.9",
                   "French":"5c",
@@ -212,11 +490,84 @@
                "location":"From the entrance to the open area with all of the crags surrounding it, stay left and follow the steep, vegetated quarry wall to the first bare area. This is Boring and Meaningless.",
                "protection":"4 bolts/clips (excluding anchor)",
                "metadata":{
-                  "left_right_seq":"",
-                  "parent_lnglat":[1.3614, 103.7723],
-                  "parent_sector":"",
-                  "mp_route_id":"",
-                  "mp_sector_id":""
+                  "left-right-seq":"",
+                  "parent-lnglat":[1.3614, 103.7723],
+                  "parent-sector":"Dairy Farm",
+                  "mp-route-id":"650200001",
+                  "mp-sector-id":"650500001"
+               }
+            }
+         ]
+      },
+      "united-states": {
+         "climbing-gyms": [
+            {
+               "name": "Aesthetic Climbing Gym",
+               "address": "26794 Vista Terrace, Lake Forest, CA 92630, United States",
+               "opening-hours": {
+                  "monday": "0900 to 2200",
+                  "tuesday": "0900 to 2200",
+                  "wednesday": "0900 to 2200",
+                  "thursday": "0900 to 2200",
+                  "friday": "0900 to 2200",
+                  "saturday": "1000 to 2000",
+                  "sunday": "1000 to 1800"
+               },
+               "contact": "+1 949-716-7116",
+               "prices": {
+                  "single-entry": "USD 30",
+                  "multi-pass-5": "Nil",
+                  "multi-pass-10": "USD 250",
+                  "monthly-pass": "USD 89"
+               },
+               "remarks": "For exact breakdown of prices, refer to gym website. Note that there is a USD 50 initiation fee applied at the start of each membership",
+               "link": "https://aestheticclimbinggym.com/",
+               "images": [
+                  "https://aestheticclimbinggym.com/wp-content/uploads/2020/11/ANA7452.jpg",
+                  "https://aestheticclimbinggym.com/wp-content/uploads/2020/12/fullsizeoutput_1ba8-768x512.jpg"
+               ],
+               "type": {
+                  "lead": true,
+                  "boulder": true,
+                  "top-rope": true
+               },
+               "metadata":{
+                  "left-right-seq":"",
+                  "parent-lnglat":[33.66722961457207, -117.66329476276651],
+                  "parent-sector":"",
+                  "mp-gym-id":"100100001",
+                  "mp-sector-id":""
+               }
+            }
+         ],
+         "climbing-routes": [
+            {
+               "route-name":"Epinephrine",
+               "grade":{
+                  "YDS":"5.9",
+                  "French":"5c",
+                  "Ewbanks":"17",
+                  "UIAA":"VI",
+                  "ZA":"17",
+                  "British":"HVS 5a"
+               },
+               "safety":"",
+               "type":{
+                  "trad":true
+               },
+               "fa":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
+               "description": "Epinephrine is the Red Rocks classic. The route is long, varied, and has consistently good rock. The first half of the climb follows a spectacular chimney system. The second half ascends steep faces, cracks, and dihedrals.",
+               "location": "From the parking area near the mouth of Black Velvet Canyon, hike up the old dirt road for a couple hundred yards, the take the trail that heads to the right. Follow this into the canyon. After a little less than a half-mile, a trail will drop down into the wash. Take it. Follow the wash for another half-mile or so. When your path is blocked by a waterfall (usually dry), head up and left on Class 3 terrain. Or, you can do a little 5.easy climbing up the waterfall. The start of the climb is about 50m up the canyon from here.",
+               "protection": "You don't need anything bigger than a #4 camalot in the chimney pitches. A 3, 3.5, and 4 camalot and perhaps a #11 hex, combined with the existing fixed gear, should get you up the chimney without much mental stress.",
+               "metadata":{
+                  "left-right-seq":"23",
+                  "parent-lnglat":[
+                     -115.46652,
+                     36.03518
+                  ],
+                  "parent-sector":"Black Velvet Wall",
+                  "mp-route-id":"105732422",
+                  "mp-sector-id":"105732162"
                }
             }
          ]
