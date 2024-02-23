@@ -1,0 +1,18 @@
+{
+  "country-codes": [
+    {
+      "country": "United States",
+      "iso-2": "US",
+      "iso-3": "USA",
+      "iso-numeric": 702,
+      "coordinates": [36.7783, 119.4179]
+    },
+    {
+      "country": "Singapore",
+      "iso-2": "SG",
+      "iso-3": "SGP",
+      "iso-numeric": 702,
+      "coordinates": [1.3521, 103.8198]
+    }
+  ]
+}
