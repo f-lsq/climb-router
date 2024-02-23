@@ -1,7 +1,8 @@
+/* GENERAL STYLES */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Noto Serif SC", serif;
+  font-family: Montserrat, sans-serif;
   box-sizing: border-box;
 }
 
@@ -17,22 +18,62 @@ body {
   width: 100%;
 }
 
-/* Nav Bar Styling */
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: #ef3d33;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* HEADER STYLES */
+/* Nav Bar */
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 0.5rem 1.5rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-}
 #nav-left img{
   width: 50px;
+  margin-right: 0.2rem;
 }
 
+#nav-left, 
+#nav-right {
+  display: flex;
+  align-items: center;
+  text-wrap: wrap;
+  font-size: 1.6rem;
+}
 
+#nav-left span {
+  display: none;
+}
+
+#nav-right a {
+  margin-left: 1.2rem;
+}
+
+/* MAIN STYLES */
 /* Leaflet Map Styling */
 #map { 
   height: 98vh; 
+}
+
+/* FOOTER STYLES */
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  margin: 1rem;
 }
