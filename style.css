@@ -112,12 +112,24 @@ nav span {
 .non-parallax {
   padding: 1.5rem;
 }
+
 /* Leaflet Map Styling */
+#map-container {
+  position: relative;
+}
+
 #map { 
   height: 50vh;
   width: 100%;
 }
 
+
+#map-container select {
+  z-index: 100000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 
 /* FOOTER STYLES */
