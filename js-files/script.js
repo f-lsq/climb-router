@@ -8,6 +8,6 @@ function getLocation() {
   if (navigation.geolocation) {
     console.log(navigator.geolocation.watchPosition())
   } else {
-
+    console.log("Geolocation failed")
   }
 }
