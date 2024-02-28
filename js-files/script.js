@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', function(){
   sgCoordinates = [1.3521, 103.8198]
   const map = createMap('map', sgCoordinates);
-  getLocation()
+  console.log(getLocation());
 })  
 
 function getLocation() {
   if (navigation.geolocation) {
-    console.log(navigator.geolocation.watchPosition())
+    navigator.geolocation.watchPosition((position) => {
+      const lat = position.coords.latitude;
+      const lng = position.coords.longtitude;
+      return [lat, lng];
+    })
   } else {
-    console.log("Geolocation failed")
+    return [1.3521, 103.8198] // Default coordinates - Singapore
   }
 }
