@@ -25,17 +25,13 @@
 */
 
 body {
-  background: #010a19;
+  background: #fafcfc;
   height: 100vh;
   width: 100%;
 }
 
 #nav-right a, h1 {
-  text-shadow: 0 0 15px #070e28;
-  color: #fafcfc;
-}
-
-h2 {
+  text-shadow: 0 0 15px #000000;
   color: #fafcfc;
 }
 
@@ -59,7 +55,7 @@ nav {
   width: 40px;
   margin-right: 0.2rem;
   border-radius: 50%;
-  box-shadow: 0 0 50px #207383;
+  box-shadow: 0 0 50px #000000;
 }
 
 #nav-left, 
@@ -67,7 +63,7 @@ nav {
   display: flex;
   align-items: center;
   text-wrap: wrap;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 #nav-left span {
@@ -81,7 +77,7 @@ nav {
 }
 
 #nav-right a:hover {
-  color: #dadada;
+  color: #f36233;
 }
 
 
@@ -94,24 +90,30 @@ nav {
 #page-home h1{
   position: absolute; 
   left: 50%;
-  transform: translatex(-50%);
-  width: 70%;
   top: 50%;
-
+  transform: translate(-50%, -50%);
+  width: 70%;
+  font-size: 2rem;
 }
 
 .parallax {
   height: 100vh;
-  background: url('assets/hero.webp') no-repeat top;
+  background: url('assets/hero.webp') no-repeat top right;
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* General Styling */
+.non-parallax {
+  padding: 1.5rem;
+}
 /* Leaflet Map Styling */
 #map { 
   height: 50vh;
   width: 100%;
 }
+
+
 
 /* FOOTER STYLES */
 footer {
