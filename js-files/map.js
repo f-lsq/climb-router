@@ -1,7 +1,6 @@
-// Leaflet Map Javascript
-let USER_COORDINATES = null;
+// LEAFLET MAP JAVASCRIPT
 /**
- * Create a Leaflet map
+ * - Create a Leaflet map
  * @param {string} mapContainerID - ID of element that will display the map
  * @param {array} coordinates - Coordinates of center of displayed map, in the format [latitude, longitude]
  * @returns An object that represents the Leaflet map 
@@ -18,18 +17,30 @@ function createMap(mapContainerID, coordinates){
 	return map;
 }
 
-function getUserLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+/**
+ * 
+ * @param {object} data Data from JSON file containing climbing routes and gyms information 
+ * @param {object} map Leaflet map object created 
+ * @param {string} locationCountry Country selected (dropdown) by users
+ * @param {string} locationType Type of climbing locaiton selected (dropdown) by users
+ */
+function addMarkersToMap(data, map, locationCountry, locationType) {
+	const locationClusterLayer = L.markerClusterGroup();
+	var locationTypeIcon = L.icon({
+    iconUrl: 'assets/' + locationType +'.webp',
+    shadowUrl: 'assets/climbing-shadow.webp',
+
+    iconSize:     [38, 38], // size of the icon
+    shadowSize:   [38, 38], // size of the shadow
+    iconAnchor:   [19, 38], // point of the icon which will correspond to marker's location
+    shadowAnchor: [19, 38],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+	for (let eachLocation of data[locationCountry][locationType]) {
+    const coordinates = eachLocation.metadata["parent-lnglat"].reverse();
+    const marker = L.marker(coordinates, {icon: locationTypeIcon}).addTo(locationClusterLayer);
   }
+
+	locationClusterLayer.addTo(map);
 }
-
-async function showPosition(position) {
-	USER_COORDINATES = [await position.coords.latitude, await position.coords.longitude];
-	console.log("map.js:", USER_COORDINATES)
-}
-
-
-

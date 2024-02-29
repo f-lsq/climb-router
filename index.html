@@ -18,6 +18,12 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
+  <!-- Marker Cluster Default CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Marker Cluster CSS file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <!-- Boxicon CSS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -46,10 +52,6 @@
           <i class='bx bxs-map-alt'></i>
           <span>Route Map</span>
         </a>
-        <a href="#">
-          <i class='bx bxs-user-detail'></i>
-          <span>Profile Analysis</span>
-        </a>
       </div>
     </nav>
   </header>
@@ -57,28 +59,26 @@
     <!-- Hero Image -->
     <section id="page-home" class="parallax">
       <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
+      <input type="search" placeholder="Search routes or gyms">
     </section>
     <!-- Interactive Leaflet Map -->
     <section class="non-parallax">
-      <h2>Climbing locations in your area!</h2>
+      <h2>Explore climbing locations</h2>
       <div id="map-container">
         <div id="map"></div>
         <form>
-          <select name="country">
-            <option value="singapore">SG</option>
-            <option value="united-states">US (CA)</option>
-          </select>
+          <select name="country" id="map-country"></select>
+          <select name="state" id="map-state"></select>
         </form>
       </div>
+      <ul>
+        <li>location</li>
+      </ul>
       
     </section class="non-parallax">
     <!-- Photos from Climbing Routes and Gyms -->
     <section class="non-parallax">
       <h2>Check out these climbing places!</h2>
-    </section>
-    <!-- User Statistics  -->
-    <section class="non-parallax">
-      <h2>Looking to improve? Get insights on your progress!</h2>
     </section>
   </main>
   <footer>
@@ -104,6 +104,9 @@
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Marker Clustering JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" integrity="sha512-OFs3W4DIZ5ZkrDhBFtsCP6JXtMEDGmhl0QPlmWYBJay40TT1n3gt2Xuw8Pf/iezgW9CdabjkNChRqozl/YADmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Boxicon JS -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

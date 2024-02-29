@@ -49,11 +49,13 @@ a:hover {
 /* Nav Bar */
 nav {
   position: absolute;
-  z-index: 100;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1.5rem; 
+  position: fixed;
+  background-color: #0c1214;
+  z-index: 10000;
 }
 
 #nav-left img{
@@ -101,6 +103,12 @@ nav span {
   font-size: 2rem;
 }
 
+#page-home input{
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 70%;
+}
 .parallax {
   height: 100vh;
   background: url('assets/hero.webp') no-repeat top right;
@@ -125,7 +133,7 @@ nav span {
 
 
 #map-container select {
-  z-index: 100000;
+  z-index: 401;
   position: absolute;
   top: 0;
   right: 0;
