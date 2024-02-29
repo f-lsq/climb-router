@@ -1,5 +1,5 @@
 // Leaflet Map Javascript
-
+let USER_COORDINATES = null;
 /**
  * Create a Leaflet map
  * @param {string} mapContainerID - ID of element that will display the map
@@ -27,8 +27,8 @@ function getUserLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
+	USER_COORDINATES = [position.coords.latitude, position.coords.longitude];
+	console.log("showPosition:", USER_COORDINATES)
 }
 
 
