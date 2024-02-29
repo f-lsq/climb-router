@@ -28,7 +28,7 @@ function getUserLocation() {
 
 function showPosition(position) {
 	USER_COORDINATES = [position.coords.latitude, position.coords.longitude];
-	console.log("showPosition:", USER_COORDINATES)
+	console.log("map.js:", USER_COORDINATES)
 }
 
 

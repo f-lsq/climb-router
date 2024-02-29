@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function(){
   const map = createMap('map', sgCoordinates);
 
   getUserLocation();
-  console.log("User Coordinates:", USER_COORDINATES);
+  
 
   getCoordinates(map, "singapore","climbing-gyms");
   getCoordinates(map, "singapore","climbing-routes");
+  console.log("main.js:", USER_COORDINATES);
 })  
