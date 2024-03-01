@@ -37,13 +37,13 @@
   <header>
     <!-- NavBar -->
     <nav>
-      <div id="nav-left">
+      <div id="navLeft">
         <a href="#">
           <img src="assets/logo.webp" alt="ClimbDoko Logo" />
           <span class="protest-revolution-regular">ClimbDoko</span>
         </a>
       </div>
-      <div id="nav-right">
+      <div id="navRight">
         <a href="#">
           <i class='bx bxs-home'></i>
           <span>Home</span>
@@ -57,27 +57,32 @@
   </header>
   <main>
     <!-- Hero Image -->
-    <section id="page-home" class="parallax">
+    <section id="pageHome" class="parallax">
       <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
-      <input type="search" placeholder="Search routes or gyms">
+      <div id="searchTerm">
+        <input type="search" placeholder="Search routes or gyms">
+        <button>
+          <i class='bx bx-search-alt-2'></i>
+        </button>
+      </div>
     </section>
     <!-- Interactive Leaflet Map -->
-    <section class="non-parallax">
+    <section class="nonParallax">
       <h2>Explore climbing locations</h2>
-      <div id="map-container">
+      <div id="mapContainer">
         <div id="map"></div>
         <form>
-          <select name="country" id="map-country"></select>
-          <select name="state" id="map-state"></select>
+          <select name="country" id="mapCountry"></select>
+          <select name="state" id="mapState"></select>
         </form>
       </div>
       <ul>
         <li>location</li>
       </ul>
       
-    </section class="non-parallax">
+    </section class="nonParallax">
     <!-- Photos from Climbing Routes and Gyms -->
-    <section class="non-parallax">
+    <section class="nonParallax">
       <h2>Check out these climbing places!</h2>
     </section>
   </main>
@@ -85,7 +90,7 @@
     <a href="https://www.linkedin.com/in/f-lsq/" target="_blank">
       <i class='bx bxl-linkedin-square'></i>
     </a>
-    <a href="https://github.com/f-lsq">
+    <a href="https://github.com/f-lsq" target="_blank">
       <i class='bx bxl-github'></i>
     </a>
     <a href="mailto:fionaloo69@gmail.com">

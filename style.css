@@ -33,7 +33,6 @@ body {
 h1 {
   font-weight: bold;
   text-align: center;
-  
 }
 
 h1, a {
@@ -58,14 +57,14 @@ nav {
   z-index: 10000;
 }
 
-#nav-left img{
+#navLeft img{
   width: 40px;
   margin-right: 0.2rem;
   border-radius: 50%;
 }
 
-#nav-left, 
-#nav-right {
+#navLeft, 
+#navRight {
   display: flex;
   align-items: center;
   text-wrap: wrap;
@@ -76,12 +75,12 @@ nav span {
   display: none;
 }
 
-#nav-right a {
+#navRight a {
   margin-left: 1.2rem;
   text-decoration: none;
 }
 
-#nav-right a, h1 {
+#navRight a, h1 {
   text-shadow: 0 0 10px #0c1214;
 }
 
@@ -90,25 +89,6 @@ nav span {
 
 /* MAIN STYLES */
 /* Hero Image Styling */
-#page-home {
-  position: relative; 
-}
-
-#page-home h1{
-  position: absolute; 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  font-size: 2rem;
-}
-
-#page-home input{
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-  top: 70%;
-}
 .parallax {
   height: 100vh;
   background: url('assets/hero.webp') no-repeat top right;
@@ -116,13 +96,54 @@ nav span {
   background-attachment: fixed;
 }
 
+#pageHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pageHome h1{
+  width: 70%;
+  font-size: 8vw;
+}
+
+#searchTerm{
+  width: 60%;
+  max-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchTerm input,
+#searchTerm button {
+  border: none;
+  border-radius: 10px;
+  box-shadow:  0 0 10px #0c1214;
+  outline: none;
+}
+
+#searchTerm input {
+  padding: 0 1.5rem;
+  width: 80%;
+  font-size: 0.8rem;
+}
+
+#searchTerm button {
+  background: #f58831;
+  aspect-ratio : 1 / 1;
+  width: 15%;
+  text-align: center;
+}
+
+
 /* General Styling */
-.non-parallax {
+.nonParallax {
   padding: 1.5rem;
 }
 
 /* Leaflet Map Styling */
-#map-container {
+#mapContainer {
   position: relative;
 }
 
@@ -132,7 +153,7 @@ nav span {
 }
 
 
-#map-container select {
+#mapContainer select {
   z-index: 401;
   position: absolute;
   top: 0;
