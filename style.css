@@ -96,14 +96,14 @@ nav span {
   background-attachment: fixed;
 }
 
-#pageHome {
+#homeHero {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-#pageHome h1{
+#homeHero h1{
   width: 70%;
   font-size: 8vw;
 }
@@ -143,6 +143,10 @@ nav span {
 }
 
 /* Leaflet Map Styling */
+#pageMap {
+  display: none;
+}
+
 #mapContainer {
   position: relative;
 }

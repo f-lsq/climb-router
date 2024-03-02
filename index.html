@@ -8,7 +8,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
 
   <!-- Bootstrap5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,11 +21,16 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
   <!-- Marker Cluster Default CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"
+    integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Marker Cluster CSS file-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"
+    integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Boxicon CSS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -56,18 +63,25 @@
     </nav>
   </header>
   <main>
-    <!-- Hero Image -->
-    <section id="pageHome" class="parallax">
-      <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
-      <div id="searchTerm">
-        <input type="search" placeholder="Search routes or gyms">
-        <button>
-          <i class='bx bx-search-alt-2'></i>
-        </button>
+    
+    <section id="pageHome">
+      <!-- Hero Image -->
+      <div id="homeHero" class="parallax">
+        <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
+        <div id="searchTerm">
+          <input type="search" placeholder="Search routes or gyms">
+          <button>
+            <i class='bx bx-search-alt-2'></i>
+          </button>
+        </div>
+      </div>
+       <!-- Photos from Climbing Routes and Gyms -->
+      <div class="nonParallax">
+        <h2>Check out these climbing places!</h2>
       </div>
     </section>
     <!-- Interactive Leaflet Map -->
-    <section class="nonParallax">
+    <section id="pageMap" class="nonParallax">
       <h2>Explore climbing locations</h2>
       <div id="mapContainer">
         <div id="map"></div>
@@ -79,11 +93,6 @@
       <ul>
         <li>location</li>
       </ul>
-      
-    </section class="nonParallax">
-    <!-- Photos from Climbing Routes and Gyms -->
-    <section class="nonParallax">
-      <h2>Check out these climbing places!</h2>
     </section>
   </main>
   <footer>
@@ -111,7 +120,9 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <!-- Marker Clustering JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" integrity="sha512-OFs3W4DIZ5ZkrDhBFtsCP6JXtMEDGmhl0QPlmWYBJay40TT1n3gt2Xuw8Pf/iezgW9CdabjkNChRqozl/YADmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"
+    integrity="sha512-OFs3W4DIZ5ZkrDhBFtsCP6JXtMEDGmhl0QPlmWYBJay40TT1n3gt2Xuw8Pf/iezgW9CdabjkNChRqozl/YADmg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Boxicon JS -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
