@@ -1,4 +1,15 @@
 // LEAFLET MAP JAVASCRIPT
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  }
+}
+
+function showPosition(position) {
+  USER_COORDINATES = [position.coords.latitude, position.coords.longitude];
+}
+
 /**
  * - Create a Leaflet map
  * @param {string} mapContainerID - ID of element that will display the map

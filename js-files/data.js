@@ -13,5 +13,4 @@ async function createMapSelect() {
   stateSelect = document.querySelector("#map-state");
 
   const countryData = await getCountryData();
-  console.log(countryData);
 }

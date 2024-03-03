@@ -51,11 +51,11 @@
         </a>
       </div>
       <div id="navRight">
-        <a href="#">
+        <a class="homeBtn" href="#">
           <i class='bx bxs-home'></i>
           <span>Home</span>
         </a>
-        <a href="#">
+        <a class="mapBtn" href="#">
           <i class='bx bxs-map-alt'></i>
           <span>Route Map</span>
         </a>
@@ -63,8 +63,7 @@
     </nav>
   </header>
   <main>
-    
-    <section id="pageHome">
+    <section id="homePage" class="active">
       <!-- Hero Image -->
       <div id="homeHero" class="parallax">
         <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
@@ -81,18 +80,17 @@
       </div>
     </section>
     <!-- Interactive Leaflet Map -->
-    <section id="pageMap" class="nonParallax">
-      <h2>Explore climbing locations</h2>
+    <section id="mapPage">
       <div id="mapContainer">
         <div id="map"></div>
         <form>
           <select name="country" id="mapCountry"></select>
           <select name="state" id="mapState"></select>
         </form>
-      </div>
-      <ul>
-        <li>location</li>
-      </ul>
+        <a id="currLocationBtn">
+          <i class='bx bx-current-location'></i>
+        </a>
+      </div>  
     </section>
   </main>
   <footer>

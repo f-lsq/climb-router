@@ -1,9 +1,34 @@
+USER_COORDINATES = [1.3548, 103.7763];
+getLocation();
 
 document.addEventListener('DOMContentLoaded', async function(){
-  sgCoordinates = [1.3548, 103.7763]
-  const map = createMap('map', sgCoordinates);
+  // Switch to Map Page from Home Page
+  const homeBtn = document.querySelector('.homeBtn');
+  const mapBtn = document.querySelector('.mapBtn');
+  const homePage = document.querySelector('#homePage')
+  const mapPage = document.querySelector('#mapPage')
+
+  mapBtn.addEventListener("click", async function(){
+    homePage.classList.remove('active');
+    mapPage.classList.add('active');
+
+    // Create Leaflet Map
+    const map = createMap('map', USER_COORDINATES);
+    
+    addMarkersToMap(await getRouteData(), map, 'singapore', 'climbing-gyms');
+    addMarkersToMap(await getRouteData(), map, 'singapore','climbing-routes');
+    createMapSelect();
+
+    document.querySelector('#currLocationBtn').addEventListener('click', ()=>{
+      map.flyTo(USER_COORDINATES)
+    })
+  });
+
+  homeBtn.addEventListener('click', function(){
+    homePage.classList.add('active');
+    mapPage.classList.remove('active');
+  });
   
-  addMarkersToMap(await getRouteData(), map, "singapore","climbing-gyms");
-  addMarkersToMap(await getRouteData(), map, "singapore","climbing-routes");
-  createMapSelect();
+  
+
 })  

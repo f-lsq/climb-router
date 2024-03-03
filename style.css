@@ -47,14 +47,14 @@ a:hover {
 /* HEADER STYLES */
 /* Nav Bar */
 nav {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1.5rem; 
-  position: fixed;
   background-color: #0c1214;
-  z-index: 10000;
+  z-index: 10000; 
 }
 
 #navLeft img{
@@ -84,7 +84,16 @@ nav span {
   text-shadow: 0 0 10px #0c1214;
 }
 
+/* PAGE SWITCHES*/
+#homePage,
+#mapPage  {
+  display: none;
+}
 
+#homePage.active, 
+#mapPage.active {
+  display: block;
+}
 
 
 /* MAIN STYLES */
@@ -144,26 +153,50 @@ nav span {
 }
 
 /* Leaflet Map Styling */
-#pageMap {
-  display: none;
-}
-
 #mapContainer {
+  margin-top: calc(40px + 2*0.5rem);
   position: relative;
 }
 
 #map { 
-  height: 50vh;
+  height: calc(100vh - 40px - 2*0.5rem);
   width: 100%;
 }
 
-
-#mapContainer select {
+#mapContainer select, 
+#currLocationBtn{
   z-index: 401;
   position: absolute;
-  top: 0;
-  right: 0;
 }
+
+#mapContainer select {
+  top: 20px;
+  right: 20px;
+}
+
+#currLocationBtn {
+  bottom: 20px;
+  right: 20px;
+  background: #fafcfc;
+  box-shadow: 0 0 5px #a0a0a0;
+  height: 7%;
+  aspect-ratio : 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s;
+}
+
+#currLocationBtn i{
+  font-size: 1.1em;
+}
+
+#currLocationBtn:active {
+  background: #ffd7a2;
+}
+
 
 
 /* FOOTER STYLES */
