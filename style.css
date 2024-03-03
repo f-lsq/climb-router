@@ -113,6 +113,7 @@ nav span {
   max-height: 50px;
   display: flex;
   justify-content: space-between;
+  margin-top: 5%;
 }
 
 #searchTerm input,
@@ -125,14 +126,14 @@ nav span {
 
 #searchTerm input {
   padding: 0 1.5rem;
-  width: 80%;
+  width: 75%;
   font-size: 0.8rem;
 }
 
 #searchTerm button {
   background: #f58831;
   aspect-ratio : 1 / 1;
-  width: 15%;
+  width: 20%;
   text-align: center;
 }
 
