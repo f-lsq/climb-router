@@ -14,26 +14,12 @@ document.addEventListener('DOMContentLoaded', async function(){
 
     // Create Leaflet Map
     const map = createMap('map', USER_COORDINATES);
-    countryData = await getCountryData();
-    createCountrySelect(countryData);
-    countrySelect = document.querySelector('#mapCountry');
-    createStateSelect(countryData, countrySelect.value)
-    countrySelect.addEventListener("change", function(){
-      selectedCountry = createStateSelect(countryData, countrySelect.value);
-      let selectedState = {};
-      for (let eachState of selectedCountry.states) {
-        console.log(document.querySelector('#mapCountry').value);
-        if (eachState.state_code == document.querySelector('#mapCountry').value) {
-          selectedState = eachState;
-          break;
-        }
-      }
-      
-      map.flyTo([selectedState.latitude, selectedState.altitude]);
-    })
+    createMapSelect(map);
 
-    addMarkersToMap(await getRouteData(), map, 'SG', 'climbing-gyms');
-    addMarkersToMap(await getRouteData(), map, 'US','climbing-routes');
+    const routeData = await getRouteData();
+
+    addMarkersToMap(routeData, map, 'SG', 'climbing-gyms');
+    addMarkersToMap(routeData, map, 'SG','climbing-routes');
     
 
     document.querySelector('#currLocationBtn').addEventListener('click', ()=>{

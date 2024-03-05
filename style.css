@@ -174,7 +174,6 @@ nav span {
   right: 20px;
   display: flex;
   flex-direction: column;
-  width: 100px;
 
 }
 
@@ -204,8 +203,6 @@ nav span {
 #currLocationBtn:active {
   background: #ffd7a2;
 }
-
-
 
 /* FOOTER STYLES */
 footer {

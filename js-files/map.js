@@ -55,3 +55,19 @@ function addMarkersToMap(data, map, locationCountry, locationType) {
 
 	locationClusterLayer.addTo(map);
 }
+
+function createLocationLayer(data, map, country, type) {
+  const layer = L.layerGroup();
+  layer.addTo(map);
+  for (let eachCountryType of data[country][type]) {
+        
+  }
+}
+
+// layer.addTo(map);
+//     for (let location of response.data) {
+//         // this technique is known as function chaining
+//         // this works because .bindPopup also returs the marker
+//         L.marker(location.coordinates).bindPopup(`<h1>${location.name}</h1>`).addTo(layer);
+//     }
+//     return layer;
