@@ -1,10 +1,11 @@
 ## API Resources
+Nearest amendities
 ```
+https://foursquare.com/developers/home
 ```
 
 ## JSON File Resources
-
-Countries and States
+Country, State, City
 ```
 https://github.com/dr5hn/countries-states-cities-database
 ```

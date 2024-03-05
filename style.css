@@ -163,15 +163,23 @@ nav span {
   width: 100%;
 }
 
-#mapContainer select, 
+#mapContainer form, 
 #currLocationBtn{
   z-index: 401;
   position: absolute;
 }
 
-#mapContainer select {
+#mapContainer form {
   top: 20px;
   right: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+
+}
+
+#mapContainer select {
+  padding-right: 5px;
 }
 
 #currLocationBtn {

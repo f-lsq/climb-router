@@ -1,5 +1,5 @@
 {
-   "singapore": {
+   "SG": {
       "climbing-gyms": [
          {
          "gym-name": "Adventure HQ",
@@ -1141,7 +1141,7 @@
          }             
       ]
    },
-   "united-states": {
+   "US": {
       "climbing-gyms": [
          {
             "name": "Aesthetic Climbing Gym",
