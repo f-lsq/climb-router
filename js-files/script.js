@@ -2,6 +2,8 @@ USER_COORDINATES = [1.3548, 103.7763];
 getLocation();
 
 document.addEventListener('DOMContentLoaded', async function(){
+  const locationData = await getLocationData();
+  const countryData = await getCountryData();
   // Switch to Map Page from Home Page
   const homeBtn = document.querySelector('.homeBtn');
   const mapBtn = document.querySelector('.mapBtn');
@@ -13,14 +15,23 @@ document.addEventListener('DOMContentLoaded', async function(){
     mapPage.classList.add('active');
 
     // Create Leaflet Map
-    const map = createMap('map', USER_COORDINATES);
+    const mapItems = createMap('map', USER_COORDINATES);
+    map = mapItems.map;
     createMapSelect(map);
 
-    const routeData = await getRouteData();
-    createLocationLayer(routeData, map, 'SG', 'climbing-gyms');
+    selectedCountry = 'SG' // SAMPLE
+    // createClusterGroup(locationData, map, selectedCountry, 'climbing-gyms')
+    // createClusterGroup(locationData, map, selectedCountry, 'climbing-routes')
+    createLayerControl(locationData, map, selectedCountry, mapItems.defaultMapTile)
 
-    addMarkersToMap(routeData, map, 'SG', 'climbing-gyms');
-    addMarkersToMap(routeData, map, 'SG','climbing-routes');
+
+
+    
+
+    // createLocationLayer(routeData, map, 'SG', 'climbing-gyms');
+
+    // addMarkersToMap(routeData, map, 'SG', 'climbing-gyms');
+    // addMarkersToMap(routeData, map, 'SG','climbing-routes');
     
 
     document.querySelector('#currLocationBtn').addEventListener('click', ()=>{

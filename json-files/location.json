@@ -2,7 +2,7 @@
    "SG": {
       "climbing-gyms": [
          {
-         "gym-name": "Adventure HQ",
+         "name": "Adventure HQ",
          "address": "2 Yishun Walk, Singapore 767944",
          "opening-hours": {
             "monday": "Closed",
@@ -40,7 +40,7 @@
          }
       }, 
       {
-         "gym-name": "Arête (By Upwall)",
+         "name": "Arête (By Upwall)",
          "address": "5 Changi Business Park Central 1, #02 14/15/16, Singapore 486038",
          "opening-hours": {
             "monday": "1300 to 2130",
@@ -78,7 +78,7 @@
          }
       },
       {
-         "gym-name": "Ark Bloc",
+         "name": "Ark Bloc",
          "address": "6 Tebing Ln, #01-05, Singapore 828835",
          "opening-hours": {
             "monday": "0800 to 1200, 1500 to 2200",
@@ -114,7 +114,7 @@
          }
       },
       {
-         "gym-name": "BFF Climb Bendemeer",
+         "name": "BFF Climb Bendemeer",
          "address": "2 Kallang Ave, #01-20 CT Hub @ Kallang, Singapore 339407",
          "opening-hours": {
             "monday": "0930 to 2245",
@@ -151,7 +151,7 @@
          }
       },
       {
-         "gym-name": "BFF Climb Tampines Hub",
+         "name": "BFF Climb Tampines Hub",
          "address": "1 Tampines Walk, #02-81 Our Tampines Hub, Singapore 528523",
          "opening-hours": {
             "monday": "0930 to 2245",
@@ -189,7 +189,7 @@
          }
       },
       {
-         "gym-name": "BFF Climb Tampines Yoha",
+         "name": "BFF Climb Tampines Yoha",
          "address": "6 Tampines Street 92, #03-06 yo:HA Commercial @ Tampines, Singapore 528893",
          "opening-hours": {
             "monday": "0930 to 2245",
@@ -224,7 +224,7 @@
          }
       },
       {
-         "gym-name": "boruda Climbing",
+         "name": "boruda Climbing",
          "address": "991A Alexandra Road #02-06/07 Singapore 119969",
          "opening-hours": {
             "monday": "1130 to 2230",
@@ -259,7 +259,7 @@
          }
       },
       {
-         "gym-name": "Boulder Movement Bugis",
+         "name": "Boulder Movement Bugis",
          "address": "201 Victoria St, #05 - 07, Singapore 188067",
          "opening-hours": {
             "monday": "1730 to 2200",
@@ -294,7 +294,7 @@
          }
       },
       {
-         "gym-name": "Boulder Movement Downtown",
+         "name": "Boulder Movement Downtown",
          "address": "6A Shenton Way, #B1-03 Downtown Gallery, 068815",
          "opening-hours": {
             "monday": "1730 to 2200",
@@ -329,7 +329,7 @@
          }
       },
       {
-         "gym-name": "Boulder Movement Tai Seng",
+         "name": "Boulder Movement Tai Seng",
          "address": "18 Tai Seng St, #01-09, Singapore 539775",
          "opening-hours": {
             "monday": "1730 to 2200",
@@ -364,7 +364,7 @@
          }
       },
       {
-         "gym-name": "Boulder Movement Rochor",
+         "name": "Boulder Movement Rochor",
          "address": "2 Serangoon Rd, #02-12 Tekka Place, Singapore 218227",
          "opening-hours": {
             "monday": "1730 to 2200",
@@ -399,7 +399,7 @@
          }
       },
       {
-         "gym-name": "boulder+ Aperia",
+         "name": "boulder+ Aperia",
          "address": "12 Kallang Ave, #03-17 The Aperia Mall, Singapore 339511",
          "opening-hours": {
             "monday": "1700 to 2230",
@@ -434,7 +434,7 @@
          }
       },
       {
-         "gym-name": "boulder+ Chevrons",
+         "name": "boulder+ Chevrons",
          "address": "48 Boon Lay Wy, #04-01 THE CHEVRONS, Singapore 609961",
          "opening-hours": {
             "monday": "1300 to 2230",
@@ -469,7 +469,7 @@
          }
       },
       {
-         "gym-name": "Boulder Planet Sembawang",
+         "name": "Boulder Planet Sembawang",
          "address": "604 Sembawang Rd, #B1-22/23 Sembawang Shopping Centre, Singapore 758459",
          "opening-hours": {
             "monday": "1000 to 2200",
@@ -504,7 +504,7 @@
          }
       },
       {
-         "gym-name": "Boulder Planet Tai Seng",
+         "name": "Boulder Planet Tai Seng",
          "address": "601 MacPherson Rd, #02-07 Grantral Mall/Grantral Complex@Macpherson, Singapore 368242",
          "opening-hours": {
             "monday": "1000 to 2230",
@@ -539,7 +539,7 @@
          }
       },
       {
-         "gym-name": "Boulder World",
+         "name": "Boulder World",
          "address": "290 Orchard Rd, #06-25/26 Paragon Shopping Centre, Singapore 238859",
          "opening-hours": {
             "monday": "0900 to 2230",
@@ -574,7 +574,7 @@
          }
       },
       {
-         "gym-name": "Boys' Town Adventure Centre",
+         "name": "Boys' Town Adventure Centre",
          "address": "624 Upper Bukit Timah Rd, Singapore 678212",
          "opening-hours": {
             "monday": "Closed",
@@ -611,7 +611,7 @@
          }
       },
       {
-         "gym-name": "Climb@T3",
+         "name": "Climb@T3",
          "address": "Changi Airport Terminal 3, 65 Airport Blvd., B3-01/02 Public Area, 819663",
          "opening-hours": {
             "monday": "1430 to 2130",
@@ -648,7 +648,7 @@
          }
       },
       {
-         "gym-name": "Climba Gym",
+         "name": "Climba Gym",
          "address": "61 Robinson Rd, #05-03/04, Singapore 068893",
          "opening-hours": {
             "monday": "1100 to 2200",
@@ -683,7 +683,7 @@
          }
       },
       {
-         "gym-name": "Climb Central Katong",
+         "name": "Climb Central Katong",
          "address": "E Coast Rd, #04-01/02 112, Singapore 428802",
          "opening-hours": {
             "monday": "1100 to 2300",
@@ -723,7 +723,7 @@
    ],
       "climbing-routes": [
          {
-            "route-name":"Boring and Meaningless",
+            "name":"Boring and Meaningless",
             "grade":{
                "YDS":"5.9",
                "French":"5b",
@@ -752,7 +752,7 @@
             ]
          },
          {
-            "route-name":"Third Kid",
+            "name":"Third Kid",
             "grade":{
                "YDS":"5.10d",
                "French":"6b+",
@@ -780,7 +780,7 @@
             ]
          },
          {
-            "route-name":"Direct",
+            "name":"Direct",
             "grade":{
                "YDS":"5.7",
                "French":"5a",
@@ -808,7 +808,7 @@
             ]
          },
          {
-            "route-name":"Razor's Edge",
+            "name":"Razor's Edge",
             "grade":{
                "YDS":"5.10a",
                "French":"6a",
@@ -836,7 +836,7 @@
             ]
          },
          {
-            "route-name":"Chicken Shit",
+            "name":"Chicken Shit",
             "grade":{
                "YDS":"5.10a",
                "French":"6a",
@@ -864,7 +864,7 @@
             ]
          },
          {
-            "route-name":"No Pokemon Up Here",
+            "name":"No Pokemon Up Here",
             "grade":{
                "YDS":"5.9",
                "French":"5b",
@@ -892,7 +892,7 @@
             ]
          },
          {
-            "route-name":"Homage / Homage to Gullich Sport",
+            "name":"Homage / Homage to Gullich Sport",
             "grade":{
                "YDS":"5.10d",
                "French":"6b+",
@@ -920,7 +920,7 @@
             ]
          },
          {
-            "route-name":"American Pie",
+            "name":"American Pie",
             "grade":{
                "YDS":"5.10a",
                "French":"5c",
@@ -949,7 +949,7 @@
             ]
          },
          {
-            "route-name":"River Crossing",
+            "name":"River Crossing",
             "grade":{
                "YDS":"5.11c",
                "French":"6c+",
@@ -977,7 +977,7 @@
             ]
          },
          {
-            "route-name":"Baby Star",
+            "name":"Baby Star",
             "grade":{
                "YDS":"5.12a",
                "French":"7a+",
@@ -1005,7 +1005,7 @@
             ]
          },
          {
-            "route-name":"Pigs In Space",
+            "name":"Pigs In Space",
             "grade":{
                "YDS":"5.10c",
                "French":"6b",
@@ -1033,7 +1033,7 @@
             ]
          },
          {
-            "route-name":"Dragon Shit",
+            "name":"Dragon Shit",
             "grade":{
                "YDS":"5.9",
                "French":"5b",
@@ -1062,7 +1062,7 @@
             ]
          },
          {
-            "route-name":"Atlantis",
+            "name":"Atlantis",
             "grade":{
                "BLDV":"V5",
                "FB":"6C"
@@ -1088,7 +1088,7 @@
             ]
          },
          {
-            "route-name":"Heritage Crack",
+            "name":"Heritage Crack",
             "grade":{
                "BLDV":"V4",
                "FB":"6A+"
@@ -1114,7 +1114,7 @@
             ]
          },
          {
-            "route-name":"Bukit Ciambi",
+            "name":"Bukit Ciambi",
             "grade":{
                "BLDV":"V3",
                "FB":"5C+"
@@ -1184,7 +1184,7 @@
       ],
       "climbing-routes": [
          {
-            "route-name":"Epinephrine",
+            "name":"Epinephrine",
             "grade":{
                "YDS":"5.9",
                "French":"5c",
