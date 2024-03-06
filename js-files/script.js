@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async function(){
     createMapSelect(map);
 
     const routeData = await getRouteData();
+    createLocationLayer(routeData, map, 'SG', 'climbing-gyms');
 
     addMarkersToMap(routeData, map, 'SG', 'climbing-gyms');
     addMarkersToMap(routeData, map, 'SG','climbing-routes');

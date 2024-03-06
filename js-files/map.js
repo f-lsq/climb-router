@@ -56,11 +56,11 @@ function addMarkersToMap(data, map, locationCountry, locationType) {
 	locationClusterLayer.addTo(map);
 }
 
-function createLocationLayer(data, map, country, type) {
-  const layer = L.layerGroup();
-  layer.addTo(map);
-  for (let eachCountryType of data[country][type]) {
-        
+function createLocationLayer(data, map, locationCountry, locationType) {
+  // const layer = L.layerGroup();
+  // layer.addTo(map);
+  for (let eachLocation of data[locationCountry][locationType]) {
+    console.log(eachLocation);
   }
 }
 
