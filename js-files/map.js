@@ -38,34 +38,27 @@ function createLayerControl(data, map, selectedCountry, defaultMapTile){
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
   });
 
+  const climbingGymsLayer = createLayer(data, map, selectedCountry, 'climbing-gyms');
+  const climbingRoutesLayer = createLayer(data, map, selectedCountry, 'climbing-routes');
+
   L.control.layers({
     'Default Map': defaultMapTile,
     'Satellite Map': satelliteMapTile
   }, {
-    'Climbing Gyms': createLayer(data, map, selectedCountry, 'climbing-gyms'),
-    'Climbing Routes': createLayer(data, map, selectedCountry, 'climbing-routes')
+    'Climbing Gyms': climbingGymsLayer,
+    'Climbing Routes': climbingRoutesLayer
   }).addTo(map);
 
 }
 
-function createClusterGroup(data, map, locationCountry, locationType) {
+function createLayer(data, map, locationCountry, locationType) {
   const locationClusterLayer = L.markerClusterGroup();
+  locationClusterLayer.addTo(map);
   const markerAll = createMarkers(data, locationCountry, locationType);
   for (eachMarker of markerAll) {
     eachMarker.addTo(locationClusterLayer);
   }
-  locationClusterLayer.addTo(map);
-
-}
-
-function createLayer(data, map, locationCountry, locationType) {
-  const layer = L.layerGroup();
-  layer.addTo(map);
-  const markerAll = createMarkers(data, locationCountry, locationType);
-  for (eachMarker of markerAll) {
-    eachMarker.addTo(layer);
-  }
-  return layer;
+  return locationClusterLayer;
 }
 
 /**
@@ -94,31 +87,3 @@ function createMarkers(data, locationCountry, locationType) {
   }
   return markerAll;
 }
-
-// /**
-//  * 
-//  * @param {object} data Data from JSON file containing climbing routes and gyms information 
-//  * @param {object} map Leaflet map object created 
-//  * @param {string} locationCountry Country selected (dropdown) by users
-//  * @param {string} locationType Type of climbing locaiton selected (dropdown) by users
-//  */
-// function addMarkersToMap(data, map, locationCountry, locationType) {
-// 	const locationClusterLayer = L.markerClusterGroup();
-// 	let locationTypeIcon = L.icon({
-//     iconUrl: 'assets/' + locationType +'.webp',
-//     shadowUrl: 'assets/climbing-shadow.webp',
-
-//     iconSize:     [38, 38], // size of the icon
-//     shadowSize:   [38, 38], // size of the shadow
-//     iconAnchor:   [19, 38], // point of the icon which will correspond to marker's location
-//     shadowAnchor: [19, 38],  // the same for the shadow
-//     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-// });
-
-// 	for (let eachLocation of data[locationCountry][locationType]) {
-//     const coordinates = eachLocation.metadata["parent-lnglat"].reverse();
-//     const marker = L.marker(coordinates, {icon: locationTypeIcon}).addTo(locationClusterLayer);
-//   }
-
-// 	locationClusterLayer.addTo(map);
-// }

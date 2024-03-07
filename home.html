@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- Marker Cluster Default CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"
+    integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Marker Cluster CSS file-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"
+    integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Boxicon CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.webp">
+  <title>ClimbDoko | Home</title>
+</head>
+
+<body>
+  <header>
+    <!-- NavBar -->
+    <nav>
+      <div id="navLeft">
+        <a href="/home.html">
+          <img src="assets/logo.webp" alt="ClimbDoko Logo" />
+          <span class="protest-revolution-regular">ClimbDoko</span>
+        </a>
+      </div>
+      <div id="navRight">
+        <a class="homeBtn" href="/home.html">
+          <i class='bx bxs-home'></i>
+          <span>Home</span>
+        </a>
+        <a class="mapBtn" href="/map.html">
+          <i class='bx bxs-map-alt'></i>
+          <span>Route Map</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="homePage" class="active">
+      <!-- Hero Image -->
+      <div id="homeHero" class="parallax">
+        <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
+        <div id="searchTerm">
+          <input type="search" placeholder="Search routes or gyms">
+          <button>
+            <i class='bx bx-search-alt-2'></i>
+          </button>
+        </div>
+      </div>
+       <!-- Photos from Climbing Routes and Gyms -->
+      <div class="nonParallax">
+        <h2>Check out these climbing places!</h2>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="https://www.linkedin.com/in/f-lsq/" target="_blank">
+      <i class='bx bxl-linkedin-square'></i>
+    </a>
+    <a href="https://github.com/f-lsq" target="_blank">
+      <i class='bx bxl-github'></i>
+    </a>
+    <a href="mailto:fionaloo69@gmail.com">
+      <i class='bx bxs-envelope'></i>
+    </a>
+  </footer>
+
+  <!-- Axios JS -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Bootstrap5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Marker Clustering JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"
+    integrity="sha512-OFs3W4DIZ5ZkrDhBFtsCP6JXtMEDGmhl0QPlmWYBJay40TT1n3gt2Xuw8Pf/iezgW9CdabjkNChRqozl/YADmg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Boxicon JS -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!-- Own JS -->
+  <script src="js-files/map.js"></script>
+  <script src="js-files/data.js"></script>
+  <script src="js-files/overlay.js"></script>
+  <script src="js-files/script.js"></script>
+</body>
+
+</html>

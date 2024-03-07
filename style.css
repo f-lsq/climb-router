@@ -58,7 +58,7 @@ nav {
 }
 
 #navLeft img{
-  width: 40px;
+  width: 30px;
   margin-right: 0.2rem;
   border-radius: 50%;
 }
@@ -66,35 +66,29 @@ nav {
 #navLeft, 
 #navRight {
   display: flex;
-  align-items: center;
   text-wrap: wrap;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 nav span {
   display: none;
+  margin-left: 5px;
+}
+
+#navLeft a,
+#navRight a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 #navRight a {
   margin-left: 1.2rem;
-  text-decoration: none;
 }
 
 #navRight a, h1 {
   text-shadow: 0 0 10px #0c1214;
 }
-
-/* PAGE SWITCHES*/
-#homePage,
-#mapPage  {
-  display: none;
-}
-
-#homePage.active, 
-#mapPage.active {
-  display: block;
-}
-
 
 /* MAIN STYLES */
 /* Hero Image Styling */
@@ -114,7 +108,7 @@ nav span {
 
 #homeHero h1{
   width: 70%;
-  font-size: 8vw;
+  font-size: 1.5rem;
 }
 
 #searchTerm{
@@ -213,4 +207,64 @@ footer {
 
 footer a {
   margin: 1rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #homeHero h1{
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  #homeHero h1{
+    font-size: 4rem;
+  }
+
+  nav span {
+    display: inline-block;
+  }
+
+  #navLeft img{
+    width: 40px;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+  }
+
+  #navRight span {
+    font-size: 0.8rem;
+  }
+
+  #searchTerm{
+    margin-top: 3%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #homeHero h1{
+    font-size: 6rem;
+  }
+
+  nav span {
+    display: inline-block;
+    text-align: center;
+  }
+
+  #navLeft img{
+    width: 50px;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+  }
+
+  #navLeft, 
+  #navRight {
+    font-size: 1.5rem;
+  }
+  
+  #navRight span {
+    font-size: 1rem;
+  }
+
+  #searchTerm{
+    margin-top: 1%;
+  }
 }

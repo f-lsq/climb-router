@@ -1,5 +1,32 @@
 // LEAFLET MAP OVERLAYS JAVASCRIPT
 
+function createMapSelect(countryData, map) {
+  const countrySelect = document.querySelector('#mapCountry');
+  const stateSelect = document.querySelector('#mapState');
+  
+  createCountrySelect(countryData);
+  createStateSelect(countryData, countrySelect.value)
+  countrySelect.addEventListener('change', function(){
+    createStateSelect(countryData, countrySelect.value);
+  })
+  stateSelect.addEventListener('change', function() {
+    let selectedCountry = selectedState = null;
+    for (let eachCountry of countryData) {
+      if (eachCountry.iso3 == countrySelect.value) {
+        selectedCountry = eachCountry;
+        break;
+      } 
+    }
+    for (let eachState of selectedCountry.states) {
+      if (eachState.state_code == stateSelect.value) {
+        selectedState = eachState;
+        break;
+      }
+    }
+    map.flyTo([selectedState.latitude, selectedState.longitude])
+  });
+}
+
 function createCountrySelect(countryData) {
   countrySelect = document.querySelector('#mapCountry');
   for (let eachCountry of countryData) {
@@ -31,30 +58,3 @@ function createStateSelect(countryData, countryISO3) {
   }
 }
 
-async function createMapSelect(map) {
-  const countryData = await getCountryData();
-  const countrySelect = document.querySelector('#mapCountry');
-  const stateSelect = document.querySelector('#mapState');
-  
-  createCountrySelect(countryData);
-  createStateSelect(countryData, countrySelect.value)
-  countrySelect.addEventListener('change', function(){
-    createStateSelect(countryData, countrySelect.value);
-  })
-  stateSelect.addEventListener('change', function() {
-    let selectedCountry = selectedState = null;
-    for (let eachCountry of countryData) {
-      if (eachCountry.iso3 == countrySelect.value) {
-        selectedCountry = eachCountry;
-        break;
-      } 
-    }
-    for (let eachState of selectedCountry.states) {
-      if (eachState.state_code == stateSelect.value) {
-        selectedState = eachState;
-        break;
-      }
-    }
-    map.flyTo([selectedState.latitude, selectedState.longitude])
-  });
-}
