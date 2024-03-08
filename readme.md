@@ -1,7 +1,16 @@
 ## API Resources
-Nearest amendities
+Search & Nearest amendities
 ```
 https://foursquare.com/developers/home
+```
+
+Weather API
+```
+https://openweathermap.org/api
+```
+Leaflet routing machine
+```
+https://www.liedman.net/leaflet-routing-machine/
 ```
 
 ## JSON File Resources
