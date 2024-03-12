@@ -98,46 +98,113 @@ nav span {
   text-shadow: 0 0 10px #0c1214;
 }
 
-#navCenter {
-  flex: 1;
+#navCenter,
+.searchContainer,
+.searchContainer button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#navCenter {
+  flex: 1;
   position: relative;
 }
 
-#navCenter input {
+.autocom-box {
+  position: absolute;
+  background: white;
   width: 70%;
+  top: 45px;
+  /* padding: calc(0.5rem + 5px) 1rem 0.5rem 1rem; */
+  list-style: none;
+  background: #fafcfc;
+  border-radius: 0 0 5px 5px;
+  line-height: 30px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.autocom-box li {
+  padding: 0 10px;
+  margin: 3px 0;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.autocom-box li span {
+  border-radius: 3px;
+  font-size: 0.75rem;
+  padding: 0 10px;
+  line-height: 17px;
+  color: white;
+}
+
+.autocom-box li .navSearchGym{
+  background-color: #f8a230;
+}
+
+.autocom-box li .navSearchRoute{
+  background-color: #ee212d;
+}
+
+.autocom-box li:hover {
+  background: #ececec;
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+}
+
+.searchContainer input {
+  width: 100%;
   height: 100%;
   outline: none;
   border-radius: 5px;
   padding: 0 1rem;
   border: none;
   background: #fafcfc;
-  transition: background-color 0.3s;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-#navCenter input:hover,
-#navCenter button:hover + #navSearch{
+.searchContainer input:hover,
+.searchContainer button:hover + #navSearch{
   background: #ececec;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
 }
 
-#navCenter button {
+.searchContainer button {
   position: absolute;
-  right: calc(15% + 5rem);
+  right: 1.5rem;
   border: none;
   background: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+  font-size: 1.35rem;
   color: rgb(92, 92, 92);
   transition: color 0.3s;
+  z-index: 11;
 }
 
-#navCenter button:hover {
+.searchContainer button:hover {
   color: #f58732;
 }
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* MAIN STYLES */
 /* Hero Image Styling */
