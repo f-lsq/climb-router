@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', async function(){
 
   selectedCountry = 'SG' // SAMPLE
   createLayerControl(locationData, map, selectedCountry, mapItems.defaultMapTile)
-
-  getAllLocationName(locationData, selectedCountry, "climbing-gyms");
-
+  searchLocation(locationData, selectedCountry);
   document.querySelector('#currLocationBtn').addEventListener('click', ()=>{
     map.flyTo(USER_COORDINATES)
   })

@@ -116,12 +116,19 @@ nav span {
   background: white;
   width: 70%;
   top: 45px;
-  /* padding: calc(0.5rem + 5px) 1rem 0.5rem 1rem; */
+  /* */
   list-style: none;
-  background: #fafcfc;
   border-radius: 0 0 5px 5px;
   line-height: 30px;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.autocom-box.active {
+  opacity: 1;
+  pointer-events: auto;
+  padding: calc(0.5rem + 5px) 1rem 0.5rem 1rem;
 }
 
 .autocom-box li {
@@ -131,7 +138,6 @@ nav span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: none;
 }
 
 .autocom-box li span {
@@ -175,25 +181,9 @@ nav span {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.searchContainer input:hover,
-.searchContainer button:hover + #navSearch{
+.searchContainer input:hover{
   background: #ececec;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
-}
-
-.searchContainer button {
-  position: absolute;
-  right: 1.5rem;
-  border: none;
-  background: none;
-  font-size: 1.35rem;
-  color: rgb(92, 92, 92);
-  transition: color 0.3s;
-  z-index: 11;
-}
-
-.searchContainer button:hover {
-  color: #f58732;
 }
 
 /* clears the 'X' from Internet Explorer */
@@ -205,6 +195,7 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 
 /* MAIN STYLES */
 /* Hero Image Styling */

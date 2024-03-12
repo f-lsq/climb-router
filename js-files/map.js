@@ -87,3 +87,17 @@ function createMarkers(data, locationCountry, locationType) {
   }
   return markerAll;
 }
+
+async function goToSearchLocation(locationName){
+  const locationData = await getLocationData();
+  for (let eachLocation of locationData["SG"]["climbing-gyms"]){
+    if (eachLocation.name == locationName) {
+      map.flyTo(eachLocation.metadata["parent-lnglat"].reverse());
+    }
+  }
+  for (let eachLocation of locationData["SG"]["climbing-routes"]){
+    if (eachLocation.name == locationName) {
+      map.flyTo(eachLocation.metadata["parent-lnglat"].reverse());
+    }
+  }
+}
