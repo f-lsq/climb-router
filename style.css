@@ -40,6 +40,10 @@ h1, a {
   transition: color 0.3s;
 }
 
+h2 {
+  text-align: center;
+}
+
 a:hover {
   color: #f58732;
 }
@@ -59,7 +63,7 @@ nav {
 
 #navLeft img{
   width: 30px;
-  margin-right: 0.2rem;
+  margin-right: 1.2rem;
   border-radius: 50%;
 }
 
@@ -75,6 +79,10 @@ nav span {
   margin-left: 5px;
 }
 
+#navLeft span{
+  margin-right: 1.2rem;
+}
+
 #navLeft a,
 #navRight a {
   text-decoration: none;
@@ -88,6 +96,47 @@ nav span {
 
 #navRight a, h1 {
   text-shadow: 0 0 10px #0c1214;
+}
+
+#navCenter {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#navCenter input {
+  width: 70%;
+  height: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 1rem;
+  border: none;
+  background: #fafcfc;
+  transition: background-color 0.3s;
+}
+
+#navCenter input:hover,
+#navCenter button:hover + #navSearch{
+  background: #ececec;
+}
+
+#navCenter button {
+  position: absolute;
+  right: calc(15% + 5rem);
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(92, 92, 92);
+  transition: color 0.3s;
+}
+
+#navCenter button:hover {
+  color: #f58732;
 }
 
 /* MAIN STYLES */
@@ -146,15 +195,31 @@ nav span {
   padding: 1.5rem;
 }
 
-/* Leaflet Map Styling */
-#mapContainer {
-  margin-top: calc(40px + 2*0.5rem);
-  position: relative;
+/* Map Page Styling */
+#mapPage{
+  display: flex;
 }
 
-#map { 
-  height: calc(100vh - 40px - 2*0.5rem);
-  width: 100%;
+#resultsContainer,
+#mapContainer {
+  margin-top: calc(30px + 2*0.5rem);
+  height: calc(100vh - 30px - 2*0.5rem);
+}
+
+/* Map Page Result Sidebar Styling*/
+#resultsContainer {
+  width: 35vw;
+  background-color: rgb(236, 212, 161);
+}
+
+/* Leaflet Map Styling */
+#mapContainer {
+  position: relative;
+  width: 65vw;
+}
+
+#map {
+  height: 100%;
 }
 
 #mapContainer form, 
@@ -237,6 +302,12 @@ footer a {
   #searchTerm{
     margin-top: 3%;
   }
+
+  #resultsContainer,
+  #mapContainer {
+    margin-top: calc(40px + 2*0.5rem);
+    height: calc(100vh - 40px - 2*0.5rem);
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -266,5 +337,11 @@ footer a {
 
   #searchTerm{
     margin-top: 1%;
+  }
+
+  #resultsContainer,
+  #mapContainer {
+    margin-top: calc(50px + 2*0.5rem);
+    height: calc(100vh - 50px - 2*0.5rem);
   }
 }
