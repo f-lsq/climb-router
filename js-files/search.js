@@ -5,21 +5,25 @@ function searchLocation(locationData, selectedCountry){
 
   const gymResults = getAllLocationName(locationData, selectedCountry, "climbing-gyms");
   const locationResults = getAllLocationName(locationData, selectedCountry, "climbing-routes");
+  const allResults = gymResults.concat(locationResults);
 
   searchInput.onkeyup = function(userInput){
-    searchResultsBox.style.padding = "calc(0.5rem + 5px) 1rem 0.5rem 1rem"
-
     let userData = userInput.target.value; // stores the data entered by users
     let emptyResult = [];
     if (userData){
       searchResultsBox.classList.add("active");
-      emptyResult = gymResults.filter(function(data){
+      emptyResult = allResults.filter(function(data){
         // Filtering array value and converting user input to lowercase
         // This returns results that starts with the user's input
         return data.toLocaleLowerCase().includes(userData.toLocaleLowerCase());
       }); 
+
       emptyResult = emptyResult.map(function(data){
-        return data = '<li>' + data + '</li>'
+        if (gymResults.includes(data)) {
+          return data = '<li>' + data + '<span class="navSearchGym">gym</span></li>'
+        } else {
+          return data = '<li>' + data + '<span class="navSearchRoute">route</span></li>'
+        }
       })
     } else {
       searchResultsBox.classList.remove("active");
@@ -38,9 +42,9 @@ function searchLocation(locationData, selectedCountry){
 
 function selectResult(result){
   // Replace search input with selected result
-  document.querySelector("#navSearch").value = result.textContent;
+  document.querySelector("#navSearch").value = result.firstChild.textContent;
   document.querySelector(".autocom-box").classList.remove("active");
-  goToSearchLocation(result.textContent)
+  goToSearchLocation(result.firstChild.textContent)
 }
 
 function displayResults(resultArray, searchResultsBox, searchInput){
@@ -48,7 +52,7 @@ function displayResults(resultArray, searchResultsBox, searchInput){
   if(!resultArray.length){
     // If array is empty
       userInput = searchInput.value;
-      resultArrayData = '<li>' + userInput + '</li>'
+      resultArrayData = '<li>"' + userInput + '" is not found. </li>'
   } else {
     // If array is not empty
     resultArrayData = resultArray.join('');
