@@ -272,6 +272,17 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-color: rgb(236, 212, 161);
 }
 
+#resultsContainer form {
+  background-color: red;
+}
+
+#locationContainer {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+
+
 /* Leaflet Map Styling */
 #mapContainer {
   position: relative;

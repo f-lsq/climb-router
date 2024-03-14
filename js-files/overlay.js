@@ -41,7 +41,7 @@ function createCountrySelect(countryData) {
 }
 
 function createStateSelect(countryData, countryISO3) {
-  stateSelect = document.querySelector('#mapState');
+  const stateSelect = document.querySelector('#mapState');
   stateSelect.innerHTML = '';
   let selectedCountry = {};
   for (let eachCountry of countryData) {
@@ -58,3 +58,68 @@ function createStateSelect(countryData, countryISO3) {
   }
 }
 
+function displayAllLocation(locationData, selectedType) {
+  const locationDiv = document.querySelector("#locationContainer");
+  locationDiv.innerHTML = "";
+  let allLocation = locationData[0]["climbing-gyms"].concat(locationData[1]["climbing-routes"]);
+  if (selectedType == "climbing-gyms") {
+    allLocation = locationData[0]["climbing-gyms"];
+  } else if (selectedType == "climbing-routes") {
+    allLocation = locationData[1]["climbing-routes"]
+  }
+
+  // Sort by distance from user
+  const allLocationSorted = allLocation.sort((a,b) => {
+    return relativeHaversineDistance(a.metadata["parent-lnglat"][1], a.metadata["parent-lnglat"][0], USER_COORDINATES[0], USER_COORDINATES[1])
+    - relativeHaversineDistance(b.metadata["parent-lnglat"][1], b.metadata["parent-lnglat"][0], USER_COORDINATES[0], USER_COORDINATES[1])
+  });
+
+  for (let eachLocation of allLocationSorted) {
+    const eachLocationDiv = document.createElement("div");
+    eachLocationDiv.setAttribute("id",eachLocation.metadata["mp-location-id"]);
+    eachLocationDiv.classList.add("eachLocationResult")
+
+    if (locationData[0]["climbing-gyms"].includes(eachLocation)) {
+      eachLocationDiv.innerHTML = `
+      <div>
+        <h1>${eachLocation.name}</h1><span class="eachLocationGym">gym</span>
+        <h3>${eachLocation.address}</h3>
+      </div>
+      <div>
+        <div>
+          <a href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
+        </div>
+        <div>
+          <a><i class='bx bxs-direction-right' ></i></a><span>Direction</span>
+        </div> 
+      </div>`; 
+    } else {
+      eachLocationDiv.innerHTML = `
+      <div>
+        <h1>${eachLocation.name}</h1><span class="eachLocationRoute">route</span>
+        <h3>${eachLocation.metadata["parent-sector"]}</h3>
+      </div>
+      <div>
+        <div>
+          <a href="${eachLocation.link} target="_blank""><i class='bx bx-globe'></i></a><span>Website</span>
+        </div>
+        <div>
+          <a><i class='bx bxs-direction-right' ></i></a><span>Direction</span>
+        </div>       
+      </div>`; 
+    }
+    locationDiv.appendChild(eachLocationDiv);   
+  }
+}
+
+function displayClickedLocation(map, locationId){
+  map.closePopup();
+  for (let eachMarker in markerAll) {
+    if (locationId == markerAll[eachMarker].options.title) {
+      map.flyTo(markerAll[eachMarker].getLatLng(), 17);
+      map.on("zoomend", ()=>{
+        markerAll[eachMarker].openPopup();
+      })
+    }
+  }
+}

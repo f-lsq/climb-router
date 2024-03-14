@@ -28,3 +28,4 @@
 * 27Crags: https://27crags.com/
 * NLB Website: https://www.nlb.gov.sg/main/home
 * CodeAcademy: https://www.codecademy.com/resources/docs/java/classes
+* Haversine Distance: https://www.movable-type.co.uk/scripts/latlong.html , https://stackoverflow.com/questions/26836146/how-to-sort-array-items-by-longitude-latitude-distance-in-javascripts 

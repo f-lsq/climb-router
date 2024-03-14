@@ -33,13 +33,13 @@ function createMap(mapContainerID, coordinates){
   };
 }
 
-function createLayerControl(data, map, selectedCountry, defaultMapTile){
+function createLayerControl(data, map, defaultMapTile){
   const satelliteMapTile = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
   });
 
-  const climbingGymsLayer = createLayer(data, map, selectedCountry, 'climbing-gyms');
-  const climbingRoutesLayer = createLayer(data, map, selectedCountry, 'climbing-routes');
+  const climbingGymsLayer = createLayer(data, map, 'climbing-gyms');
+  const climbingRoutesLayer = createLayer(data, map, 'climbing-routes');
 
   L.control.layers({
     'Default Map': defaultMapTile,
@@ -51,10 +51,10 @@ function createLayerControl(data, map, selectedCountry, defaultMapTile){
 
 }
 
-function createLayer(data, map, locationCountry, locationType) {
+function createLayer(data, map, locationType) {
   const locationClusterLayer = L.markerClusterGroup();
   locationClusterLayer.addTo(map);
-  const markerAll = createMarkers(data, locationCountry, locationType);
+  const markerAll = createMarkers(data, locationType);
   for (eachMarker of markerAll) {
     eachMarker.addTo(locationClusterLayer);
   }
@@ -63,11 +63,10 @@ function createLayer(data, map, locationCountry, locationType) {
 
 /**
  * Creates markers by country and by location type
- * @param {string} locationCountry Country where climbing location is located (eg. SG or US)
  * @param {string} locationType Type of climbing location (ie. Gyms or Route)
  * @returns Array containing all markers created
  */
-function createMarkers(data, locationCountry, locationType) {
+function createMarkers(data, locationType) {
   let locationTypeIcon = L.icon({
       iconUrl: 'assets/' + locationType +'.webp',
       shadowUrl: 'assets/climbing-shadow.webp',
@@ -79,26 +78,42 @@ function createMarkers(data, locationCountry, locationType) {
       popupAnchor:  [0, -40] // point from which the popup should open relative to the iconAnchor
   });
 
-  let markerAll = [];
-  for (let eachLocation of data[locationCountry][locationType]) {
-      const coordinates = eachLocation.metadata["parent-lnglat"].reverse();
-      const marker = L.marker(coordinates, {icon: locationTypeIcon}).bindPopup(eachLocation.name);
-      markerAll.push(marker);
+  // let markerAll = [];
+  for (let eachLocationType of data) {
+    if (eachLocationType[locationType]) {
+      for (let eachLocation of eachLocationType[locationType]){
+        const coordinates = eachLocation.metadata["parent-lnglat"].reverse();
+        const marker = L.marker(coordinates, {
+          "title": eachLocation.metadata["mp-location-id"],
+          "icon": locationTypeIcon
+        }).bindPopup(eachLocation.name);
+        markerAll.push(marker);
+    }
+    }
   }
   return markerAll;
 }
 
+function createUserMarker (map, coordinates) {
+  let locationTypeIcon = L.icon({
+    iconUrl: 'assets/user-location.webp',
+    shadowUrl: 'assets/user-location-shadow.webp',
+
+    iconSize:     [38, 38], // size of the icon
+    shadowSize:   [38, 38], // size of the shadow
+    iconAnchor:   [19, 38], // point of the icon which will correspond to marker's location
+    shadowAnchor: [19, 38],  // the same for the shadow
+    popupAnchor:  [0, -40] // point from which the popup should open relative to the iconAnchor
+});
+  const marker = L.marker(coordinates, {icon: locationTypeIcon}).addTo(map).bindPopup("You are here");
+}
 
 async function getSearchLocation(locationName){
   const locationData = await getLocationData();
-  for (let eachLocation of locationData["SG"]["climbing-gyms"]){
+  const allLocation = locationData[0]["climbing-gyms"].concat(locationData[1]["climbing-routes"]);
+  for (let eachLocation of allLocation) {
     if (eachLocation.name == locationName) {
       return eachLocation.metadata["parent-lnglat"].reverse();
-    }
-  }
-  for (let eachLocation of locationData["SG"]["climbing-routes"]){
-    if (eachLocation.name == locationName) {
-      return eachLocation.metadata["parent-lnglat"].reverse()
     }
   }
 }

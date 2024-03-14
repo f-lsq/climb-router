@@ -72,7 +72,14 @@
     <!-- Interactive Leaflet Map -->
     <section id="mapPage">
       <div id="resultsContainer">
-        testing
+        <form>
+          <select id="locationTypeSelect">
+            <option value="climbing-all">All Location</option>
+            <option value="climbing-gyms">Climbing Gyms</option>
+            <option value="climbing-routes">Climbing Routes</option>
+          </select>
+        </form>
+        <div id="locationContainer"></div>
       </div>
       <div id="mapContainer">
         <div id="map"></div>

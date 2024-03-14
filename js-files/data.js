@@ -47,3 +47,24 @@ async function getPhotoFromFourSquare(fsqid){
   });
   return response.data;
 }
+
+// Calculate distance between two coordinates
+function relativeHaversineDistance(aLat, aLng, bLat, bLng) {
+  const asin = Math.asin;
+  const cos = Math.cos;
+  const sin = Math.sin;
+  const PI_180 = Math.PI / 180;
+
+  function hav(x) {
+    const s = sin(x /2)
+    return s * s;
+  }
+
+  const aLatRad = aLat * PI_180; // in radian
+  const bLatRad = bLat * PI_180;
+  const aLngRad = aLng * PI_180;
+  const bLngRad = bLng * PI_180;
+
+  const ht = hav(bLatRad - aLatRad)  + cos(aLatRad) * cos(bLatRad) * hav (bLngRad - aLngRad);
+  return asin(ht);
+}

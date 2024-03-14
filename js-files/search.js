@@ -3,8 +3,8 @@ function searchLocation(locationData, selectedCountry){
   const searchInput = document.querySelector("#navSearch");
   const searchResultsBox = document.querySelector(".autocom-box");
 
-  const gymResults = getAllLocationName(locationData, selectedCountry, "climbing-gyms");
-  const locationResults = getAllLocationName(locationData, selectedCountry, "climbing-routes");
+  const gymResults = getAllLocationName(locationData, "climbing-gyms");
+  const locationResults = getAllLocationName(locationData, "climbing-routes");
   const allResults = gymResults.concat(locationResults);
 
   searchInput.onkeyup = function(userInput){
@@ -60,10 +60,14 @@ function displayResults(resultArray, searchResultsBox, searchInput){
   searchResultsBox.innerHTML = resultArrayData;
 }
 
-function getAllLocationName(locationData, selectedCountry, locationType){
+function getAllLocationName(locationData, locationType){
   let locationResult = [];
-  for (let eachLocation of locationData[selectedCountry][locationType]) {
-    locationResult.push(eachLocation.name);
+  for (let eachLocationType of locationData) {
+    if (eachLocationType[locationType]) {
+      for (let eachLocation of eachLocationType[locationType]) {
+        locationResult.push(eachLocation.name)
+    }
+  }
   }
   return locationResult;
 }

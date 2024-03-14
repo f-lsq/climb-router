@@ -1,0 +1,1217 @@
+{
+   "SG": {
+      "climbing-gyms": [
+         {
+         "name": "Adventure HQ",
+         "address": "2 Yishun Walk, Singapore 767944",
+         "opening-hours": {
+            "monday": "Closed",
+            "tuesday": "1400 to 1730",
+            "wednesday": "1400 to 2130",
+            "thursday": "1400 to 2130",
+            "friday": "1400 to 2130",
+            "saturday": "1000 to 2130",
+            "sunday": "1000 to 2130"
+         },
+         "contact": "+65 6705 9420",
+         "prices": {
+            "single-entry": "SGD 40.75 to SGD 69.27 (Tuesday-Friday), SGD 48.90 to SGD 79.46 (Saturday-Sunday)",
+            "multi-pass-5": "SGD 183.36 to SGD 313.76 (Tuesday-Friday), SGD 222.07 to SGD 356.54 (Saturday-Sunday)",
+            "multi-pass-10": "Nil",
+            "monthly-pass": "Nil"
+         },
+         "remarks": "For exact breakdown of prices, refer to gym website.",
+         "link": "https://www.hometeamns.sg/khatib/adventurehq/",
+         "images": [
+            "https://static.mothership.sg/1/2020/10/boulder1.jpg",
+            "https://static.mothership.sg/1/2020/10/wall1.jpg"
+         ],
+         "type": {
+            "boulder": true,
+            "top-rope": true,
+            "auto-belay": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.8311410511582, 1.4145840167232775],
+            "parent-sector":"",
+            "mp-gym-id":"650100001",
+            "mp-sector-id":""
+         }
+      }, 
+      {
+         "name": "Arete (By Upwall)",
+         "address": "5 Changi Business Park Central 1, #02 14/15/16, Singapore 486038",
+         "opening-hours": {
+            "monday": "1300 to 2130",
+            "tuesday": "1300 to 2130",
+            "wednesday": "1300 to 2130",
+            "thursday": "1300 to 2130",
+            "friday": "1300 to 2130",
+            "saturday": "0930 to 2130",
+            "sunday": "0930 to 2130"
+         },
+         "contact": "+65 8028 7028",
+         "prices": {
+            "single-entry": "SGD 22",
+            "multi-pass-5": "SGD 100",
+            "multi-pass-10": "SGD 180",
+            "monthly-pass": "SGD 80"
+         },
+         "remarks": "Passes can be used at Upwall Climbing.",
+         "link": "https://upwallclimbing.sg/",
+         "images": [
+            "https://upwallclimbing.sg/wp-content/uploads/2023/09/arete-pic-on-google-768x512.jpg",
+            "https://upwallclimbing.sg/wp-content/uploads/2022/01/Upwall-Climbing-facility-768x512.jpg"
+         ],
+         "type": {
+            "boulder": true,
+            "top-rope": true,
+            "auto-belay": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.96245162417475, 1.3340515616569568],
+            "parent-sector":"",
+            "mp-gym-id":"650100002",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Ark Bloc",
+         "address": "6 Tebing Ln, #01-05, Singapore 828835",
+         "opening-hours": {
+            "monday": "0800 to 1200, 1500 to 2200",
+            "tuesday": "0800 to 1200, 1500 to 2200",
+            "wednesday": "0800 to 1200, 1500 to 2200",
+            "thursday": "0800 to 1200, 1500 to 2200",
+            "friday": "0800 to 1200, 1500 to 2200",
+            "saturday": "1000 to 2200",
+            "sunday": "1000 to 2200"
+         },
+         "contact": "+65 8022 1480",
+         "prices": {
+            "single-entry": "SGD 28",
+            "multi-pass-3": "SGD 58",
+            "multi-pass-10": "SGD 168",
+            "monthly-pass": "SGD 90"
+         },
+         "remarks": "Passes can be used at Upwall Climbing.",
+         "link": "https://arkbloc.com/",
+         "images": [
+            "https://arkbloc.com/wp-content/uploads/2023/01/Ark-Bloc-Climbing-Wall-2-768x768.jpeg",
+            "https://arkbloc.com/wp-content/uploads/2022/07/IMG_0455-2-768x432.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.91704974368331, 1.394466269033976],
+            "parent-sector":"",
+            "mp-gym-id":"650100003",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "BFF Climb Bendemeer",
+         "address": "2 Kallang Ave, #01-20 CT Hub @ Kallang, Singapore 339407",
+         "opening-hours": {
+            "monday": "0930 to 2245",
+            "tuesday": "0930 to 2245",
+            "wednesday": "0930 to 2245",
+            "thursday": "0930 to 2245",
+            "friday": "0930 to 2245",
+            "saturday": "0930 to 2245",
+            "sunday": "0930 to 2245"
+         },
+         "contact": "+65 9649 4145",
+         "prices": {
+            "single-entry": "SGD 27.25",
+            "multi-pass-5": "Any Outlet: SGD 119.90",
+            "multi-pass-10": "Any Outlet: SGD 207.10",
+            "monthly-pass": "Any Outlet: SGD 141.70, Bendemeer Outlet: SGD 109.00"
+         },
+         "remarks": "SGD 100 initiation fee for Monthly Pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+         "link": "https://bffclimb.com/",
+         "images": [
+            "https://media.karousell.com/media/photos/products/2022/11/27/multi_gym_entry_pass_into_any__1669552176_dd7e40f0_progressive",
+            "https://www.littledayout.com/wp-content/uploads/08-BFF-Climb.jpg"
+         ],
+         "type": {
+            "boulder": true,
+            "auto-belay": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.86384619461124, 1.3137287755522833],
+            "parent-sector":"",
+            "mp-gym-id":"650100004",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "BFF Climb Tampines Hub",
+         "address": "1 Tampines Walk, #02-81 Our Tampines Hub, Singapore 528523",
+         "opening-hours": {
+            "monday": "0930 to 2245",
+            "tuesday": "0930 to 2245",
+            "wednesday": "0930 to 2245",
+            "thursday": "0930 to 2245",
+            "friday": "0930 to 2245",
+            "saturday": "0930 to 2245",
+            "sunday": "0930 to 2245"
+         },
+         "contact": "+65 8368 9214",
+         "prices": {
+            "single-entry": "SGD 23.98",
+            "multi-pass-5": "Any Outlet: SGD 119.90, Tampines Outlets: SGD 103.55",
+            "multi-pass-10": "Any Outlet: SGD 207.10, Tampines Outlets: SGD 185.30",
+            "monthly-pass": "Any Outlet: SGD 141.70, Tampines Outlets: SGD 98.10"
+         },
+         "remarks": "SGD 100 initiation fee for Monthly Pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+         "link": "https://bffclimb.com/",
+         "images": [
+            "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
+         ],
+         "type": {
+            "lead": true,
+            "boulder": true,
+            "top-rope": true,
+            "auto-belay": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.94203949496897, 1.380837308210486],
+            "parent-sector":"",
+            "mp-gym-id":"650100005",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "BFF Climb Tampines Yoha",
+         "address": "6 Tampines Street 92, #03-06 yo:HA Commercial @ Tampines, Singapore 528893",
+         "opening-hours": {
+            "monday": "0930 to 2245",
+            "tuesday": "0930 to 2245",
+            "wednesday": "0930 to 2245",
+            "thursday": "1700 to 2245",
+            "friday": "0930 to 0315",
+            "saturday": "0930 to 0315",
+            "sunday": "0930 to 2245"
+         },
+         "contact": "+65 8691 9790",
+         "prices": {
+            "single-entry": "SGD 23.98",
+            "multi-pass-5": "Any Outlet: SGD 119.90, Tampines Outlets: SGD 103.55",
+            "multi-pass-10": "Any Outlet: SGD 207.10, Tampines Outlets: SGD 185.30",
+            "monthly-pass": "Any Outlet: SGD 141.70, Tampines Outlets: SGD 98.10"
+         },
+         "remarks": "SGD 100 initiation fee for Monthly Pass. SGD 70.85 Off Peak Multi-Gym Pass Available.",
+         "link": "https://bffclimb.com/",
+         "images": [
+            "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.94100376491768, 1.3523265327240714],
+            "parent-sector":"",
+            "mp-gym-id":"650100006",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "boruda Climbing",
+         "address": "991A Alexandra Road #02-06/07 Singapore 119969",
+         "opening-hours": {
+            "monday": "1130 to 2230",
+            "tuesday": "1130 to 2230",
+            "wednesday": "1130 to 2230",
+            "thursday": "1130 to 2230",
+            "friday": "0900 to 2100",
+            "saturday": "0900 to 2100",
+            "sunday": "1330 to 2230"
+         },
+         "contact": "+65 6994 2325",
+         "prices": {
+            "single-entry": "SGD 33",
+            "multi-pass-5": "SGD 135",
+            "multi-pass-10": "SGD 220",
+            "monthly-pass": "SGD 121"
+         },
+         "remarks": "SGD 98 initiation fee for Monthly Pass.",
+         "link": "http://boruda.sg/",
+         "images": [
+            "https://static.wixstatic.com/media/c94d2d_12c604f212594dd38430db9efcf7508a~mv2.jpg/v1/fill/w_229,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSCF0755.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.80362657336593, 1.2743941532889755],
+            "parent-sector":"",
+            "mp-gym-id":"650100007",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boulder Movement Bugis",
+         "address": "201 Victoria St, #05 - 07, Singapore 188067",
+         "opening-hours": {
+            "monday": "1730 to 2200",
+            "tuesday": "1100 to 1630, 1730 to 2200",
+            "wednesday": "1100 to 1630, 1730 to 2200",
+            "thursday": "1100 to 1630, 1730 to 2200",
+            "friday": "1100 to 1630, 1730 to 2200",
+            "saturday": "1000 to 2000",
+            "sunday": "1000 to 2000"
+         },
+         "contact": "+65 6993 9228",
+         "prices": {
+            "single-entry": "SGD 30",
+            "multi-pass-5": "SGD 135",
+            "multi-pass-10": "SGD 200",
+            "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+         },
+         "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+         "link": "http://www.boulderm.com/",
+         "images": [
+            "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.85590114082866, 1.3076318657691632],
+            "parent-sector":"",
+            "mp-gym-id":"650100008",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boulder Movement Downtown",
+         "address": "6A Shenton Way, #B1-03 Downtown Gallery, 068815",
+         "opening-hours": {
+            "monday": "1730 to 2200",
+            "tuesday": "1100 to 1630, 1730 to 2200",
+            "wednesday": "1100 to 1630, 1730 to 2200",
+            "thursday": "1100 to 1630, 1730 to 2200",
+            "friday": "1100 to 1630, 1730 to 2200",
+            "saturday": "1000 to 2000",
+            "sunday": "1000 to 2000"
+         },
+         "contact": "+65 6816 6001",
+         "prices": {
+            "single-entry": "SGD 30",
+            "multi-pass-5": "SGD 135",
+            "multi-pass-10": "SGD 200",
+            "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+         },
+         "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+         "link": "http://www.boulderm.com/",
+         "images": [
+            "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.84945039882241, 1.2787479114977534],
+            "parent-sector":"",
+            "mp-gym-id":"650100009",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boulder Movement Tai Seng",
+         "address": "18 Tai Seng St, #01-09, Singapore 539775",
+         "opening-hours": {
+            "monday": "1730 to 2200",
+            "tuesday": "1100 to 1630, 1730 to 2200",
+            "wednesday": "1100 to 1630, 1730 to 2200",
+            "thursday": "1100 to 1630, 1730 to 2200",
+            "friday": "1100 to 1630, 1730 to 2200",
+            "saturday": "1000 to 2000",
+            "sunday": "1000 to 2000"
+         },
+         "contact": "+65 6816 6001",
+         "prices": {
+            "single-entry": "SGD 30",
+            "multi-pass-5": "SGD 135",
+            "multi-pass-10": "SGD 200",
+            "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+         },
+         "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+         "link": "http://www.boulderm.com/",
+         "images": [
+            "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.88959120945803, 1.3384394605278973],
+            "parent-sector":"",
+            "mp-gym-id":"650100010",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boulder Movement Rochor",
+         "address": "2 Serangoon Rd, #02-12 Tekka Place, Singapore 218227",
+         "opening-hours": {
+            "monday": "1730 to 2200",
+            "tuesday": "1100 to 1630, 1730 to 2200",
+            "wednesday": "1100 to 1630, 1730 to 2200",
+            "thursday": "1100 to 1630, 1730 to 2200",
+            "friday": "1100 to 1630, 1730 to 2200",
+            "saturday": "1000 to 2000",
+            "sunday": "1000 to 2000"
+         },
+         "contact": "+65 6993 2100",
+         "prices": {
+            "single-entry": "SGD 30",
+            "multi-pass-5": "SGD 135",
+            "multi-pass-10": "SGD 200",
+            "monthly-pass": "SGD 118 (Peak), $69 (Off-Peak)"
+         },
+         "remarks": "Weekly Unlimited Pass available at SGD 35 a week",
+         "link": "http://www.boulderm.com/",
+         "images": [
+            "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.8517211430051, 1.306891891336752],
+            "parent-sector":"",
+            "mp-gym-id":"650100011",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "boulder+ Aperia",
+         "address": "12 Kallang Ave, #03-17 The Aperia Mall, Singapore 339511",
+         "opening-hours": {
+            "monday": "1700 to 2230",
+            "tuesday": "0900 to 2230",
+            "wednesday": "0900 to 2230",
+            "thursday": "0900 to 2230",
+            "friday": "0900 to 2230",
+            "saturday": "0900 to 2100",
+            "sunday": "0900 to 2100"
+         },
+         "contact": "+65 6282 7530",
+         "prices": {
+            "single-entry": "SGD 28",
+            "multi-pass-5": "Nil",
+            "multi-pass-10": "SGD 200",
+            "monthly-pass": "SGD 110"
+         },
+         "remarks": "SGD 100 activation fee to be incurred for Monthly Pass",
+         "link": "http://www.boulderplusclimbing.com/",
+         "images": [
+            "https://thesmartlocal.com/wp-content/uploads/2023/07/rock-climbing-and-bouldering-gyms-boulder-plus.png"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.8645792026007, 1.3103404042643298],
+            "parent-sector":"",
+            "mp-gym-id":"650100012",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "boulder+ Chevrons",
+         "address": "48 Boon Lay Wy, #04-01 THE CHEVRONS, Singapore 609961",
+         "opening-hours": {
+            "monday": "1300 to 2230",
+            "tuesday": "0900 to 2230",
+            "wednesday": "0900 to 2230",
+            "thursday": "0900 to 2230",
+            "friday": "0900 to 2230",
+            "saturday": "0900 to 2100",
+            "sunday": "0900 to 2100"
+         },
+         "contact": "+65 6970 0116",
+         "prices": {
+            "single-entry": "SGD 28",
+            "multi-pass-5": "Nil",
+            "multi-pass-10": "SGD 200",
+            "monthly-pass": "SGD 110"
+         },
+         "remarks": "SGD 100 activation fee to be incurred for Monthly Pass",
+         "link": "http://www.boulderplusclimbing.com/",
+         "images": [
+            "https://thesmartlocal.com/wp-content/uploads/2023/07/rock-climbing-and-bouldering-gyms-boulder-plus-overhang-wall-750x500.png"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.74826910674517, 1.3311388964366422],
+            "parent-sector":"",
+            "mp-gym-id":"650100013",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boulder Planet Sembawang",
+         "address": "604 Sembawang Rd, #B1-22/23 Sembawang Shopping Centre, Singapore 758459",
+         "opening-hours": {
+            "monday": "1000 to 2200",
+            "tuesday": "1000 to 2200",
+            "wednesday": "1000 to 2200",
+            "thursday": "1000 to 2200",
+            "friday": "1000 to 2200",
+            "saturday": "1000 to 2100",
+            "sunday": "1000 to 2100"
+         },
+         "contact": "+65 9469 2386",
+         "prices": {
+            "single-entry": "SGD 33",
+            "multi-pass-5": "SGD 135",
+            "multi-pass-10": "SGD 220",
+            "monthly-pass": "SGD 121"
+         },
+         "remarks": "SGD 98 initiation fee for Monthly Pass.",
+         "link": "https://www.boulderplanet.sg/",
+         "images": [
+            "https://static.wixstatic.com/media/8b92f2_5205b52bb4c1416788cb4e566412f889~mv2.jpg/v1/fill/w_656,h_782,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8b92f2_5205b52bb4c1416788cb4e566412f889~mv2.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.82497113581393, 1.4421998309940733],
+            "parent-sector":"",
+            "mp-gym-id":"650100014",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boulder Planet Tai Seng",
+         "address": "601 MacPherson Rd, #02-07 Grantral Mall/Grantral Complex@Macpherson, Singapore 368242",
+         "opening-hours": {
+            "monday": "1000 to 2230",
+            "tuesday": "1000 to 2230",
+            "wednesday": "1000 to 2230",
+            "thursday": "1000 to 2230",
+            "friday": "1000 to 2230",
+            "saturday": "1000 to 2100",
+            "sunday": "1000 to 2100"
+         },
+         "contact": "+65 9469 2386",
+         "prices": {
+            "single-entry": "SGD 33",
+            "multi-pass-5": "SGD 135",
+            "multi-pass-10": "SGD 220",
+            "monthly-pass": "SGD 121"
+         },
+         "remarks": "SGD 98 initiation fee for Monthly Pass.",
+         "link": "https://www.boulderplanet.sg/",
+         "images": [
+            "https://static.wixstatic.com/media/8b92f2_4d2e12b939b04ba09c37b823dbf7e6de~mv2.jpg/v1/fill/w_640,h_427,q_90/8b92f2_4d2e12b939b04ba09c37b823dbf7e6de~mv2.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.88844374623275, 1.3341694624070695],
+            "parent-sector":"",
+            "mp-gym-id":"650100015",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boulder World",
+         "address": "290 Orchard Rd, #06-25/26 Paragon Shopping Centre, Singapore 238859",
+         "opening-hours": {
+            "monday": "0900 to 2230",
+            "tuesday": "0900 to 2230",
+            "wednesday": "0900 to 2230",
+            "thursday": "0900 to 2230",
+            "friday": "0900 to 2230",
+            "saturday": "1300 to 2100",
+            "sunday": "0900 to 2100"
+         },
+         "contact": "+65 6610 5464",
+         "prices": {
+            "single-entry": "SGD 25",
+            "multi-pass-5": "SGD 120",
+            "multi-pass-10": "SGD 200",
+            "monthly-pass": "SGD 90"
+         },
+         "remarks": "SGD 90 initiation fee for Monthly Pass.",
+         "link": "https://www.boulderworld.com/",
+         "images": [
+            "https://assets-global.website-files.com/623c6a1bbc130c9bc9c1b4a8/64f80f280a8ce1f3a12d6ed8_Bouldering_Easy-min.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.83564603254085, 1.3042250933107284],
+            "parent-sector":"",
+            "mp-gym-id":"650100016",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Boys' Town Adventure Centre",
+         "address": "624 Upper Bukit Timah Rd, Singapore 678212",
+         "opening-hours": {
+            "monday": "Closed",
+            "tuesday": "Closed",
+            "wednesday": "1800 to 2200",
+            "thursday": "1800 to 2200",
+            "friday": "Closed",
+            "saturday": "1400 to 2200",
+            "sunday": "Closed"
+         },
+         "contact": "+65 6690 5420",
+         "prices": {
+            "single-entry": "SGD 16",
+            "multi-pass-5": "Nil",
+            "multi-pass-10": "Nil",
+            "monthly-pass": "Nil"
+         },
+         "remarks": "Last entry at 2100 on Wednesday, Thursday and Saturday",
+         "link": "https://www.boystown.org.sg/adventure-centre/",
+         "images": [
+            "https://lh3.googleusercontent.com/p/AF1QipMFsaBfbtOtS8V5K2RTF1HNzyNBOVOkfrCR3Hbv=s1360-w1360-h1020"
+         ],
+         "type": {
+            "lead": true,
+            "boulder": true,
+            "top-rope": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.7679612395189, 1.3698955717318235],
+            "parent-sector":"",
+            "mp-gym-id":"650100017",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Climb@T3",
+         "address": "Changi Airport Terminal 3, 65 Airport Blvd., B3-01/02 Public Area, 819663",
+         "opening-hours": {
+            "monday": "1430 to 2130",
+            "tuesday": "1430 to 2130",
+            "wednesday": "1430 to 2130",
+            "thursday": "1430 to 2130",
+            "friday": "1430 to 2130",
+            "saturday": "1200 to 2130",
+            "sunday": "1200 to 2130"
+         },
+         "contact": "+65 8040 9515",
+         "prices": {
+            "single-entry": "SGD 19",
+            "multi-pass-5": "SGD 85",
+            "multi-pass-10": "Nil",
+            "monthly-pass": "Nil"
+         },
+         "remarks": "",
+         "link": "https://www.climbt3.sg/",
+         "images": [
+            "https://media.timeout.com/images/105984745/image.jpg",
+            "https://media.timeout.com/images/105984746/750/422/image.jpg"
+         ],
+         "type": {
+            "boulder": true,
+            "auto-belay": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.98761462417467, 1.357163637691629],
+            "parent-sector":"",
+            "mp-gym-id":"650100018",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Climba Gym",
+         "address": "61 Robinson Rd, #05-03/04, Singapore 068893",
+         "opening-hours": {
+            "monday": "1100 to 2200",
+            "tuesday": "1100 to 2200",
+            "wednesday": "1100 to 2200",
+            "thursday": "1100 to 2200",
+            "friday": "1100 to 2200",
+            "saturday": "1000 to 1800",
+            "sunday": "Closed"
+         },
+         "contact": "+65 8040 6534",
+         "prices": {
+            "single-entry": "SGD 28",
+            "multi-pass-5": "Nil",
+            "multi-pass-10": "SGD 220",
+            "monthly-pass": "SGD 120"
+         },
+         "remarks": "SGD 80 initiation fee for Monthly Pass.",
+         "link": "https://climba.sg/",
+         "images": [
+            "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/djb8sgusvgalffuogkgi.jpg"
+         ],
+         "type": {
+            "boulder": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.84947968555174, 1.2794404219474051],
+            "parent-sector":"",
+            "mp-gym-id":"650100019",
+            "mp-sector-id":""
+         }
+      },
+      {
+         "name": "Climb Central Katong",
+         "address": "E Coast Rd, #04-01/02 112, Singapore 428802",
+         "opening-hours": {
+            "monday": "1100 to 2300",
+            "tuesday": "1100 to 2300",
+            "wednesday": "1100 to 2300",
+            "thursday": "1100 to 2300",
+            "friday": "1100 to 2300",
+            "saturday": "0900 to 2100",
+            "sunday": "0900 to 2100"
+         },
+         "contact": "+65 6990 0702",
+         "prices": {
+            "single-entry": "SGD 27.25",
+            "multi-pass-5": "SGD 114.45",
+            "multi-pass-10": "SGD 207.10",
+            "monthly-pass": "SGD 196.20"
+         },
+         "remarks": "Prices Updated with 9% GST from 1st Jan 2024.",
+         "link": "https://www.climbcentral.sg/",
+         "images": [
+            "https://cdn.shopify.com/s/files/1/1301/6863/files/CC_Katong_2_480x480.jpg?v=1656481858"
+         ],
+         "type": {
+            "lead": true,
+            "boulder": true,
+            "top-rope": true,
+            "auto-belay": true
+         },
+         "metadata":{
+            "left-right-seq":"",
+            "parent-lnglat":[103.90495011068293, 1.305508433151937],
+            "parent-sector":"",
+            "mp-gym-id":"650100020",
+            "mp-sector-id":""
+         }
+      }
+   ],
+      "climbing-routes": [
+         {
+            "name":"Boring and Meaningless",
+            "grade":{
+               "YDS":"5.9",
+               "French":"5b",
+               "Ewbanks":"16",
+               "British":"4c"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "lead":true
+            },
+            "route-setter":"Lawrence Lee & Tan Tien Chye",
+            "first-ascent":"Lawrence Lee & Tan Tien Chye, 1991",
+            "description":"Boring And Meaningless is named after one of the most popular climbs on the wall, somewhat of an ironic happening and a measured compliment. Even by local standards it is quite short, being only about 30 to 35 feet tall.",
+            "location":"From the entrance to the open area with all of the crags surrounding it, stay left and follow the steep, vegetated quarry wall to the first bare area. This is Boring and Meaningless.",
+            "protection":"4 bolts/clips (excluding anchor)",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.7723, 1.3614],
+               "parent-sector":"Boring and Meaningless",
+               "mp-route-id":"650200001",
+               "mp-sector-id":"650500001"
+            },
+            "images": [
+               "https://image.thecrag.com/480x320/4c/f5/4cf5bf05023379c3b810c38a06cd77f3f88d40ee",
+               "https://image.thecrag.com/960x1280/35/5a/355acc0f901d7d4ca0f813b5cbb578fbccdaf391"
+            ]
+         },
+         {
+            "name":"Third Kid",
+            "grade":{
+               "YDS":"5.10d",
+               "French":"6b+",
+               "Ewbanks":"21",
+               "British":"5c"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "lead":true
+            },
+            "route-setter":"Chiew Sien Chew & KF. Tham",
+            "first-ascent":"Jeffrey Neo, 2001",
+            "description":"Scramble start to a line that follows two parallel weaknesses in the rock. Work up to a natural break with two obvious (suspiciously perfect) handholds. Move right and mount the protrusion. Staying left, insecure moves bring you a large ledge. From here some powerful moves to reach the anchor.",
+            "location":"Stay left on the main trail passing 'Boring And Meaningless' by a few meters and look for the next distinct section of Rock. The left side of this is the chossy 'Rappelling Wall' and the right side is called 'Third Kid.' Two natural lines are on the left side of this (5.7, 5.8) and two bolted lines are on the right side (10d, 11a).",
+            "protection":"8 bolts/clips (excluding anchor)",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77252, 1.36190],
+               "parent-sector":"Third Kid",
+               "mp-route-id":"650200002",
+               "mp-sector-id":"650500002"
+            },
+            "images": [
+               "https://image.thecrag.com/240x320/f9/cb/f9cb44726bc5bd72aa1a8c3d98b775287cfd10d8"
+            ]
+         },
+         {
+            "name":"Direct",
+            "grade":{
+               "YDS":"5.7",
+               "French":"5a",
+               "Ewbanks":"16",
+               "British":"4c"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "lead":true
+            },
+            "route-setter":"",
+            "first-ascent":"Lawrence Lee & Anthony Seah, 1987",
+            "description":"Can be climbed with slight variations. As noted in the 'Climb Singapore' guidebook, the bolts were originally placed as a 'secondary protection' to help beginners learn to how to place traditional protection. This explains why the 2 separate lines of bolts are everywhere but where you need them.",
+            "location":"Walk past 'Boring and Meaningless', the 'Third Kid,' and then arrive at the 'Direct Section' and 'Razor's Edge' as the wall/side of the depression tilts to the SouthEast, just before a corner.",
+            "protection":"5 bolts/clips (excluding anchor)",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77285, 1.36176],
+               "parent-sector":"Direct",
+               "mp-route-id":"650200003",
+               "mp-sector-id":"650500003"
+            },
+            "images": [
+               "https://image.thecrag.com/213x320/26/04/2604034098af723f13987aa84896b43a186b540c"
+            ]
+         },
+         {
+            "name":"Razor's Edge",
+            "grade":{
+               "YDS":"5.10a",
+               "French":"6a",
+               "Ewbanks":"18",
+               "British":"5a"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "traditional":true
+            },
+            "route-setter":"",
+            "first-ascent":"Peter Terbush, 1994",
+            "description":"Starts right on the slab and traverses up and left to the crack, then up and over the obvious flake to the anchor. Since rockfall to the right opened the canopy the lower half of this climb is now overrun with vines.",
+            "location":"Walk past 'Boring and Meaningless', the 'Third Kid,' and then arrive at the 'Direct Section' and 'Razor's Edge' as the wall/side of the depression tilts to the SouthEast, just before a corner.",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77305, 1.36179],
+               "parent-sector":"Razor's Edge",
+               "mp-route-id":"650200004",
+               "mp-sector-id":"650500004"
+            },
+            "images": [
+               "https://image.thecrag.com/240x320/6a/93/6a934b86ebdc5665d27a2bab3545a0f9f397a4b3"
+            ]
+         },
+         {
+            "name":"Chicken Shit",
+            "grade":{
+               "YDS":"5.10a",
+               "French":"6a",
+               "Ewbanks":"18",
+               "British":"5a"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "traditional":true
+            },
+            "route-setter":"",
+            "first-ascent":"",
+            "description":"50ft to the right of the Direct buttress/Razors Edge are three short climbs (25ft tops) that are on OK rock with an easy approach. The base is often wet and muddy with more mosquitoes than some of the more open areas.",
+            "location":"Approach through any of the openings just right of the Direct.",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77345, 1.36198],
+               "parent-sector":"Chicken Shit",
+               "mp-route-id":"650200005",
+               "mp-sector-id":"650500005"
+            },
+            "images": [
+               "https://image.thecrag.com/213x320/64/68/64682bef2bf79e7bf61afd065fe32cbfb11eaa56"
+            ]
+         },
+         {
+            "name":"No Pokemon Up Here",
+            "grade":{
+               "YDS":"5.9",
+               "French":"5b",
+               "Ewbanks":"16",
+               "British":"4c"
+            },
+            "safety":"Warning - this route has lots of loose rock and failure to bear right will lead to dangerous rock.",
+            "type":{
+               "traditional":true
+            },
+            "route-setter":"Kahlil Lawless",
+            "first-ascent":"Kahlil Lawless",
+            "description":"From the far left of the step go up a set of twin cracks then bear right onto cleaner rock before going straight up to the anchors.",
+            "location":"To approach, stay left in the main area of the dairy farm, keeping on the left side path after Boring and Meaningless and continuing beyond 3rd Kid and the Direct Section. After rounding a second corner to the left, you will pop out below a Large chunk of rock.",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77375, 1.36222],
+               "parent-sector":"ABCD",
+               "mp-route-id":"650200006",
+               "mp-sector-id":"650500006"
+            },
+            "images": [
+               "https://image.thecrag.com/427x320/d2/ff/d2ff8a77d4ae1510c680ade060698d3753187ec0"
+            ]
+         },
+         {
+            "name":"Homage / Homage to Gullich Sport",
+            "grade":{
+               "YDS":"5.10d",
+               "French":"6b+",
+               "Ewbanks":"21",
+               "British":"5c"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "lead":true
+            },
+            "route-setter":"Peter Ong & Lim Song Huat",
+            "first-ascent":"Peter Ong & Lim Song Huat, 1998",
+            "description":"In remembrance of Wolfgang Güllich †.",
+            "location":"From the American Pie section continue further back to the end, passing the big dead tree and scramble down some mossy rock to the cave-like base of the next wall, which is the Homage wall.",
+            "protection":"10 bolts/clips (excluding anchor)",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77428, 1.36246],
+               "parent-sector":"Homage",
+               "mp-route-id":"650200007",
+               "mp-sector-id":"650500007"
+            },
+            "images": [
+               "https://image.thecrag.com/569x320/c0/09/c009aa78a3227d03f1e4b89a8dc7b0fed7cf739f"
+            ]
+         },
+         {
+            "name":"American Pie",
+            "grade":{
+               "YDS":"5.10a",
+               "French":"5c",
+               "Ewbanks":"17",
+               "British":"5a"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "lead":true
+            },
+            "route-setter":"Peter Terbush & Scottie Nelson",
+            "first-ascent":"Peter Terbush & Scottie Nelson",
+            "description":"Keep to the right side of the hangars and use the corner. The variation which just goes directly up the face is 6b+.",
+            "location":"Continue past The ABCD area and drop into a more bare dirt area with some large slopes at the base of a fairly large corner. On the right side there is a distinctive set of cracks and flakes splitting the south-facing wall. This is Supercrack.",
+            "protection":"9 bolts/clips (excluding anchor)",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77420, 1.36259],
+               "parent-sector":"American Pie",
+               "mp-route-id":"650200008",
+               "mp-sector-id":"650500008"
+            },
+            "images": [
+               "https://image.thecrag.com/569x320/67/3d/673d378ab6d12b2c21e7c9893e794adebf869a33",
+               "https://image.thecrag.com/213x320/b6/b9/b6b95ebd28cd3de6e173c280afa9da45bdb6708f"
+            ]
+         },
+         {
+            "name":"River Crossing",
+            "grade":{
+               "YDS":"5.11c",
+               "French":"6c+",
+               "Ewbanks":"22",
+               "British":"5c"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "lead":true
+            },
+            "route-setter":"",
+            "first-ascent":"",
+            "description":"There are three bolted climbs here, mostly quite difficult.",
+            "location":"Duck left off the MTB track just south of homage.",
+            "protection":"4 bolts/clips (excluding anchor)",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77474, 1.36275],
+               "parent-sector":"Lost World",
+               "mp-route-id":"650200009",
+               "mp-sector-id":"650500009"
+            },
+            "images": [
+               "https://image.thecrag.com/240x320/fc/99/fc997a1b69ecb83c0321b6b46639601138d4f29a"
+            ]
+         },
+         {
+            "name":"Baby Star",
+            "grade":{
+               "YDS":"5.12a",
+               "French":"7a+",
+               "Ewbanks":"24",
+               "British":"6a"
+            },
+            "safety":"Be aware that in the gully above 'Short and Sweet' and 'Slash isn't real' there is a lot of loose rock held together with not much but sand and mud. Real chance of pulling down big chunks of rock here, so be very careful.",
+            "type":{
+               "lead":true
+            },
+            "route-setter":"",
+            "first-ascent":"",
+            "description":"",
+            "location":"",
+            "protection":"9 bolts/clips (excluding anchor)",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77382, 1.36123],
+               "parent-sector":"Rock Star",
+               "mp-route-id":"650200010",
+               "mp-sector-id":"650500010"
+            },
+            "images": [
+               "https://image.thecrag.com/320x213/filters:rotate(270)/db/3d/db3ddc6a799fc930b10b673966b6a520ae98eee9"
+            ]
+         },
+         {
+            "name":"Pigs In Space",
+            "grade":{
+               "YDS":"5.10c",
+               "French":"6b",
+               "Ewbanks":"20",
+               "British":"5b"
+            },
+            "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
+            "type":{
+               "top-rope":true
+            },
+            "route-setter":"",
+            "first-ascent":"",
+            "description":"Alternate route for second pitch of first blood. From the stance goes right past the tree and runs straight up from there to the same anchor as first blood. Trad protection is scant, so best on top rope after leading first blood.",
+            "location":"Same approach as the other areas for the Dairy Farm. When you reach the clearing you will see the Nose on the right side of the quarry near some tall trees.",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77320, 1.36099],
+               "parent-sector":"The Nose",
+               "mp-route-id":"650200011",
+               "mp-sector-id":"650500011"
+            },
+            "images": [
+               "https://image.thecrag.com/195x320/bc/f8/bcf87c12dcfc49437fe20899a373ec634e3389eb"
+            ]
+         },
+         {
+            "name":"Dragon Shit",
+            "grade":{
+               "YDS":"5.9",
+               "French":"5b",
+               "Ewbanks":"16",
+               "British":"4c"
+            },
+            "safety":"This route has a lot of loose rock! Lead climber must be careful not to pull loose rocks down onto the belayer. When placing gear in the crack be aware that in places the rock had softened due to water ingress.",
+            "type":{
+               "traditional":true
+            },
+            "route-setter":"",
+            "first-ascent":"",
+            "description":"Has a chain anchor at the top.",
+            "location":"Access is through several openings in the dense foliage guarding the base. Many times you'll find that walking along the cliff base is difficult and it's best to return to the open Meadow and find another approach when accessing a new climb.",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.77308, 1.36081],
+               "parent-sector":"The Nose Right",
+               "mp-route-id":"650200012",
+               "mp-sector-id":"650500012"
+            },
+            "images": [
+               "https://image.thecrag.com/240x320/9f/6d/9f6db45513d20be6448856f3d468d697ffc65b08",
+               "https://image.thecrag.com/427x320/7c/b9/7cb9c9f67e25ba0a9a68b8f59c09cd36f7b26bf7"
+            ]
+         },
+         {
+            "name":"Atlantis",
+            "grade":{
+               "BLDV":"V5",
+               "FB":"6C"
+            },
+            "safety":"",
+            "type":{
+               "boulder":true
+            },
+            "route-setter":"Nathaniel Soon",
+            "first-ascent":"Peter Zhang, 2021",
+            "description":"Fun compression with some big but easy moves to top.",
+            "location":"",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.97672, 1.39239],
+               "parent-sector":"Batu Puteh",
+               "mp-route-id":"650200013",
+               "mp-sector-id":"650500013"
+            },
+            "images": [
+               "https://image.thecrag.com/320x286/filters:rotate(90)/5d/74/5d74315592ed16b5e767ff3312a1bf09f3ab5177"
+            ]
+         },
+         {
+            "name":"Heritage Crack",
+            "grade":{
+               "BLDV":"V4",
+               "FB":"6A+"
+            },
+            "safety":"",
+            "type":{
+               "boulder":true
+            },
+            "route-setter":"Nathaniel Soon",
+            "first-ascent":"Nathaniel Soon, 2021",
+            "description":"Climb the obvious jug rail.",
+            "location":"",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.97333, 1.40344],
+               "parent-sector":"Pulau Ubin",
+               "mp-route-id":"650200014",
+               "mp-sector-id":"650500014"
+            },
+            "images": [
+               "https://image.thecrag.com/240x320/85/c7/85c7642ecbdf9dd02bb0254b30227ff2bd4c17e9"
+            ]
+         },
+         {
+            "name":"Bukit Ciambi",
+            "grade":{
+               "BLDV":"V3",
+               "FB":"5C+"
+            },
+            "safety":"",
+            "type":{
+               "boulder":true
+            },
+            "route-setter":"Davide Rota",
+            "first-ascent":"Davide Rota, 2021",
+            "description":"Keep your centre of gravity low for the proper challenge. It can be done from left to right, and vice-versa.",
+            "location":"",
+            "protection":"",
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[103.78327, 1.32748],
+               "parent-sector":"Bukit Ciambi",
+               "mp-route-id":"650200015",
+               "mp-sector-id":"650500015"
+            },
+            "images": [
+               "https://image.thecrag.com/1280x960/fc/ce/fcce14535bc97b71b7c213ef6563271b1e8b8878"
+            ]
+         }             
+      ]
+   },
+   "US": {
+      "climbing-gyms": [
+         {
+            "name": "Aesthetic Climbing Gym",
+            "address": "26794 Vista Terrace, Lake Forest, CA 92630, United States",
+            "opening-hours": {
+               "monday": "0900 to 2200",
+               "tuesday": "0900 to 2200",
+               "wednesday": "0900 to 2200",
+               "thursday": "0900 to 2200",
+               "friday": "0900 to 2200",
+               "saturday": "1000 to 2000",
+               "sunday": "1000 to 1800"
+            },
+            "contact": "+1 949-716-7116",
+            "prices": {
+               "single-entry": "USD 30",
+               "multi-pass-5": "Nil",
+               "multi-pass-10": "USD 250",
+               "monthly-pass": "USD 89"
+            },
+            "remarks": "For exact breakdown of prices, refer to gym website. Note that there is a USD 50 initiation fee applied at the start of each membership",
+            "link": "https://aestheticclimbinggym.com/",
+            "images": [
+               "https://aestheticclimbinggym.com/wp-content/uploads/2020/11/ANA7452.jpg",
+               "https://aestheticclimbinggym.com/wp-content/uploads/2020/12/fullsizeoutput_1ba8-768x512.jpg"
+            ],
+            "type": {
+               "lead": true,
+               "boulder": true,
+               "top-rope": true
+            },
+            "metadata":{
+               "left-right-seq":"",
+               "parent-lnglat":[-117.66329476276651, 33.66722961457207],
+               "parent-sector":"",
+               "mp-gym-id":"100100001",
+               "mp-sector-id":""
+            }
+         }
+      ],
+      "climbing-routes": [
+         {
+            "name":"Epinephrine",
+            "grade":{
+               "YDS":"5.9",
+               "French":"5c",
+               "Ewbanks":"17",
+               "UIAA":"VI",
+               "ZA":"17",
+               "British":"HVS 5a"
+            },
+            "safety":"",
+            "type":{
+               "traditional":true
+            },
+            "first-ascent":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
+            "description": "Epinephrine is the Red Rocks classic. The route is long, varied, and has consistently good rock. The first half of the climb follows a spectacular chimney system. The second half ascends steep faces, cracks, and dihedrals.",
+            "location": "From the parking area near the mouth of Black Velvet Canyon, hike up the old dirt road for a couple hundred yards, the take the trail that heads to the right. Follow this into the canyon. After a little less than a half-mile, a trail will drop down into the wash. Take it. Follow the wash for another half-mile or so. When your path is blocked by a waterfall (usually dry), head up and left on Class 3 terrain. Or, you can do a little 5.easy climbing up the waterfall. The start of the climb is about 50m up the canyon from here.",
+            "protection": "You don't need anything bigger than a #4 camalot in the chimney pitches. A 3, 3.5, and 4 camalot and perhaps a #11 hex, combined with the existing fixed gear, should get you up the chimney without much mental stress.",
+            "metadata":{
+               "left-right-seq":"23",
+               "parent-lnglat":[
+                  -115.46652,
+                  36.03518
+               ],
+               "parent-sector":"Black Velvet Wall",
+               "mp-route-id":"105732422",
+               "mp-sector-id":"105732162"
+            }
+         }
+      ]
+   }
+}
