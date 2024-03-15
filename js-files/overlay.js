@@ -116,7 +116,9 @@ function displayClickedLocation(map, locationId){
   map.closePopup();
   for (let eachMarker in markerAll) {
     if (locationId == markerAll[eachMarker].options.title) {
-      map.flyTo(markerAll[eachMarker].getLatLng(), 17);
+      markerCoordinates = markerAll[eachMarker].getLatLng();
+      console.log(markerCoordinates);
+      map.flyTo([markerCoordinates.lat+0.002,markerCoordinates.lng], 17);
       map.on("zoomend", ()=>{
         markerAll[eachMarker].openPopup();
       })

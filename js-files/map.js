@@ -89,43 +89,44 @@ function createMarkers(data, locationType) {
         });
         if (locationType == "climbing-gyms") {
           marker.bindPopup(
-            `
-              <div class="eachLocationPopup eachGymPopup">
-              <img src="https://scontent-xsp2-1.xx.fbcdn.net/v/t39.30808-6/299191272_505562448238397_7196596415162152065_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HtptJImP9IAAX-2Nl92&_nc_ht=scontent-xsp2-1.xx&oh=00_AfCUuCRVZtbNBW0cSftxHLf6Aph11CSb4JB2xYSqhrIdsg&oe=65F992E8">
-              <div>
-                <h1>boulder+ Aperia</h1>
-                <h2>Climbing Gym</h2>
-              </div>
-              <div>
-                <div>Overview</div>
-                <!-- <div>About</div> -->
-              </div>
-              <div>
-                <a><i class='bx bxs-direction-right'></i></a><p>Directions</p>
-                <a><i class='bx bx-reset'></i></a><p>Nearby</p>
-                <a><i class='bx bxs-sun'></i></a><p>Weather</p>
-              </div>
-              <div>
-                <div>
-                  <i class='bx bxs-map' ></i><span>12 Kallang Ave, #03-17 The Aperia Mall, Singapore 339511</span>
+            `<div class="eachPopup eachGymPopup">
+              <img src="${eachLocation.images[0]}"/>
+              <div class="eachPopupContent">
+                <div class="eachPopupContentTitle">
+                  <h1>${eachLocation.name}</h1>
+                  <h2>Climbing Gym</h2>
                 </div>
-                <div>
-                  <i class='bx bxs-time' ></i>
+                <div class="eachPopupContentSection">
+                  <div>Overview</div>
+                  <!-- <div>About</div> -->
+                </div>
+                <div class="eachPopupContentButton">
+                  <a><i class='bx bxs-direction-right'></i></a><p>Directions</p>
+                  <a><i class='bx bx-reset'></i></a><p>Nearby</p>
+                  <a><i class='bx bxs-sun'></i></a><p>Weather</p>
+                </div>
+                <div class="eachPopupContentInfo">
                   <div>
-                    <p>Monday: 0900 to 2230</p>
-                    <p>Tuesday: 0900 to 2230</p>
-                    <p>Wednesday: 0900 to 2230</p>
-                    <p>Thursday: 0900 to 2230</p>
-                    <p>Friday: 0900 to 2230</p>
-                    <p>Saturday: 0900 to 2230</p>
-                    <p>Sunday: 0900 to 2230</p>
+                    <i class='bx bxs-map' ></i><span>${eachLocation.address}</span>
                   </div>
-                </div>
-                <div>
-                  <i class='bx bxs-phone' ></i><span>+65 6282 7530</span>
-                </div>
-                <div>
-                  <i class='bx bx-globe' ></i><a href="http://www.boulderplusclimbing.com/">boulderplusclimbing.com</a>
+                  <div>
+                    <i class='bx bxs-time' ></i>
+                    <div>
+                      <p>Monday: ${eachLocation["opening-hours"].monday}</p>
+                      <p>Tuesday: ${eachLocation["opening-hours"].tuesday}</p>
+                      <p>Wednesday: ${eachLocation["opening-hours"].wednesday}</p>
+                      <p>Thursday: ${eachLocation["opening-hours"].thursday}</p>
+                      <p>Friday: ${eachLocation["opening-hours"].friday}</p>
+                      <p>Saturday: ${eachLocation["opening-hours"].saturday}</p>
+                      <p>Sunday: ${eachLocation["opening-hours"].sunday}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <i class='bx bxs-phone' ></i><span>${eachLocation.contact}</span>
+                  </div>
+                  <div>
+                    <i class='bx bx-globe' ></i><a href="${eachLocation.link}" target="_blank">Visit gym's website</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,11 +134,11 @@ function createMarkers(data, locationType) {
           );
         } else {
           marker.bindPopup(
-            `<div class="eachLocationPopup eachRoutePopup">
-              <img src="https://image.thecrag.com/480x320/4c/f5/4cf5bf05023379c3b810c38a06cd77f3f88d40ee">
+            `<div class="eachPopup eachRoutePopup">
+              <img src="${eachLocation.images[0]}"/>
               <div>
-                <h1>Boring and Meaningless</h1>
-                <span>lead</span><span>5.9</span>
+                <h1>${eachLocation.name}</h1>
+                <span>lead</span><span>${eachLocation.grade.YDS || ""}</span>
                 <h2>Climbing Route</h2>
               </div>
               <div>
@@ -151,13 +152,13 @@ function createMarkers(data, locationType) {
               </div>
               <div>
                 <div>
-                  <i class='bx bxs-map'></i><span>From the entrance to the open area with all of the crags surrounding it, stay left and follow the steep, vegetated quarry wall to the first bare area. This is Boring and Meaningless.</span>
+                  <i class='bx bxs-map'></i><span>${eachLocation.location || "<i>No location information</i>"}</span>
                 </div>
                 <div>
-                  <i class='bx bxs-shopping-bag'></i><span>4 bolts/clips (excluding anchor)</span>
+                  <i class='bx bxs-shopping-bag'></i><span>${eachLocation.protection || "<i>No protection information</i>"}</span>
                 </div>
                 <div>
-                  <i class='bx bx-globe' ></i><a href="https://www.thecrag.com/en/climbing/singapore/boring-but-meaningless/route/12482125">thecrag/Boring-but-meaningless</a>
+                  <i class='bx bx-globe' ></i><a href="${eachLocation.link}" target="_blank">Visit route's website</a>
                 </div>
               </div>
             </div>`

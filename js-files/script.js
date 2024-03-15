@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async function(){
   createLayerControl(locationData, map, mapItems.defaultMapTile)
   searchLocation(locationData);
   document.querySelector('#currLocationBtn').addEventListener('click', ()=>{
-    map.flyTo(USER_COORDINATES)
+    map.flyTo(USER_COORDINATES, 13);
   })
 
   // Display Location Information when a Result is Clicked

@@ -1221,7 +1221,10 @@
                "parent-sector":"Black Velvet Wall",
                "mp-location-id":"105732422",
                "mp-sector-id":"105732162"
-            }
+            },
+            "images": [
+               "https://gripped.com/wp-content/uploads/2020/10/Black-Velvet-Wall-1000x675.jpg"
+            ]
          }             
       ]
    }
