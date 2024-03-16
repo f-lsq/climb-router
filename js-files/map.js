@@ -101,9 +101,9 @@ function createMarkers(data, locationType) {
                   <!-- <div>About</div> -->
                 </div>
                 <div class="eachPopupContentButton">
-                  <a><i class='bx bxs-direction-right'></i></a><p>Directions</p>
-                  <a><i class='bx bx-reset'></i></a><p>Nearby</p>
-                  <a><i class='bx bxs-sun'></i></a><p>Weather</p>
+                  <a><div><i class='bx bxs-direction-right'></i></div><p>Directions</p></a>
+                  <a><div><i class='bx bx-reset'></i></div><p>Nearby</p></a>
+                  <a><div><i class='bx bxs-sun'></i></div><p>Weather</p></a>
                 </div>
                 <div class="eachPopupContentInfo">
                   <div>
@@ -182,7 +182,7 @@ function createUserMarker (map, coordinates) {
     shadowAnchor: [19, 38],  // the same for the shadow
     popupAnchor:  [0, -40] // point from which the popup should open relative to the iconAnchor
 });
-  const marker = L.marker(coordinates, {icon: locationTypeIcon}).addTo(map).bindPopup("You are here");
+  const marker = L.marker(coordinates, {icon: locationTypeIcon}).addTo(map);
 }
 
 async function getSearchLocation(locationName){

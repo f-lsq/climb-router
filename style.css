@@ -377,9 +377,69 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding: 6%;
 }
 
-.eachPopupContentTitle {
+
+
+.eachPopupContentTitle h1 {
  color: black;
+ text-shadow: none;
+ font-size: 1rem;
+
 }
+
+.eachPopupContentTitle h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.eachPopupContentSection,
+.eachPopupContentButton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.eachPopupContentButton {
+  border-top: 1px solid rgb(182, 182, 182);
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 20px 5px;
+}
+
+.eachPopupContentButton a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.eachPopupContentButton a div {
+  height: 40px;
+  width: 40px;
+  border-radius: 1000px;
+  border: 1px #a5a5a5 solid;
+  background: #f58732;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s;
+  
+}
+
+.eachPopupContentButton a p {
+  margin: 5px 0 0 0;
+  color: #f58732;
+  transition: color 0.2s;
+}
+
+.eachPopupContentButton a:hover div {
+  background: #f36233;
+}
+
+.eachPopupContentButton a:hover p {
+  color: #f36233;
+}
+
 
 /* FOOTER STYLES */
 footer {
