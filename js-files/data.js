@@ -1,5 +1,5 @@
 const BASE_API_URL = "https://api.foursquare.com/v3";
-const FOURSQUARE_API_KEY = 'fsq3cXgOhjFwVX0r0E7bNUOGt/eEKbKpC3i4URJqANeIoDQ=';
+const FOURSQUARE_API_KEY = 'fsq32re8uvt4gru84t8jz7gpYJ/PikEcEJmZnlYYKH75Zuc=';
 
 /**
  * Get route and gym information from 'location.json'
@@ -19,23 +19,22 @@ async function getCountryData() {
   return response.data;
 }
 
-async function getFourSquareData(locationLat, locationLng, nearbySearchTerms) {
-  const response = await axios.get(`${BASE_API_URL}/places/search`, {
+async function getFourSquareData(locationLat, locationLng, searchTerms) {
+  const response = await axios.get('https://api.foursquare.com/v3/places/search?query=toilet&ll=1.3521%2C103.8198&radius=5000', {
     params: {
-      query: encodeURI(searchTerms), //encodeURI function to convert special characters to their encoded equivalent
-      ll: lat + "," + lng,
-      // categories: '13033', // enable use of categories
-      sort: 'DISTANCE',
-      radius: 2000,
+      query: encodeURI(searchTerms),
+      ll: locationLat + "," + locationLng,
+      sort: "DISTANCE",
+      radius: 5000,
       limit: 50
-    },
+    }, 
     headers: {
-      Accept: 'application/json',
-      Authorization: FOURSQUARE_API_KEY
-    } 
-  }
-  )
-  console.log(response.data);
+      accept: 'application/json',
+      Authorization: 'fsq32re8uvt4gru84t8jz7gpYJ/PikEcEJmZnlYYKH75Zuc='
+    }
+  })
+
+  return response.data;
 }
 
 async function getFourSquarePhotos(fsqid){

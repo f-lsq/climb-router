@@ -134,7 +134,7 @@ function changeSidebar(eachSideBarDivId) {
   document.querySelector(eachSideBarDivId).classList.add("active");
 }
 
-function displayNearbySpots(locationName) {
+async function displayNearbySpots(locationLat, locationLng, locationName) {
   document.querySelector("#nearbyContainer").innerHTML = `
   <h1>Find Spots near ${locationName}<h1>
   <div id="nearbySearchButton">
@@ -149,6 +149,9 @@ function displayNearbySpots(locationName) {
   <div id="nearbySearchResults">
   </div>
   `
+
+  const data = await getFourSquareData(locationLat, locationLng, "toilet");
+  console.log(data);
 }
 
 function displayNearbyMarker() {
