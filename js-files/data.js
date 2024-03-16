@@ -1,5 +1,5 @@
 const BASE_API_URL = "https://api.foursquare.com/v3";
-const API_KEY = 'fsq3cXgOhjFwVX0r0E7bNUOGt/eEKbKpC3i4URJqANeIoDQ=';
+const FOURSQUARE_API_KEY = 'fsq3cXgOhjFwVX0r0E7bNUOGt/eEKbKpC3i4URJqANeIoDQ=';
 
 /**
  * Get route and gym information from 'location.json'
@@ -19,7 +19,7 @@ async function getCountryData() {
   return response.data;
 }
 
-async function search(lat, lng, searchTerms) {
+async function getFourSquareData(locationLat, locationLng, nearbySearchTerms) {
   const response = await axios.get(`${BASE_API_URL}/places/search`, {
     params: {
       query: encodeURI(searchTerms), //encodeURI function to convert special characters to their encoded equivalent
@@ -31,14 +31,14 @@ async function search(lat, lng, searchTerms) {
     },
     headers: {
       Accept: 'application/json',
-      Authorization: API_KEY
+      Authorization: FOURSQUARE_API_KEY
     } 
   }
   )
-  return response.data;
+  console.log(response.data);
 }
 
-async function getPhotoFromFourSquare(fsqid){
+async function getFourSquarePhotos(fsqid){
   const response = await axios.get(`${BASE_API_URL}/places/${fsqid}/photos`, {
     headers: {
       Accept: 'application/json',
@@ -47,6 +47,17 @@ async function getPhotoFromFourSquare(fsqid){
   });
   return response.data;
 }
+
+async function getCurrentWeatherData(coordinates) {
+  const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${coordinates[0]}&lon=${coordinates[1]}&appid=9b5dd1595063d41d9f0105cd8a5acbab&units=metric`)
+  return response.data;
+}
+
+async function getForecastWeatherData(coordinates) {
+  const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates[0]}&lon=${coordinates[1]}&appid=9b5dd1595063d41d9f0105cd8a5acbab&units=metric`)
+  return response.data;
+}
+
 
 // Calculate distance between two coordinates
 function relativeHaversineDistance(aLat, aLng, bLat, bLng) {

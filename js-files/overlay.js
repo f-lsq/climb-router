@@ -125,3 +125,93 @@ function displayClickedLocation(map, locationId){
     }
   }
 }
+
+function changeSidebar(eachSideBarDivId) {
+  const sideBarDiv = document.querySelectorAll(".mapSideBar");
+  for (let eachSideBarDiv of sideBarDiv) {
+    eachSideBarDiv.classList.remove("active");
+  }
+  document.querySelector(eachSideBarDivId).classList.add("active");
+}
+
+function displayNearbySpots(locationName) {
+  document.querySelector("#nearbyContainer").innerHTML = `
+  <h1>Find Spots near ${locationName}<h1>
+  <div id="nearbySearchButton">
+    <a><i class='bx bx-male-female'></i></a><p>Toilet</p>
+    <a><i class='bx bx-restaurant'></i><p>Restaurant</p>
+    <a><i class='bx bx-hotel'></i><p>Accomodation</p>
+  <div>
+  <div id="nearbySearchContainer">
+    <input type="text"/>
+    <button><i class='bx bx-search-alt-2' ></i></button>
+  </div>
+  <div id="nearbySearchResults">
+  </div>
+  `
+}
+
+function displayNearbyMarker() {
+
+}
+
+function displayLocationWeather(locationName, currentWeatherData, forecastWeatherData) {
+  let currentTime = new Date().toLocaleTimeString([], {
+    "hour": "2-digit", 
+    "minute": "2-digit"
+  });
+  let currentWeatherDescription = currentWeatherData.weather[0].description;
+  document.querySelector("#weatherContainer").innerHTML = `
+  <div id="currentWeatherContainer">
+    <div>
+      <span>Current Weather @ ${locationName},${currentWeatherData.name}</span>
+      <span>${currentTime}</span>
+    </div>
+    <div>
+      <div>
+        <img src="https://openweathermap.org/img/wn/${currentWeatherData.weather[0].icon}@2x.png"/>
+        <div>
+          <p>${currentWeatherData.main.temp}&deg;C</p>
+          <p>Feels like: ${currentWeatherData.main.feels_like}&degC</p>
+        </div>
+      </div>
+      <p>${currentWeatherDescription.charAt(0).toUpperCase() + currentWeatherDescription.slice(1)}</p>
+    </div>
+  </div>
+  <div id="forecastWeatherContainer">
+    <p>5-Day Weather Forcast<p>
+  </div>
+  `
+  for (let i = 0; i < forecastWeatherData.list.length; i += 8) {
+    const dateDate = new Date(forecastWeatherData.list[i].dt_txt);
+    const dateString = dateDate.toString();
+    let dayOfWeek = "TODAY"
+    if (i != 0) {
+      dayOfWeek = dateString.slice(0, 4).toUpperCase();
+    } 
+    let dateOfWeek = dateString.slice(4, 10);
+
+    let forecastWeatherDescription = forecastWeatherData.list[i].weather[0].description;
+    
+    
+    dailyForecastDiv = document.createElement("div");
+    dailyForecastDiv.innerHTML = `
+    <div class="dailyForecastLeft">
+      <p>${dayOfWeek}</p>
+      <p>${dateOfWeek}<p>
+    </div>
+    <div class="dailyForecastLeftCenter">
+      <img src="https://openweathermap.org/img/wn/${forecastWeatherData.list[i].weather[0].icon}@2x.png"/>
+      <span>${forecastWeatherData.list[i].main.temp_max}&deg;</span>
+      <span>${forecastWeatherData.list[i].main.temp_min}&deg;</span>
+    </div>
+    <div class="dailyForecastRightCenter">
+      <p>${forecastWeatherDescription.charAt(0).toUpperCase() + forecastWeatherDescription.slice(1)}</p>
+    </div>
+    <div class="dailyForecastRight">
+      <i class='bx bx-droplet'></i><span>${forecastWeatherData.list[i].main.humidity}&percnt;</span>
+    </div>
+    `
+    document.querySelector("#forecastWeatherContainer").appendChild(dailyForecastDiv);
+  }
+}

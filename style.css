@@ -260,16 +260,21 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: flex;
 }
 
-#resultsContainer,
+.mapSideBar,
 #mapContainer {
   margin-top: calc(30px + 2*0.5rem);
   height: calc(100vh - 30px - 2*0.5rem);
 }
 
 /* Map Page Result Sidebar Styling*/
-#resultsContainer {
+.mapSideBar {
   width: 35vw;
   background-color: rgb(236, 212, 161);
+  display: none;
+}
+
+.mapSideBar.active {
+  display: block;
 }
 
 #resultsContainer form {
@@ -408,6 +413,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
   
 }
 

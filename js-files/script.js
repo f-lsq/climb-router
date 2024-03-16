@@ -34,8 +34,45 @@ document.addEventListener('DOMContentLoaded', async function(){
     })
   }
 
-  
+  for (let eachMarker of markerAll) {
+    eachMarker.addEventListener("click", async function(){
+      markerLatLng = eachMarker.getLatLng();
+      // const currentWeatherData = await getCurrentWeatherData([markerLatLng.lat, markerLatLng.lng]);
+      // const forecastWeatherData = await getForecastWeatherData([markerLatLng.lat, markerLatLng.lng]);
+      let locationName = ""
+      for (let i = 0; i < locationData.length; i++) {
+        const gymLocation = locationData[i]["climbing-gyms"];
+        const routeLocation = locationData[i]["climbing-routes"];
+        if (i==0){
+          for (let eachGym of gymLocation) {
+            if (eachGym.metadata["mp-location-id"] == eachMarker.options.title) {
+              locationName = eachGym.name;
+            }
+          }
+        } else {
+          for (let eachRoute of routeLocation) {
+            if (eachRoute.metadata["mp-location-id"] == eachMarker.options.title) {
+              locationName = eachRoute.name;
+            }
+          }
+        }
+
+      }
+      displayNearbySpots(locationName, markerLatLng.lat, markerLatLng.lng);
+      // displayLocationWeather(locationName, currentWeatherData, forecastWeatherData)
+    })
+  }
+
+
+
+  // L.Routing.control({
+  //   waypoints: [
+  //     L.latLng(1.3548, 103.7763),
+  //     L.latLng(1.4145840167232775, 103.8311410511582)
+  //   ]
+  // }).addTo(map);
 
   
-
+  
+  
 })  

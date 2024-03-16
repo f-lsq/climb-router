@@ -101,9 +101,9 @@ function createMarkers(data, locationType) {
                   <!-- <div>About</div> -->
                 </div>
                 <div class="eachPopupContentButton">
-                  <a><div><i class='bx bxs-direction-right'></i></div><p>Directions</p></a>
-                  <a><div><i class='bx bx-reset'></i></div><p>Nearby</p></a>
-                  <a><div><i class='bx bxs-sun'></i></div><p>Weather</p></a>
+                  <a class="eachPopupDirection" onclick="changeSidebar('#directionContainer')"><div><i class='bx bxs-direction-right'></i></div><p>Directions</p></a>
+                  <a class="eachPopupNearby" onclick="changeSidebar('#nearbyContainer')"><div><i class='bx bx-reset'></i></div><p>Nearby</p></a>
+                  <a class="eachPopupWeather" onclick="changeSidebar('#weatherContainer')"><div><i class='bx bxs-sun'></i></div><p>Weather</p></a>
                 </div>
                 <div class="eachPopupContentInfo">
                   <div>
@@ -198,3 +198,4 @@ async function getSearchLocation(locationName){
 async function goToSearchLocation(locationName){
   map.flyTo(await getSearchLocation(locationName));
 }
+
