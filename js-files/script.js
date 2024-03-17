@@ -1,3 +1,5 @@
+// MAIN SCRIPT THAT CALLS FUNCTIONS FROM OTHER SCRIPTS
+
 let USER_COORDINATES = [1.3548, 103.7763];
 getLocation();
 
@@ -6,6 +8,9 @@ let markerAll = [];
 document.addEventListener('DOMContentLoaded', async function(){
   const locationData = await getLocationData();
   const countryData = await getCountryData();
+  
+  // Generate Random Location Suggestion in Home Page
+  generateLocationSuggestion(locationData);
 
   // Create Leaflet Map
   const mapItems = createMap('map', USER_COORDINATES);
@@ -58,7 +63,9 @@ document.addEventListener('DOMContentLoaded', async function(){
         }
 
       }
-      displayNearbySpots(locationName, markerLatLng.lat, markerLatLng.lng);
+
+    
+      displayNearbySpots(map, locationName, markerLatLng.lat, markerLatLng.lng);
       // displayLocationWeather(locationName, currentWeatherData, forecastWeatherData)
     })
   }

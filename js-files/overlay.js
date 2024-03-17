@@ -134,28 +134,68 @@ function changeSidebar(eachSideBarDivId) {
   document.querySelector(eachSideBarDivId).classList.add("active");
 }
 
-async function displayNearbySpots(locationLat, locationLng, locationName) {
+function displayNearbySpots(map, locationName, locationLat, locationLng) {
   document.querySelector("#nearbyContainer").innerHTML = `
+  <i class='bx bx-x' onclick="changeSidebar('#resultsContainer')"></i>
   <h1>Find Spots near ${locationName}<h1>
   <div id="nearbySearchButton">
-    <a><i class='bx bx-male-female'></i></a><p>Toilet</p>
-    <a><i class='bx bx-restaurant'></i><p>Restaurant</p>
-    <a><i class='bx bx-hotel'></i><p>Accomodation</p>
+    <a class="nearbyToiletBtn"><i class='bx bx-male-female'></i><p>Toilet</p></a>
+    <a class="nearbyRestaurantBtn"><i class='bx bx-restaurant'></i><p>Restaurant</p></a>
+    <a class="nearbyAccomodationBtn"><i class='bx bx-hotel'></i><p>Accomodation</p></a>
   <div>
   <div id="nearbySearchContainer">
-    <input type="text"/>
-    <button><i class='bx bx-search-alt-2' ></i></button>
+    <input class="nearbySearchTerm" type="text"/>
+    <button class="nearbySearchTermBtn"><i class='bx bx-search-alt-2' ></i></button>
   </div>
   <div id="nearbySearchResults">
   </div>
   `
+  const nearbySpotLayer = L.markerClusterGroup();
+  nearbySpotLayer.addTo(map);
+  document.querySelector(".nearbyToiletBtn").addEventListener("click", async function(){
+    createNearbyMarkers(map, nearbySpotLayer, "toilet", locationLat, locationLng);
+  });
 
-  const data = await getFourSquareData(locationLat, locationLng, "toilet");
-  console.log(data);
+  document.querySelector(".nearbyRestaurantBtn").addEventListener("click", function(){
+    createNearbyMarkers(map, nearbySpotLayer, "restaurant", locationLat, locationLng);
+  });
+
+  document.querySelector(".nearbyAccomodationBtn").addEventListener("click", function(){
+    createNearbyMarkers(map, nearbySpotLayer, "hotel", locationLat, locationLng);
+  });
+
+  const nearbySearchTermInput = document.querySelector(".nearbySearchTerm");
+  const nearbySearchTermBtn = document.querySelector(".nearbySearchTermBtn");
+  nearbySearchTermBtn.addEventListener("click", function(){
+    const nearbySearchTerm = nearbySearchTermInput.value;
+    if (nearbySearchTerm) {
+      createNearbyMarkers(map, nearbySpotLayer, nearbySearchTerm, locationLat, locationLng);
+    } else {
+      Swal.fire({
+        icon: "warning",
+        title: "Oops...",
+        text: "Please enter a valid search term!",
+        confirmButtonColor: "#f58831",
+      });
+    }
+  });
+
+  nearbySearchTermInput.addEventListener("keypress",function(event){
+    if (event.key === "Enter") {
+      // Prevents form submission
+      event.preventDefault();
+      nearbySearchTermBtn.click();
+    }
+  })
+  
 }
 
-function displayNearbyMarker() {
-
+function changeNearbyPopup(eachNearbyDivClass) {
+  const nearbyPopupDiv = document.querySelectorAll(".eachPopupContentInfo div");
+  for (let eachNearbyPopupDiv of nearbyPopupDiv) {
+    eachNearbyPopupDiv.classList.remove("active");
+  }
+  document.querySelector(eachNearbyDivClass).classList.add("active");
 }
 
 function displayLocationWeather(locationName, currentWeatherData, forecastWeatherData) {
@@ -166,6 +206,7 @@ function displayLocationWeather(locationName, currentWeatherData, forecastWeathe
   let currentWeatherDescription = currentWeatherData.weather[0].description;
   document.querySelector("#weatherContainer").innerHTML = `
   <div id="currentWeatherContainer">
+  <i class='bx bx-x' onclick="changeSidebar('#resultsContainer')"></i>
     <div>
       <span>Current Weather @ ${locationName},${currentWeatherData.name}</span>
       <span>${currentTime}</span>
@@ -178,7 +219,7 @@ function displayLocationWeather(locationName, currentWeatherData, forecastWeathe
           <p>Feels like: ${currentWeatherData.main.feels_like}&degC</p>
         </div>
       </div>
-      <p>${currentWeatherDescription.charAt(0).toUpperCase() + currentWeatherDescription.slice(1)}</p>
+      <p>${capitaliseString(currentWeatherDescription)}</p>
     </div>
   </div>
   <div id="forecastWeatherContainer">
@@ -209,7 +250,7 @@ function displayLocationWeather(locationName, currentWeatherData, forecastWeathe
       <span>${forecastWeatherData.list[i].main.temp_min}&deg;</span>
     </div>
     <div class="dailyForecastRightCenter">
-      <p>${forecastWeatherDescription.charAt(0).toUpperCase() + forecastWeatherDescription.slice(1)}</p>
+      <p>${capitaliseString(forecastWeatherDescription)}</p>
     </div>
     <div class="dailyForecastRight">
       <i class='bx bx-droplet'></i><span>${forecastWeatherData.list[i].main.humidity}&percnt;</span>

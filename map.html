@@ -76,7 +76,7 @@
   <main>
     <!-- Interactive Leaflet Map -->
     <section id="mapPage">
-      <div id="resultsContainer" class="mapSideBar">
+      <div id="resultsContainer" class="mapSideBar active">
         <form>
           <select id="locationTypeSelect">
             <option value="climbing-all">All Location</option>
@@ -89,7 +89,7 @@
       <div id="directionContainer" class="mapSideBar">
         Direction
       </div>
-      <div id="nearbyContainer" class="mapSideBar active"></div>
+      <div id="nearbyContainer" class="mapSideBar"></div>
       <div id="weatherContainer" class="mapSideBar"></div>
       <div id="mapContainer">
         <div id="map"></div>
@@ -140,12 +140,16 @@
   <!-- Boxicon JS -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+  <!-- Sweet Alert JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <!-- Own JS -->
   <script src="js-files/map.js"></script>
   <script src="js-files/data.js"></script>
   <script src="js-files/overlay.js"></script>
   <script src="js-files/search.js"></script>
   <script src="js-files/script.js"></script>
+  <script src="js-files/suggestion.js"></script>
 </body>
 
 </html>

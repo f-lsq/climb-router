@@ -67,16 +67,19 @@
       <!-- Hero Image -->
       <div id="homeHero" class="parallax">
         <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
-        <div id="searchTerm">
-          <input type="search" placeholder="Search routes or gyms">
-          <button>
-            <i class='bx bx-search-alt-2'></i>
-          </button>
-        </div>
+        <button>
+          <a id="searchBtn" href="/map.html">
+            <span>Search for your favourite location!</span><i class='bx bx-search-alt-2'></i>
+          </a>
+        </button>
       </div>
-       <!-- Photos from Climbing Routes and Gyms -->
+       <!-- Suggestion for Climbing Routes and Gyms -->
       <div class="nonParallax">
         <h2>Explore different climbing places!</h2>
+        <div id="gymSuggestionContainer">
+        </div>
+        <div id="routeSuggestionContainer">
+        </div>
       </div>
     </section>
   </main>
@@ -112,11 +115,15 @@
   <!-- Boxicon JS -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+  <!-- Sweet Alert JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <!-- Own JS -->
   <script src="js-files/map.js"></script>
   <script src="js-files/data.js"></script>
   <script src="js-files/overlay.js"></script>
   <script src="js-files/search.js"></script>
+  <script src="js-files/suggestion.js"></script>
   <script src="js-files/script.js"></script>
 </body>
 

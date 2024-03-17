@@ -220,29 +220,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   font-size: 1.5rem;
 }
 
-#searchTerm{
-  width: 60%;
-  max-height: 50px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5%;
-}
-
-#searchTerm input,
-#searchTerm button {
-  border: none;
-  border-radius: 10px;
-  box-shadow:  0 0 10px #0c1214;
-  outline: none;
-}
-
-#searchTerm input {
-  padding: 0 1.5rem;
-  width: 75%;
-  font-size: 0.8rem;
-}
-
-#searchTerm button {
+#searchBtn {
   background: #f58831;
   aspect-ratio : 1 / 1;
   width: 20%;
@@ -284,6 +262,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 #locationContainer {
   overflow-y: scroll;
   height: 100%;
+}
+
+/* Remove Sweet Alert Outline on Focus */
+.swal2-popup .swal2-styled:focus {
+  box-shadow: none !important;
 }
 
 /* Leaflet Map Styling */
@@ -446,6 +429,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: #f36233;
 }
 
+.eachPopupOverviewInfo,
+.eachPopupAboutInfo  {
+  display: none;
+}
+
+.eachPopupOverviewInfo.active,
+.eachPopupAboutInfo.active  {
+  display: block;
+}
 
 /* FOOTER STYLES */
 footer {

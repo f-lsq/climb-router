@@ -26,11 +26,11 @@
                "https://static.mothership.sg/1/2020/10/boulder1.jpg",
                "https://static.mothership.sg/1/2020/10/wall1.jpg"
             ],
-            "type": {
-               "boulder": true,
-               "top-rope": true,
-               "auto-belay": true
-            },
+            "type": [
+               "boulder",
+               "top-rope",
+               "auto-belay"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.8311410511582, 1.4145840167232775],
@@ -64,11 +64,11 @@
                "https://upwallclimbing.sg/wp-content/uploads/2023/09/arete-pic-on-google-768x512.jpg",
                "https://upwallclimbing.sg/wp-content/uploads/2022/01/Upwall-Climbing-facility-768x512.jpg"
             ],
-            "type": {
-               "boulder": true,
-               "top-rope": true,
-               "auto-belay": true
-            },
+            "type": [
+               "boulder",
+               "top-rope",
+               "auto-belay"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.96245162417475, 1.3340515616569568],
@@ -102,9 +102,9 @@
                "https://arkbloc.com/wp-content/uploads/2023/01/Ark-Bloc-Climbing-Wall-2-768x768.jpeg",
                "https://arkbloc.com/wp-content/uploads/2022/07/IMG_0455-2-768x432.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.91704974368331, 1.394466269033976],
@@ -138,10 +138,10 @@
                "https://media.karousell.com/media/photos/products/2022/11/27/multi_gym_entry_pass_into_any__1669552176_dd7e40f0_progressive",
                "https://www.littledayout.com/wp-content/uploads/08-BFF-Climb.jpg"
             ],
-            "type": {
-               "boulder": true,
-               "auto-belay": true
-            },
+            "type": [
+               "boulder",
+               "auto-belay"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.86384619461124, 1.3137287755522833],
@@ -174,12 +174,12 @@
             "images": [
                "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
             ],
-            "type": {
-               "lead": true,
-               "boulder": true,
-               "top-rope": true,
-               "auto-belay": true
-            },
+            "type": [
+               "lead",
+               "boulder",
+               "top-rope",
+               "auto-belay"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.94203949496897, 1.380837308210486],
@@ -212,9 +212,9 @@
             "images": [
                "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/tqeezy4oykbwtod0xx3k.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.94100376491768, 1.3523265327240714],
@@ -247,9 +247,9 @@
             "images": [
                "https://static.wixstatic.com/media/c94d2d_12c604f212594dd38430db9efcf7508a~mv2.jpg/v1/fill/w_229,h_229,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSCF0755.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.80362657336593, 1.2743941532889755],
@@ -282,9 +282,9 @@
             "images": [
                "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.85590114082866, 1.3076318657691632],
@@ -317,9 +317,9 @@
             "images": [
                "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.84945039882241, 1.2787479114977534],
@@ -352,9 +352,9 @@
             "images": [
                "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.88959120945803, 1.3384394605278973],
@@ -387,9 +387,9 @@
             "images": [
                "https://www.capitaland.com/content/dam/capitaland-sites/singapore/shop/malls/bugis-plus/deals/Boulder%20Movement%20Jan%20NEW%20982x818.jpg.transform/cap-midres/image.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.8517211430051, 1.306891891336752],
@@ -422,9 +422,9 @@
             "images": [
                "https://scontent-xsp2-1.xx.fbcdn.net/v/t39.30808-6/299191272_505562448238397_7196596415162152065_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HtptJImP9IAAX-2Nl92&_nc_ht=scontent-xsp2-1.xx&oh=00_AfCUuCRVZtbNBW0cSftxHLf6Aph11CSb4JB2xYSqhrIdsg&oe=65F992E8"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.8645792026007, 1.3103404042643298],
@@ -457,9 +457,9 @@
             "images": [
                "https://thesmartlocal.com/wp-content/uploads/2023/07/rock-climbing-and-bouldering-gyms-boulder-plus-overhang-wall-750x500.png"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.74826910674517, 1.3311388964366422],
@@ -492,9 +492,9 @@
             "images": [
                "https://static.wixstatic.com/media/8b92f2_5205b52bb4c1416788cb4e566412f889~mv2.jpg/v1/fill/w_656,h_782,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8b92f2_5205b52bb4c1416788cb4e566412f889~mv2.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.82497113581393, 1.4421998309940733],
@@ -527,9 +527,9 @@
             "images": [
                "https://static.wixstatic.com/media/8b92f2_4d2e12b939b04ba09c37b823dbf7e6de~mv2.jpg/v1/fill/w_640,h_427,q_90/8b92f2_4d2e12b939b04ba09c37b823dbf7e6de~mv2.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.88844374623275, 1.3341694624070695],
@@ -562,9 +562,9 @@
             "images": [
                "https://assets-global.website-files.com/623c6a1bbc130c9bc9c1b4a8/64f80f280a8ce1f3a12d6ed8_Bouldering_Easy-min.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.83564603254085, 1.3042250933107284],
@@ -597,11 +597,11 @@
             "images": [
                "https://lh3.googleusercontent.com/p/AF1QipMFsaBfbtOtS8V5K2RTF1HNzyNBOVOkfrCR3Hbv=s1360-w1360-h1020"
             ],
-            "type": {
-               "lead": true,
-               "boulder": true,
-               "top-rope": true
-            },
+            "type": [
+               "lead",
+               "boulder",
+               "top-rope"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.7679612395189, 1.3698955717318235],
@@ -635,10 +635,10 @@
                "https://media.timeout.com/images/105984745/image.jpg",
                "https://media.timeout.com/images/105984746/750/422/image.jpg"
             ],
-            "type": {
-               "boulder": true,
-               "auto-belay": true
-            },
+            "type": [
+               "boulder",
+               "auto-belay"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.98761462417467, 1.357163637691629],
@@ -671,9 +671,9 @@
             "images": [
                "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/djb8sgusvgalffuogkgi.jpg"
             ],
-            "type": {
-               "boulder": true
-            },
+            "type": [
+               "boulder"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.84947968555174, 1.2794404219474051],
@@ -706,12 +706,12 @@
             "images": [
                "https://cdn.shopify.com/s/files/1/1301/6863/files/CC_Katong_2_480x480.jpg?v=1656481858"
             ],
-            "type": {
-               "lead": true,
-               "boulder": true,
-               "top-rope": true,
-               "auto-belay": true
-            },
+            "type": [
+               "lead",
+               "boulder",
+               "top-rope",
+               "auto-belay"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[103.90495011068293, 1.305508433151937],
@@ -745,11 +745,11 @@
                "https://aestheticclimbinggym.com/wp-content/uploads/2020/11/ANA7452.jpg",
                "https://aestheticclimbinggym.com/wp-content/uploads/2020/12/fullsizeoutput_1ba8-768x512.jpg"
             ],
-            "type": {
-               "lead": true,
-               "boulder": true,
-               "top-rope": true
-            },
+            "type": [
+               "lead",
+               "boulder",
+               "top-rope"
+            ],
             "metadata":{
                "left-right-seq":"",
                "parent-lnglat":[-117.66329476276651, 33.66722961457207],
@@ -770,9 +770,9 @@
                "British":"4c"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "lead":true
-            },
+            "type":[
+               "lead"
+            ],
             "route-setter":"Lawrence Lee & Tan Tien Chye",
             "first-ascent":"Lawrence Lee & Tan Tien Chye, 1991",
             "description":"Boring And Meaningless is named after one of the most popular climbs on the wall, somewhat of an ironic happening and a measured compliment. Even by local standards it is quite short, being only about 30 to 35 feet tall.",
@@ -800,9 +800,9 @@
                "British":"5c"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "lead":true
-            },
+            "type":[
+               "lead"
+            ],
             "route-setter":"Chiew Sien Chew & KF. Tham",
             "first-ascent":"Jeffrey Neo, 2001",
             "description":"Scramble start to a line that follows two parallel weaknesses in the rock. Work up to a natural break with two obvious (suspiciously perfect) handholds. Move right and mount the protrusion. Staying left, insecure moves bring you a large ledge. From here some powerful moves to reach the anchor.",
@@ -829,9 +829,9 @@
                "British":"4c"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "lead":true
-            },
+            "type":[
+               "lead"
+            ],
             "route-setter":"",
             "first-ascent":"Lawrence Lee & Anthony Seah, 1987",
             "description":"Can be climbed with slight variations. As noted in the 'Climb Singapore' guidebook, the bolts were originally placed as a 'secondary protection' to help beginners learn to how to place traditional protection. This explains why the 2 separate lines of bolts are everywhere but where you need them.",
@@ -858,9 +858,9 @@
                "British":"5a"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "traditional":true
-            },
+            "type":[
+               "trad"
+            ],
             "route-setter":"",
             "first-ascent":"Peter Terbush, 1994",
             "description":"Starts right on the slab and traverses up and left to the crack, then up and over the obvious flake to the anchor. Since rockfall to the right opened the canopy the lower half of this climb is now overrun with vines.",
@@ -887,9 +887,9 @@
                "British":"5a"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "traditional":true
-            },
+            "type":[
+               "trad"
+            ],
             "route-setter":"",
             "first-ascent":"",
             "description":"50ft to the right of the Direct buttress/Razors Edge are three short climbs (25ft tops) that are on OK rock with an easy approach. The base is often wet and muddy with more mosquitoes than some of the more open areas.",
@@ -916,9 +916,9 @@
                "British":"4c"
             },
             "safety":"Warning - this route has lots of loose rock and failure to bear right will lead to dangerous rock.",
-            "type":{
-               "traditional":true
-            },
+            "type":[
+               "trad"
+            ],
             "route-setter":"Kahlil Lawless",
             "first-ascent":"Kahlil Lawless",
             "description":"From the far left of the step go up a set of twin cracks then bear right onto cleaner rock before going straight up to the anchors.",
@@ -945,9 +945,9 @@
                "British":"5c"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "lead":true
-            },
+            "type":[
+               "lead"
+            ],
             "route-setter":"Peter Ong & Lim Song Huat",
             "first-ascent":"Peter Ong & Lim Song Huat, 1998",
             "description":"In remembrance of Wolfgang Güllich †.",
@@ -974,9 +974,9 @@
                "British":"5a"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "lead":true
-            },
+            "type":[
+               "lead"
+            ],
             "route-setter":"Peter Terbush & Scottie Nelson",
             "first-ascent":"Peter Terbush & Scottie Nelson",
             "description":"Keep to the right side of the hangars and use the corner. The variation which just goes directly up the face is 6b+.",
@@ -1004,9 +1004,9 @@
                "British":"5c"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "lead":true
-            },
+            "type":[
+               "lead"
+            ],
             "route-setter":"",
             "first-ascent":"",
             "description":"There are three bolted climbs here, mostly quite difficult.",
@@ -1033,9 +1033,9 @@
                "British":"6a"
             },
             "safety":"Be aware that in the gully above 'Short and Sweet' and 'Slash isn't real' there is a lot of loose rock held together with not much but sand and mud. Real chance of pulling down big chunks of rock here, so be very careful.",
-            "type":{
-               "lead":true
-            },
+            "type":[
+               "lead"
+            ],
             "route-setter":"",
             "first-ascent":"",
             "description":"",
@@ -1062,9 +1062,9 @@
                "British":"5b"
             },
             "safety":"There is a real risk of rock fall in the area. Wear a helmet, particularly when belaying.",
-            "type":{
-               "top-rope":true
-            },
+            "type":[
+               "top-rope"
+            ],
             "route-setter":"",
             "first-ascent":"",
             "description":"Alternate route for second pitch of first blood. From the stance goes right past the tree and runs straight up from there to the same anchor as first blood. Trad protection is scant, so best on top rope after leading first blood.",
@@ -1091,9 +1091,9 @@
                "British":"4c"
             },
             "safety":"This route has a lot of loose rock! Lead climber must be careful not to pull loose rocks down onto the belayer. When placing gear in the crack be aware that in places the rock had softened due to water ingress.",
-            "type":{
-               "traditional":true
-            },
+            "type":[
+               "trad"
+            ],
             "route-setter":"",
             "first-ascent":"",
             "description":"Has a chain anchor at the top.",
@@ -1119,9 +1119,9 @@
                "FB":"6C"
             },
             "safety":"",
-            "type":{
-               "boulder":true
-            },
+            "type":[
+               "boulder"
+            ],
             "route-setter":"Nathaniel Soon",
             "first-ascent":"Peter Zhang, 2021",
             "description":"Fun compression with some big but easy moves to top.",
@@ -1146,9 +1146,9 @@
                "FB":"6A+"
             },
             "safety":"",
-            "type":{
-               "boulder":true
-            },
+            "type":[
+               "boulder"
+            ],
             "route-setter":"Nathaniel Soon",
             "first-ascent":"Nathaniel Soon, 2021",
             "description":"Climb the obvious jug rail.",
@@ -1173,9 +1173,9 @@
                "FB":"5C+"
             },
             "safety":"",
-            "type":{
-               "boulder":true
-            },
+            "type":[
+               "boulder"
+            ],
             "route-setter":"Davide Rota",
             "first-ascent":"Davide Rota, 2021",
             "description":"Keep your centre of gravity low for the proper challenge. It can be done from left to right, and vice-versa.",
@@ -1204,9 +1204,9 @@
                "British":"HVS 5a"
             },
             "safety":"",
-            "type":{
-               "traditional":true
-            },
+            "type":[
+               "trad"
+            ],
             "first-ascent":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
             "description": "Epinephrine is the Red Rocks classic. The route is long, varied, and has consistently good rock. The first half of the climb follows a spectacular chimney system. The second half ascends steep faces, cracks, and dihedrals.",
             "location": "From the parking area near the mouth of Black Velvet Canyon, hike up the old dirt road for a couple hundred yards, the take the trail that heads to the right. Follow this into the canyon. After a little less than a half-mile, a trail will drop down into the wash. Take it. Follow the wash for another half-mile or so. When your path is blocked by a waterfall (usually dry), head up and left on Class 3 terrain. Or, you can do a little 5.easy climbing up the waterfall. The start of the climb is about 50m up the canyon from here.",

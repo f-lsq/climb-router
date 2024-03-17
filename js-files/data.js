@@ -1,3 +1,5 @@
+// AXIOS GET FUNCTIONS AND DATA MANUPULATION
+
 const BASE_API_URL = "https://api.foursquare.com/v3";
 const FOURSQUARE_API_KEY = 'fsq32re8uvt4gru84t8jz7gpYJ/PikEcEJmZnlYYKH75Zuc=';
 
@@ -20,32 +22,38 @@ async function getCountryData() {
 }
 
 async function getFourSquareData(locationLat, locationLng, searchTerms) {
-  const response = await axios.get('https://api.foursquare.com/v3/places/search?query=toilet&ll=1.3521%2C103.8198&radius=5000', {
+  const response = await axios.get(`${BASE_API_URL}/places/search`, {
     params: {
       query: encodeURI(searchTerms),
       ll: locationLat + "," + locationLng,
       sort: "DISTANCE",
-      radius: 5000,
+      radius: 1000,
       limit: 50
     }, 
     headers: {
       accept: 'application/json',
-      Authorization: 'fsq32re8uvt4gru84t8jz7gpYJ/PikEcEJmZnlYYKH75Zuc='
+      Authorization: FOURSQUARE_API_KEY
     }
   })
 
   return response.data;
 }
 
-async function getFourSquarePhotos(fsqid){
-  const response = await axios.get(`${BASE_API_URL}/places/${fsqid}/photos`, {
-    headers: {
-      Accept: 'application/json',
-      Authorisation: API_KEY
-    }
-  });
-  return response.data;
+async function getFourSquarePhotos(fsqid) {
+  try {
+      const response = await axios.get(`${BASE_API_URL}/places/${fsqid}/photos`, {
+        headers: {
+            Accept: "application/json",
+            Authorization: FOURSQUARE_API_KEY
+        }
+    });
+    return response.data;
+  } catch (error) {
+    return "not found";
+  }
 }
+
+
 
 async function getCurrentWeatherData(coordinates) {
   const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${coordinates[0]}&lon=${coordinates[1]}&appid=9b5dd1595063d41d9f0105cd8a5acbab&units=metric`)
@@ -77,4 +85,21 @@ function relativeHaversineDistance(aLat, aLng, bLat, bLng) {
 
   const ht = hav(bLatRad - aLatRad)  + cos(aLatRad) * cos(bLatRad) * hav (bLngRad - aLngRad);
   return asin(ht);
+}
+
+// Capitalise a string
+function capitaliseString(string) {
+  const spacedString = string.split("-").join(" ");
+  const splitString = spacedString.split(" ").map((eachString)=>{
+    return eachString.charAt(0).toUpperCase() + eachString.slice(1);
+  })
+  const capitalisedString = splitString.join(" ");
+  
+  return capitalisedString;
+}
+
+
+// Generate random integer
+function getRandomInt(maxInt) {
+  return Math.floor(Math.random() * maxInt);
 }

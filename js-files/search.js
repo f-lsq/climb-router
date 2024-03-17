@@ -1,3 +1,5 @@
+// LEAFLET MAP SEARCH FUNCTION 
+
 function searchLocation(locationData, selectedCountry){
   const searchContainer = document.querySelector(".searchContainer");
   const searchInput = document.querySelector("#navSearch");
