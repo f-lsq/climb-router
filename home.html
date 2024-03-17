@@ -35,7 +35,8 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Own CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  
   <link rel="icon" href="assets/logo.webp">
   <title>ClimbDoko | Home</title>
 </head>
@@ -67,20 +68,20 @@
       <!-- Hero Image -->
       <div id="homeHero" class="parallax">
         <h1>YOUR ONE-STOP CLIMBING PLATFORM</h1>
-        <button>
-          <a id="searchBtn" href="/map.html">
-            <span>Search for your favourite location!</span><i class='bx bx-search-alt-2'></i>
-          </a>
-        </button>
+        <a id="searchBtn" href="/map.html">
+          <i class='bx bx-search-alt-2'></i>
+          <span id="searchBtnLG">Search for your favourite location!</span>
+          <span id="searchBtnSM">Search</span>
+        </a>
       </div>
        <!-- Suggestion for Climbing Routes and Gyms -->
-      <div class="nonParallax">
+      <!-- <div class="nonParallax">
         <h2>Explore different climbing places!</h2>
         <div id="gymSuggestionContainer">
         </div>
         <div id="routeSuggestionContainer">
         </div>
-      </div>
+      </div> -->
     </section>
   </main>
   <footer>
@@ -119,12 +120,12 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Own JS -->
-  <script src="js-files/map.js"></script>
-  <script src="js-files/data.js"></script>
-  <script src="js-files/overlay.js"></script>
-  <script src="js-files/search.js"></script>
-  <script src="js-files/suggestion.js"></script>
-  <script src="js-files/script.js"></script>
+  <script src="scripts/map.js"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/overlay.js"></script>
+  <script src="scripts/search.js"></script>
+  <script src="scripts/suggestion.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

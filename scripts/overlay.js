@@ -82,31 +82,40 @@ function displayAllLocation(locationData, selectedType) {
     if (locationData[0]["climbing-gyms"].includes(eachLocation)) {
       eachLocationDiv.innerHTML = `
       <div>
-        <h1>${eachLocation.name}</h1><span class="eachLocationGym">gym</span>
-        <h3>${eachLocation.address}</h3>
-      </div>
-      <div>
-        <div>
-          <a href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
+        <div class="eachLocationTitle">
+          <h1>${eachLocation.name}</h1><span class="eachLocationGym">gym</span>
         </div>
-        <div>
-          <a><i class='bx bxs-direction-right' ></i></a><span>Direction</span>
-        </div> 
+      </div>
+      <div class="eachLocationContent">
+        <h3>${eachLocation.address}</h3>
+        <div class="eachLocationBtn">
+          <div>
+            <a href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
+          </div>
+          <div>
+            <a href="test.com"><i class='bx bxs-direction-right'></i></a><span>Direction</span>
+          </div> 
+        </div>
       </div>`; 
     } else {
       eachLocationDiv.innerHTML = `
       <div>
-        <h1>${eachLocation.name}</h1><span class="eachLocationRoute">route</span>
-        <h3>${eachLocation.metadata["parent-sector"]}</h3>
-      </div>
-      <div>
-        <div>
-          <a href="${eachLocation.link} target="_blank""><i class='bx bx-globe'></i></a><span>Website</span>
+        <div class="eachLocationTitle">
+          <h1>${eachLocation.name}</h1><span class="eachLocationRoute">route</span>
         </div>
-        <div>
-          <a><i class='bx bxs-direction-right' ></i></a><span>Direction</span>
-        </div>       
-      </div>`; 
+      </div>
+      <div class="eachLocationContent">
+        <h3>${eachLocation.metadata["parent-sector"]}</h3>
+        <div class="eachLocationBtn">
+          <div>
+            <a href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
+          </div>
+          <div>
+            <a href="test.com"><i class='bx bxs-direction-right'></i></a><span>Direction</span>
+          </div> 
+        </div>
+
+      </div>`;
     }
     locationDiv.appendChild(eachLocationDiv);   
   }
@@ -258,4 +267,11 @@ function displayLocationWeather(locationName, currentWeatherData, forecastWeathe
     `
     document.querySelector("#forecastWeatherContainer").appendChild(dailyForecastDiv);
   }
+}
+
+function changeMapView() {
+  document.querySelector("#resultsContainer").classList.toggle('map-active');
+  document.querySelector("#mapContainer").classList.toggle('map-active');
+  document.querySelector("#viewMapBtn").classList.toggle('map-active');
+  document.querySelector("#exitMapBtn").classList.toggle('map-active');
 }

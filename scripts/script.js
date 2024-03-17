@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async function(){
   const countryData = await getCountryData();
   
   // Generate Random Location Suggestion in Home Page
-  generateLocationSuggestion(locationData);
+  // generateLocationSuggestion(locationData);
 
   // Create Leaflet Map
   const mapItems = createMap('map', USER_COORDINATES);

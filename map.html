@@ -40,7 +40,8 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Own CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
+
   <link rel="icon" href="assets/logo.webp">
   <title>ClimbDoko | Route Map</title>
 </head>
@@ -76,14 +77,25 @@
   <main>
     <!-- Interactive Leaflet Map -->
     <section id="mapPage">
+      <button id="toggleMapBtn" onclick="changeMapView()">
+        <div id="viewMapBtn">
+          <i class='bx bx-map-alt' ></i><span>View Map</span>
+        </div>
+        <div id="exitMapBtn" class="map-active">
+          <i class='bx bx-x' ></i><span>Exit Map</span>
+        </div>
+      </button>
       <div id="resultsContainer" class="mapSideBar active">
-        <form>
-          <select id="locationTypeSelect">
-            <option value="climbing-all">All Location</option>
-            <option value="climbing-gyms">Climbing Gyms</option>
-            <option value="climbing-routes">Climbing Routes</option>
-          </select>
-        </form>
+        <div id="locationSelectContainer">
+          <form>
+            <label>Select Location Type</label>
+            <select id="locationTypeSelect">
+              <option value="climbing-all">All Location</option>
+              <option value="climbing-gyms">Climbing Gyms</option>
+              <option value="climbing-routes">Climbing Routes</option>
+            </select>
+          </form>
+        </div>
         <div id="locationContainer"></div>
       </div>
       <div id="directionContainer" class="mapSideBar">
@@ -91,7 +103,7 @@
       </div>
       <div id="nearbyContainer" class="mapSideBar"></div>
       <div id="weatherContainer" class="mapSideBar"></div>
-      <div id="mapContainer">
+      <div id="mapContainer" class="map-active">
         <div id="map"></div>
         <form>
           <select name="country" id="mapCountry"></select>
@@ -144,12 +156,12 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Own JS -->
-  <script src="js-files/map.js"></script>
-  <script src="js-files/data.js"></script>
-  <script src="js-files/overlay.js"></script>
-  <script src="js-files/search.js"></script>
-  <script src="js-files/script.js"></script>
-  <script src="js-files/suggestion.js"></script>
+  <script src="scripts/map.js"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/overlay.js"></script>
+  <script src="scripts/search.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/suggestion.js"></script>
 </body>
 
 </html>
