@@ -3,6 +3,14 @@
 const BASE_API_URL = "https://api.foursquare.com/v3";
 const FOURSQUARE_API_KEY = 'fsq32re8uvt4gru84t8jz7gpYJ/PikEcEJmZnlYYKH75Zuc=';
 
+const ONEMAP_CREDENTIALS = JSON.stringify({
+  "email": "ayoub.e2@xywdining.com",
+  "password": "mCGd9w1ipH1!df"
+});
+const ONEMAP_URL = "https://www.onemap.gov.sg"
+const AUTH_API = "/api/auth/post/getToken"
+const ROUTING_API = ""
+
 /**
  * Get route and gym information from 'location.json'
  * @returns Array of routes and gyms in each country
@@ -53,8 +61,6 @@ async function getFourSquarePhotos(fsqid) {
   }
 }
 
-
-
 async function getCurrentWeatherData(coordinates) {
   const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${coordinates[0]}&lon=${coordinates[1]}&appid=9b5dd1595063d41d9f0105cd8a5acbab&units=metric`)
   return response.data;
@@ -62,6 +68,11 @@ async function getCurrentWeatherData(coordinates) {
 
 async function getForecastWeatherData(coordinates) {
   const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates[0]}&lon=${coordinates[1]}&appid=9b5dd1595063d41d9f0105cd8a5acbab&units=metric`)
+  return response.data;
+}
+
+async function getOneMapRoutingData(USER_COORDINATES) {
+  const response = await axios.get(`https://www.onemap.gov.sg/api/public/routingsvc/route`);
   return response.data;
 }
 

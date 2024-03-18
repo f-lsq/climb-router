@@ -69,6 +69,6 @@ document.addEventListener('DOMContentLoaded', async function(){
       // displayLocationWeather(locationName, currentWeatherData, forecastWeatherData)
     })
   }
-
+  console.log("getOneMapRoutingData()",await getOneMapRoutingData(USER_COORDINATES));
   
 })  
