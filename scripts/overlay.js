@@ -143,18 +143,65 @@ function changeSidebar(eachSideBarDivId) {
   document.querySelector(eachSideBarDivId).classList.add("active");
 }
 
+async function displayDirections(map, locationName, locationLat, locationLng) {
+  document.querySelector("#directionContainer").innerHTML = `
+  <button class="closeSidebarBtn" onclick="changeSidebar('#resultsContainer')">
+    <i class='bx bx-x'></i>
+  </button>
+  <div>
+    <div id="directionModeBtn">
+      <a id="directionCarBtn"><i class='bx bx-car'></i><span>Drive</span></a>
+      <a id="directionWalkBtn"><i class='bx bx-walk'></i><span>Walk</span></a>
+      <a id="directionCycleBtn"><i class='bx bx-cycling'></i><span>Cycle</span></a>
+    <div>
+      <label><i class='bx bx-user-pin' ></i></i></label><input type="text">
+      <label><i class='bx bxs-map'></i></label><input type="text">
+    <div>
+  </div>
+  <div id="directionResults">
+  </div>
+  `
+
+  const directionLayer = L.layerGroup(); 
+  document.querySelector("#directionCarBtn").addEventListener("click", async function(){
+    const route = await getOMRouteWDC(USER_COORDINATES, [locationLat,locationLng], "drive");
+    console.log(route);
+    addRouteToMap(route, directionLayer);
+    addDirectionMarkers(USER_COORDINATES, directionLayer, "start");
+    addDirectionMarkers([locationLat,locationLng], directionLayer, "end");
+    
+  });
+  document.querySelector("#directionWalkBtn").addEventListener("click", async function(){
+    const routeData = await getOMRouteWDC(USER_COORDINATES, [locationLat,locationLng], "walk");
+    console.log(routeData);
+  });
+  document.querySelector("#directionCycleBtn").addEventListener("click", async function(){
+    const routeData = await getOMRouteWDC(USER_COORDINATES, [locationLat,locationLng], "cycle");
+    console.log(routeData);
+  });
+  
+
+  
+
+
+}
+
 function displayNearbySpots(map, locationName, locationLat, locationLng) {
   document.querySelector("#nearbyContainer").innerHTML = `
-  <i class='bx bx-x' onclick="changeSidebar('#resultsContainer')"></i>
-  <h1>Find Spots near ${locationName}<h1>
-  <div id="nearbySearchButton">
-    <a class="nearbyToiletBtn"><i class='bx bx-male-female'></i><p>Toilet</p></a>
-    <a class="nearbyRestaurantBtn"><i class='bx bx-restaurant'></i><p>Restaurant</p></a>
-    <a class="nearbyAccomodationBtn"><i class='bx bx-hotel'></i><p>Accomodation</p></a>
-  <div>
-  <div id="nearbySearchContainer">
-    <input class="nearbySearchTerm" type="text"/>
-    <button class="nearbySearchTermBtn"><i class='bx bx-search-alt-2' ></i></button>
+  <button class="closeSidebarBtn" onclick="changeSidebar('#resultsContainer')">
+    <i class='bx bx-x'></i>
+  </button>
+  <div id="nearbySearchTitle">
+    <h1>Find Spots near ${locationName}<h1>
+    <div id="nearbySearchButton">
+      <a class="nearbyToiletBtn"><i class='bx bx-male-female'></i><span>Toilet</span></a>
+      <a class="nearbyRestaurantBtn"><i class='bx bx-restaurant'></i><span>Restaurant</span></a>
+      <a class="nearbyAccomodationBtn"><i class='bx bx-hotel'></i><span>Accomodation</span></a>
+    </div>
+    <div id="nearbySearchContainer">
+      <input class="nearbySearchTerm" type="text" placeholder="Search other spots..."/>
+      <button class="nearbySearchTermBtn"><i class='bx bx-search-alt-2' ></i></button>
+    </div>
   </div>
   <div id="nearbySearchResults">
   </div>
@@ -214,25 +261,30 @@ function displayLocationWeather(locationName, currentWeatherData, forecastWeathe
   });
   let currentWeatherDescription = currentWeatherData.weather[0].description;
   document.querySelector("#weatherContainer").innerHTML = `
+  <button class="closeSidebarBtn" onclick="changeSidebar('#resultsContainer')">
+    <i class='bx bx-x'></i>
+  </button>
   <div id="currentWeatherContainer">
-  <i class='bx bx-x' onclick="changeSidebar('#resultsContainer')"></i>
-    <div>
-      <span>Current Weather @ ${locationName},${currentWeatherData.name}</span>
-      <span>${currentTime}</span>
-    </div>
-    <div>
+    <div id="currentWeatherTitle">
       <div>
+        <span>CURRENT WEATHER</span>
+        <span>${currentTime}</span>
+      </div>
+      <p>@ ${locationName},${currentWeatherData.name}</p>
+    </div>
+    <div id="currentWeatherContent">
+      <div id="currentWeatherDiv">
         <img src="https://openweathermap.org/img/wn/${currentWeatherData.weather[0].icon}@2x.png"/>
         <div>
-          <p>${currentWeatherData.main.temp}&deg;C</p>
-          <p>Feels like: ${currentWeatherData.main.feels_like}&degC</p>
+          <p id="currentWeatherTemp">${currentWeatherData.main.temp}&deg;C</p>
+          <p id="currentWeatherFeels">Feels like ${currentWeatherData.main.feels_like}&degC</p>
         </div>
       </div>
-      <p>${capitaliseString(currentWeatherDescription)}</p>
+      <p id="currentWeatherDesc">${capitaliseString(currentWeatherDescription)}</p>
     </div>
   </div>
   <div id="forecastWeatherContainer">
-    <p>5-Day Weather Forcast<p>
+    <p id="forecastWeatherTitle">5-DAY FORECAST WEATHER<p>
   </div>
   `
   for (let i = 0; i < forecastWeatherData.list.length; i += 8) {
@@ -249,21 +301,24 @@ function displayLocationWeather(locationName, currentWeatherData, forecastWeathe
     
     dailyForecastDiv = document.createElement("div");
     dailyForecastDiv.innerHTML = `
-    <div class="dailyForecastLeft">
-      <p>${dayOfWeek}</p>
-      <p>${dateOfWeek}<p>
+    <div id="forecastWeatherContent">
+      <div id="dailyForecastLeft">
+        <p id="dailyForecastDay">${dayOfWeek}</p>
+        <p id="dailyForecastDate">${dateOfWeek}<p>
+      </div>
+      <div id="dailyForecastLeftCenter">
+        <img src="https://openweathermap.org/img/wn/${forecastWeatherData.list[i].weather[0].icon}@2x.png"/>
+        <span id="dailyForecastMax">${forecastWeatherData.list[i].main.temp_max}&deg;</span>
+        <span id="dailyForecastMin">${forecastWeatherData.list[i].main.temp_min}&deg;</span>
+      </div>
+      <div id="dailyForecastRightCenter">
+        <p>${capitaliseString(forecastWeatherDescription)}</p>
+      </div>
+      <div id="dailyForecastRight">
+        <i class='bx bx-droplet'></i><span>${forecastWeatherData.list[i].main.humidity}&percnt;</span>
+      </div>
     </div>
-    <div class="dailyForecastLeftCenter">
-      <img src="https://openweathermap.org/img/wn/${forecastWeatherData.list[i].weather[0].icon}@2x.png"/>
-      <span>${forecastWeatherData.list[i].main.temp_max}&deg;</span>
-      <span>${forecastWeatherData.list[i].main.temp_min}&deg;</span>
-    </div>
-    <div class="dailyForecastRightCenter">
-      <p>${capitaliseString(forecastWeatherDescription)}</p>
-    </div>
-    <div class="dailyForecastRight">
-      <i class='bx bx-droplet'></i><span>${forecastWeatherData.list[i].main.humidity}&percnt;</span>
-    </div>
+
     `
     document.querySelector("#forecastWeatherContainer").appendChild(dailyForecastDiv);
   }

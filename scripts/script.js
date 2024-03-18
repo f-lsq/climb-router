@@ -1,11 +1,13 @@
 // MAIN SCRIPT THAT CALLS FUNCTIONS FROM OTHER SCRIPTS
 
 let USER_COORDINATES = [1.3548, 103.7763];
+let markerAll = [];
 getLocation();
 
-let markerAll = [];
+
 
 document.addEventListener('DOMContentLoaded', async function(){
+  await getOMAuthorization();
   const locationData = await getLocationData();
   const countryData = await getCountryData();
   
@@ -42,8 +44,8 @@ document.addEventListener('DOMContentLoaded', async function(){
   for (let eachMarker of markerAll) {
     eachMarker.addEventListener("click", async function(){
       markerLatLng = eachMarker.getLatLng();
-      // const currentWeatherData = await getCurrentWeatherData([markerLatLng.lat, markerLatLng.lng]);
-      // const forecastWeatherData = await getForecastWeatherData([markerLatLng.lat, markerLatLng.lng]);
+      const currentWeatherData = await getCurrentWeatherData([markerLatLng.lat, markerLatLng.lng]);
+      const forecastWeatherData = await getForecastWeatherData([markerLatLng.lat, markerLatLng.lng]);
       let locationName = ""
       for (let i = 0; i < locationData.length; i++) {
         const gymLocation = locationData[i]["climbing-gyms"];
@@ -64,11 +66,20 @@ document.addEventListener('DOMContentLoaded', async function(){
 
       }
 
-    
+      await displayDirections(map, locationName, markerLatLng.lat, markerLatLng.lng);
       displayNearbySpots(map, locationName, markerLatLng.lat, markerLatLng.lng);
-      // displayLocationWeather(locationName, currentWeatherData, forecastWeatherData)
+      displayLocationWeather(locationName, currentWeatherData, forecastWeatherData)
     })
   }
-  console.log("getOneMapRoutingData()",await getOneMapRoutingData(USER_COORDINATES));
+
+  const navSearchDiv = document.querySelector(".searchContainer");
+  document.querySelector("#navSearchBtn").addEventListener("click", function(){
+    document.querySelector(".homeBtn").classList.toggle("active");
+    document.querySelector(".mapBtn").classList.toggle("active");
+    document.querySelector("#navSearchBtn .bx-search-alt").classList.toggle("active");
+    document.querySelector("#navSearchBtn .bx-x").classList.toggle("active");
+    document.querySelector(".autocom-box").classList.toggle("inactive");
+    navSearchDiv.classList.toggle("active");
+  })
   
 })  

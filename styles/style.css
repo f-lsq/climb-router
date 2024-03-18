@@ -63,7 +63,7 @@ nav {
 
 #navLeft img{
   width: 30px;
-  margin-right: 1.2rem;
+  margin-right: 0.5rem;
   border-radius: 50%;
 }
 
@@ -72,30 +72,28 @@ nav {
   display: flex;
   text-wrap: wrap;
   font-size: 1.2rem;
-}
-
-nav span {
-  display: none;
-  margin-left: 5px;
-}
-
-#navLeft span{
-  margin-right: 1.2rem;
+  align-items: center;
 }
 
 #navLeft a,
 #navRight a {
   text-decoration: none;
-  display: flex;
-  align-items: center;
 }
 
 #navRight a {
-  margin-left: 1.2rem;
+  margin-left: 0.7rem;
+}
+
+#navRight span {
+  display: none;
 }
 
 #navRight a, h1 {
   text-shadow: 0 0 10px #0c1214;
+}
+
+#navRight span {
+  font-size: 0.9rem;
 }
 
 #navCenter,
@@ -111,12 +109,48 @@ nav span {
   position: relative;
 }
 
+.searchContainer {
+  display: none;
+  z-index: 30;
+}
+
+.searchContainer.active{
+  display: block;
+  width: 90%;
+  
+}
+
+
+#navSearchBtn {
+  color: #fafcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeBtn, .mapBtn,
+#navSearchBtn .bx-search-alt,
+#navSearchBtn .bx-x{
+  display: none;
+}
+
+.homeBtn.active, .mapBtn.active,
+#navSearchBtn .bx-search-alt.active,
+#navSearchBtn .bx-x.active {
+  display: block;
+}
+
+.searchContainer.active
++ .autocom-box {
+  width: 90%;
+  top: 25px;
+}
+
 .autocom-box {
   position: absolute;
   background: white;
   width: 70%;
   top: 45px;
-  /* */
   list-style: none;
   border-radius: 0 0 5px 5px;
   line-height: 30px;
@@ -126,6 +160,10 @@ nav span {
   max-height: 250px;
   overflow-y: scroll;
 }
+
+.autocom-box.inactive {
+  display: none;
+} 
 
 .autocom-box.active {
   opacity: 1;
@@ -140,15 +178,21 @@ nav span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgb(219, 219, 219);
 }
 
 .autocom-box li span {
+  display: none;
   border-radius: 3px;
   font-size: 0.75rem;
   padding: 0 10px;
   line-height: 17px;
   color: white;
 }
+
+.autocom-box li span{
+  display: block;
+} 
 
 .autocom-box li .navSearchGym{
   background-color: #f8a230;
@@ -271,13 +315,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   transition: width 0.1s;
 }
 
-#resultsContainer.map-active{
-  width: 100vw;
-}
-
+#resultsContainer.map-active,
 #mapContainer.map-active {
   width: 100vw;
 }
+
 
 #mapPage{
   display: flex;
@@ -286,7 +328,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #toggleMapBtn {
   position: absolute;
-  z-index: 401;
+  z-index: 601;
 }
 
 #viewMapBtn,
@@ -330,6 +372,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 100%;
   background-color: #fafcfc;
   display: none;
+  z-index: 501;
 }
 
 .mapSideBar.active {
@@ -339,9 +382,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 #locationSelectContainer {
   display: flex;
   justify-content: center;
-  padding: 10px 10px;
-  background-color: #804713;
-  box-shadow: 0 3px 5px rgba(253, 241, 241, 0.5);
+  background-color: #fafcfc;
+  box-shadow: 0 3px 5px rgba(214, 201, 201, 0.5);
+  padding: 15px;
 }
 
 #locationSelectContainer form {
@@ -352,7 +395,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #locationSelectContainer label {
   display: block;
-  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 #locationSelectContainer select {
@@ -362,11 +406,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding: 3px 10px;
   border: none;
   font-size: 1rem;
+  background-color:  #f36233;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  box-shadow: 0px 3px 10px rgba(136, 136, 136, 0.3);
 }
 
 #locationContainer {
   overflow-y: scroll;
-  height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*3px);
+  height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*6px);
 }
 
 .eachLocationResult {
@@ -383,6 +432,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .eachLocationContent {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .eachLocationBtn {
@@ -396,7 +446,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .eachLocationWebsite:hover,
 .eachLocationDirection:hover {
-  background: #ffdcbc;
+  background: rgb(233, 233, 233);
 }
 
 .eachLocationBtn div {
@@ -405,11 +455,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   align-items: center;
   justify-content: center;
   margin-left: 10px;
-  color: #804713;
+  color: rgb(95, 95, 95);
 }
 
 .eachLocationContent div a {
-  color: #804713;
+  color: rgb(95, 95, 95);
   font-size: 1rem;
   cursor: pointer;
   display: flex;
@@ -417,7 +467,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border: 1px solid #804713;
+  border: 1px solid rgb(95, 95, 95);
   width: 35px;
   border-radius: 50px;
   aspect-ratio: 1 / 1;
@@ -427,9 +477,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .eachLocationContent div span {
   font-size: 0.7rem;
 } 
-
-
-
 
 .eachLocationGym, 
 .eachLocationRoute {
@@ -467,6 +514,276 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .swal2-popup .swal2-styled:focus {
   box-shadow: none !important;
 }
+
+/* Map Page Nearby Sidebar Styling*/
+.closeSidebarBtn{
+  border: none;
+  right: 10px;
+  top: 10px;
+  background: none;
+  font-size: 30px;
+}
+
+#nearbyContainer {
+  position: relative;
+}
+
+#nearbyContainer .closeSidebarBtn {
+  position: absolute;
+}
+
+#nearbySearchTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 3px 5px rgba(214, 201, 201, 0.5);
+  padding: 15px;
+}
+
+#nearbySearchTitle h1{
+  color: black;
+  text-shadow: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+#nearbySearchButton {
+  display: flex;
+  justify-content: center;
+}
+
+#nearbySearchButton a {
+  color: black;
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 3px 10px rgba(138, 138, 138, 0.3);
+  border-radius: 10px;
+  margin: 20px 10px;
+  background: #ffaf94;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.2s, height 0.2s, width 0.2s, margin 0.2s;
+}
+
+#nearbySearchButton a i {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#nearbySearchButton a span {
+  font-size: 0.5rem;
+}
+
+#nearbySearchButton .nearbyToiletBtn:hover,
+#nearbySearchButton .nearbyRestaurantBtn:hover,
+#nearbySearchButton .nearbyAccomodationBtn:hover {
+  background: #ffa283;
+}
+
+#nearbySearchButton .nearbyToiletBtn:active,
+#nearbySearchButton .nearbyRestaurantBtn:active,
+#nearbySearchButton .nearbyAccomodationBtn:active {
+  background: #ff9470;
+  width: 68px;
+  height: 68px;
+  margin: 21px 11px;
+}
+
+#nearbySearchContainer input{
+  border: none;
+  border-radius: 100px;
+  background: rgb(236, 236, 236);
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+#nearbySearchContainer input:hover {
+  background: rgb(219, 219, 219);
+}
+
+#nearbySearchContainer button {
+  border: none;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 50px;
+  background: #999999;
+  color: white;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+}
+
+#nearbySearchContainer button:hover{
+  background: #888888;
+}
+
+#nearbySearchResults {
+  overflow-y: scroll;
+  height: calc(100vh - 243px);
+}
+
+.eachNearbySearchResult {
+  padding: 20px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.eachNearbySearchTitle {
+ color:  rgb(0, 0, 0);
+ text-shadow: none;
+ text-align: left;
+ font-size: 1.1rem;
+ font-weight: normal;
+}
+
+.eachNearbySearchTitle span{
+  background: rgb(207, 188, 163);
+  border-radius: 20px;
+  padding: 3px 6px;
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+ }
+
+ .eachNearbySearchTitle span.LikelyOpen,
+ .eachNearbySearchTitle span.VeryLikelyOpen {
+  background: rgb(129, 189, 111);
+ }
+
+.eachNearbySearchResult div {
+  margin-top: 10px;
+  color: rgb(95, 95, 95);
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+
+
+
+
+
+/* Map Page Weather Sidebar Styling*/
+#weatherContainer{
+  position: relative;
+  overflow-y: scroll;
+}
+
+#weatherContainer .closeSidebarBtn {
+  position: sticky;
+}
+
+#currentWeatherContainer,
+#forecastWeatherContainer {
+  background: rgb(255, 206, 165);
+  margin: 0 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(223, 223, 223, 0.8);
+}
+
+#currentWeatherTitle,
+#currentWeatherContent,
+#forecastWeatherTitle,
+#forecastWeatherContent {
+  padding: 15px;
+}
+
+#currentWeatherTitle,
+#forecastWeatherTitle {
+  border-bottom: 2px solid #fafcfc;
+  color: rgb(34, 34, 34);
+}
+
+#currentWeatherTitle div,
+#forecastWeatherTitle {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 0.8rem; 
+}
+
+#currentWeatherTitle p {
+  font-size: 0.7rem;
+  font-weight: 350;
+  margin: 0;
+}
+
+#currentWeatherDiv {
+  display: flex;
+  align-items: center;
+}
+
+#currentWeatherDiv p {
+  margin: 0;
+}
+
+#currentWeatherTemp {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#currentWeatherFeels {
+  font-weight: 375;
+  font-size: 0.9rem;
+}
+
+#currentWeatherDesc {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+#forecastWeatherContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dailyForecastLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#dailyForecastDay {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+#dailyForecastDate {
+  font-size: 0.6rem;
+  margin: 0;
+  color: rgb(100, 100, 100);
+  text-wrap: nowrap;
+}
+
+#dailyForecastLeftCenter img {
+  width: 60px;
+}
+
+#dailyForecastMax {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#dailyForecastMin {
+  font-size: 0.8rem;
+  color: rgb(100, 100, 100);
+}
+
+#dailyForecastRightCenter p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+#dailyForecastRight {
+  color: rgb(63, 63, 63);
+  font-weight: 300;
+}
+
 
 /* Leaflet Map Styling */
 #map {
@@ -538,10 +855,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .leaflet-popup-close-button span {
   color: #000000;
-  text-shadow: 1px 1px 5px rgba(227, 227, 227, 0.8);
+  text-shadow: 0px 0px 3px rgba(227, 227, 227, 0.8);
   font-size: 30px;
   line-height: 30px;
   transition: color 0.3s, text-shadow 0.3s;
+  
 }
 
 .leaflet-popup-close-button span:hover {
@@ -637,15 +955,47 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /* FOOTER STYLES */
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background: #0c1214;
+  color: #fafcfc;
+  padding: 40px 20px 50px 20px;
+  font-size: 0.8rem;
 }
 
-footer a {
-  margin: 1rem;
+footer div {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer div section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div section p {
+  font-weight: bold;
+}
+
+footer div section a {
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+footer img {
+  display: none;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /* HEADER STYLES */
+  /* Nav Bar */
+  #navRight span {
+    display: inline-block;
+  }
+  #navRight i {
+    display: none;
+  }
+  
   /* MAIN STYLES */
   /* Hero Image Styling */
   #homeHero h1{
@@ -663,30 +1013,68 @@ footer a {
   }
 
   /* Map Page Styling */
+
   #toggleMapBtn {display: none;}
 
   #mapContainer, 
   #resultsContainer {
   width: 50vw;
   }
+
+  /* FOOTER STYLES */
+  footer {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
   /* HEADER STYLES */
   /* Nav Bar */
-  nav span {
-    display: inline-block;
-  }
-
   #navLeft img{
     width: 40px;
-    margin-right: 0.2rem;
+    margin-right: 0.5rem;
     border-radius: 50%;
   }
 
   #navRight span {
-    font-size: 0.8rem;
+    display: inline-block;
+    font-size: 0.95rem;
   }
+  
+  #navRight i {
+    display: none;
+  }
+
+  .searchContainer {
+    display: block;
+  }
+
+  .searchContainer.active {
+    width: 70%;
+    margin: auto;
+  }
+
+  .searchContainer.active 
+  +  {
+    width: 70%;
+  }
+
+  .autocom-box.inactive {
+    display: block;
+  }
+
+  #navSearchBtn {
+    display: none;
+  }
+
+  .homeBtn, .mapBtn{
+  display: block;
+  }
+
+  .autocom-box {
+    top: 30px;
+  }
+
 
   /* MAIN STYLES */
   /* Hero Image Styling */
@@ -729,10 +1117,32 @@ footer a {
   }
 
   /* Map Page Result Sidebar Styling*/
+  #locationContainer {
+    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*10px);
+  }
+
   #locationSelectContainer label {
     display: inline-block;
   }
+
+  /* FOOTER STYLES */
+  footer {
+    font-size: 0.95rem;
+    align-items: center;
+  }
+
+  footer div {
+    width: 350px;
+  }
+
+  footer img {
+    width: 300px;
+    object-fit: cover;
+    display: inline-block;
+  }
 }
+
+
 
 @media screen and (min-width: 1280px) {
   /* HEADER STYLES */
@@ -755,6 +1165,48 @@ footer a {
   
   #navRight span {
     font-size: 1rem;
+    display: inline-block;
+  }
+
+  #navRight i {
+    display: none;
+  }
+
+  .searchContainer {
+    display: block;
+  }
+
+  .searchContainer.active {
+    width: 70%;
+    margin: auto;
+  }
+
+  #navSearchBtn {
+    display: none;
+  }
+
+  .homeBtn, .mapBtn{
+  display: block;
+  }
+
+  .autocom-box li span {
+    display: inline-block;
+  }
+  
+  .autocom-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    padding: calc(0.5rem + 5px) 1rem 0.5rem 1rem;
+  }
+
+  .searchContainer.active 
++ .autocom-box {
+  width: 70%;
+  top: 45px;
+  }
+
+  .autocom-box.inactive {
+    display: block;
   }
 
   
@@ -798,7 +1250,27 @@ footer a {
   }
 
   /* Map Page Result Sidebar Styling*/
+  #locationContainer {
+    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*13px);
+  }
   #locationSelectContainer label {
     display: inline-block;
   }
+
+  /* FOOTER STYLES */
+  footer {
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  footer div {
+    width: 500px;
+  }
+  footer img {
+    width: 300px;
+    object-fit: cover;
+    margin-left: 200px;
+    display: inline-block;
+  }
+  
 }

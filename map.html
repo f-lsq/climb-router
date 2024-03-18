@@ -56,16 +56,20 @@
         <div class="searchContainer">
           <input type="search" id="navSearch" placeholder="Search routes or gyms">
         </div>
-        <div class="autocom-box"></div>
+        <div class="autocom-box inactive"></div>
       </div>
       <div id="navRight">
-        <a class="homeBtn" href="/home.html">
+        <a class="homeBtn active" href="/home.html">
           <i class='bx bxs-home'></i>
           <span>Home</span>
         </a>
-        <a class="mapBtn" href="/map.html">
+        <a class="mapBtn active" href="/map.html">
           <i class='bx bxs-map-alt'></i>
           <span>Route Map</span>
+        </a>
+        <a id="navSearchBtn">
+          <i class='bx bx-search-alt active' ></i>
+          <i class='bx bx-x'></i>
         </a>
       </div>
     </nav>
@@ -81,12 +85,12 @@
           <i class='bx bx-x' ></i><span>Exit Map</span>
         </div>
       </button>
-      <div id="resultsContainer" class="mapSideBar active">
+      <div id="resultsContainer" class="mapSideBar">
         <div id="locationSelectContainer">
           <form>
             <label>Select Location Type</label>
             <select id="locationTypeSelect">
-              <option value="climbing-all">All Location</option>
+              <option value="climbing-all">All Locations</option>
               <option value="climbing-gyms">Climbing Gyms</option>
               <option value="climbing-routes">Climbing Routes</option>
             </select>
@@ -95,10 +99,9 @@
         <div id="locationContainer"></div>
       </div>
       <div id="directionContainer" class="mapSideBar">
-        <!-- To be deleted -->
-        <i class='bx bx-x' onclick="changeSidebar('#resultsContainer')"></i>
+
       </div>
-      <div id="nearbyContainer" class="mapSideBar"></div>
+      <div id="nearbyContainer" class="mapSideBar active"></div>
       <div id="weatherContainer" class="mapSideBar"></div>
       <div id="mapContainer" class="map-active">
         <div id="map"></div>
@@ -114,15 +117,20 @@
     </section>
   </main>
   <footer>
-    <a href="https://www.linkedin.com/in/f-lsq/" target="_blank">
-      <i class='bx bxl-linkedin-square'></i>
-    </a>
-    <a href="https://github.com/f-lsq" target="_blank">
-      <i class='bx bxl-github'></i>
-    </a>
-    <a href="mailto:fionaloo69@gmail.com">
-      <i class='bx bxs-envelope'></i>
-    </a>
+    <div>
+      <section>
+        <p>PAGES</p>
+        <a href="home.html">Home</a>
+        <a href="map.html">Route Map</a>
+      </section>
+      <section>
+        <p>CONTACT</p>
+        <a href="https://www.linkedin.com/in/f-lsq/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/f-lsq" target="_blank">GitHub</a>
+        <a href="mailto:fionaloo69@gmail.com">Email</a>
+      </section>
+    </div>
+    <img src="assets/footer.webp" alt="Mountain Range"/>
   </footer>
 
   <!-- Axios JS -->
@@ -151,6 +159,7 @@
   <!-- Own JS -->
   <script src="scripts/map.js"></script>
   <script src="scripts/data.js"></script>
+  <script src="Polyline.encoded.js"></script>
   <script src="scripts/overlay.js"></script>
   <script src="scripts/search.js"></script>
   <script src="scripts/script.js"></script>

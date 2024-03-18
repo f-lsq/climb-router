@@ -719,44 +719,6 @@
                "mp-location-id":"650100020",
                "mp-sector-id":""
             }
-         },
-         {
-            "name": "Aesthetic Climbing Gym",
-            "address": "26794 Vista Terrace, Lake Forest, CA 92630, United States",
-            "opening-hours": {
-               "monday": "0900 to 2200",
-               "tuesday": "0900 to 2200",
-               "wednesday": "0900 to 2200",
-               "thursday": "0900 to 2200",
-               "friday": "0900 to 2200",
-               "saturday": "1000 to 2000",
-               "sunday": "1000 to 1800"
-            },
-            "contact": "+1 949-716-7116",
-            "prices": {
-               "single-entry": "USD 30",
-               "multi-pass-5": "Nil",
-               "multi-pass-10": "USD 250",
-               "monthly-pass": "USD 89"
-            },
-            "remarks": "For exact breakdown of prices, refer to gym website. Note that there is a USD 50 initiation fee applied at the start of each membership",
-            "link": "https://aestheticclimbinggym.com/",
-            "images": [
-               "https://aestheticclimbinggym.com/wp-content/uploads/2020/11/ANA7452.jpg",
-               "https://aestheticclimbinggym.com/wp-content/uploads/2020/12/fullsizeoutput_1ba8-768x512.jpg"
-            ],
-            "type": [
-               "lead",
-               "boulder",
-               "top-rope"
-            ],
-            "metadata":{
-               "left-right-seq":"",
-               "parent-lnglat":[-117.66329476276651, 33.66722961457207],
-               "parent-sector":"",
-               "mp-location-id":"100100001",
-               "mp-sector-id":""
-            }
          }
       ]
    },{
@@ -1192,40 +1154,7 @@
             "images": [
                "https://image.thecrag.com/1280x960/fc/ce/fcce14535bc97b71b7c213ef6563271b1e8b8878"
             ]
-         },
-         {
-            "name":"Epinephrine",
-            "grade":{
-               "YDS":"5.9",
-               "French":"5c",
-               "Ewbanks":"17",
-               "UIAA":"VI",
-               "ZA":"17",
-               "British":"HVS 5a"
-            },
-            "safety":"",
-            "type":[
-               "trad"
-            ],
-            "first-ascent":"Jorge Urioste, Joanne Urioste, Joe Herbst, 1978",
-            "description": "Epinephrine is the Red Rocks classic. The route is long, varied, and has consistently good rock. The first half of the climb follows a spectacular chimney system. The second half ascends steep faces, cracks, and dihedrals.",
-            "location": "From the parking area near the mouth of Black Velvet Canyon, hike up the old dirt road for a couple hundred yards, the take the trail that heads to the right. Follow this into the canyon. After a little less than a half-mile, a trail will drop down into the wash. Take it. Follow the wash for another half-mile or so. When your path is blocked by a waterfall (usually dry), head up and left on Class 3 terrain. Or, you can do a little 5.easy climbing up the waterfall. The start of the climb is about 50m up the canyon from here.",
-            "protection": "You don't need anything bigger than a #4 camalot in the chimney pitches. A 3, 3.5, and 4 camalot and perhaps a #11 hex, combined with the existing fixed gear, should get you up the chimney without much mental stress.",
-            "link": "https://www.thecrag.com/en/climbing/united-states/red-rock/route/16601443",
-            "metadata":{
-               "left-right-seq":"23",
-               "parent-lnglat":[
-                  -115.46652,
-                  36.03518
-               ],
-               "parent-sector":"Black Velvet Wall",
-               "mp-location-id":"105732422",
-               "mp-sector-id":"105732162"
-            },
-            "images": [
-               "https://gripped.com/wp-content/uploads/2020/10/Black-Velvet-Wall-1000x675.jpg"
-            ]
-         }             
+         }           
       ]
    }
 ]

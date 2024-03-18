@@ -325,11 +325,16 @@ async function createNearbyMarkers(map, nearbySpotLayer, searchTerm, locationLat
     `)
 
     const eachNearbySearchResultDiv = document.createElement("div");
+    eachNearbySearchResultDiv.setAttribute("class", "eachNearbySearchResult");
     eachNearbySearchResultDiv.innerHTML = `
-    <h1>${eachNearbySpot.name}</h1>
-    <h2>${nearbyCategoryName}</h2>
-    <p>${eachNearbySpot.location.address}</p>
-    <p><i class='bx bx-timer'></i>${eachNearbySpot.closed_bucket}</p>
+    <div class="eachNearbySearchTitle">
+      <h1 class="eachNearbySearchTitle">${eachNearbySpot.name}</h1>
+      <span class="${eachNearbySpot.closed_bucket}">${eachNearbySpot.closed_bucket}</span>
+    </div>
+    <div class="eachNearbySearchContent">
+      <span>${nearbyCategoryName}</span> &#183;
+      <span>${eachNearbySpot.location.address}</span>
+    </div>
     `
 
     nearbySearchResultsDiv.append(eachNearbySearchResultDiv);
@@ -352,4 +357,17 @@ function createPopupTypeTags(marker, eachLocation) {
         eachPopupContent.querySelector('.eachTypeAvailable').appendChild(eachTypeDiv);
       }
     marker.bindPopup(eachPopupContent);
+}
+
+function addRouteToMap(routeData, directionLayer) {
+  directionLayer.clearLayer();
+  const polylineNew = L.Polyline.fromEncoded(routeData.route_geometry);
+  polylineNew.setStyle({
+    "color": "red"
+  })
+  polylineNew.addTo(directionLayer);
+}
+
+function addDirectionMarkers(start, directionLayer, directionType) {
+
 }

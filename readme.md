@@ -17,6 +17,9 @@
 **Hero**
 1. https://unsplash.com/photos/selective-focus-photography-of-person-hiking-during-daytime-WrCvD2Cgb4c
 
+**Footer**
+1. https://img.freepik.com/free-vector/monochrome-hand-drawn-mountain-outline-illustration_23-2150347966.jpg
+
 * Carousel Reference: https://getbootstrap.com/docs/5.3/components/carousel/
 * Slider: https://www.codingnepalweb.com/responsive-card-slider-javascript/
 
