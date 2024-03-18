@@ -70,16 +70,5 @@ document.addEventListener('DOMContentLoaded', async function(){
     })
   }
 
-
-
-  // L.Routing.control({
-  //   waypoints: [
-  //     L.latLng(1.3548, 103.7763),
-  //     L.latLng(1.4145840167232775, 103.8311410511582)
-  //   ]
-  // }).addTo(map);
-
-  
-  
   
 })  

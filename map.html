@@ -26,10 +26,6 @@
     integrity="sha512-6ZCLMiYwTeli2rVh3XAPxy3YoR5fVxGdH/pz+KMCzRY2M65Emgkw00Yqmhh8qLGeYQ3LbVZGdmOX9KUjSKr0TA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Leaflet Routing Machine CSS
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" /> -->
-
   <!-- Marker Cluster CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"
     integrity="sha512-mQ77VzAakzdpWdgfL/lM1ksNy89uFgibRQANsNneSTMD/bj0Y/8+94XMwYhnbzx8eki2hrbPpDm0vD0CiT2lcg=="
@@ -99,7 +95,8 @@
         <div id="locationContainer"></div>
       </div>
       <div id="directionContainer" class="mapSideBar">
-        Direction
+        <!-- To be deleted -->
+        <i class='bx bx-x' onclick="changeSidebar('#resultsContainer')"></i>
       </div>
       <div id="nearbyContainer" class="mapSideBar"></div>
       <div id="weatherContainer" class="mapSideBar"></div>
@@ -139,10 +136,6 @@
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-  <!-- Leaflet Routing Machine JS
-  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script> -->
 
   <!-- Marker Clustering JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"

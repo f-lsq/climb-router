@@ -389,6 +389,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: flex;
 }
 
+.eachLocationWebsite,
+.eachLocationDirection {
+  transition: background-color 0.5s
+}
+
+.eachLocationWebsite:hover,
+.eachLocationDirection:hover {
+  background: #ffdcbc;
+}
+
 .eachLocationBtn div {
   display: flex;
   flex-direction: column;

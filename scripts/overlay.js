@@ -90,10 +90,10 @@ function displayAllLocation(locationData, selectedType) {
         <h3>${eachLocation.address}</h3>
         <div class="eachLocationBtn">
           <div>
-            <a href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
+            <a class="eachLocationWebsite" href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
           </div>
           <div>
-            <a href="test.com"><i class='bx bxs-direction-right'></i></a><span>Direction</span>
+            <a class="eachLocationDirection" onclick="changeSidebar('#directionContainer')"><i class='bx bxs-direction-right'></i></a><span>Direction</span>
           </div> 
         </div>
       </div>`; 
@@ -108,10 +108,10 @@ function displayAllLocation(locationData, selectedType) {
         <h3>${eachLocation.metadata["parent-sector"]}</h3>
         <div class="eachLocationBtn">
           <div>
-            <a href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
+            <a class="eachLocationWebsite" href="${eachLocation.link}" target="_blank"><i class='bx bx-globe'></i></a><span>Website</span>
           </div>
           <div>
-            <a href="test.com"><i class='bx bxs-direction-right'></i></a><span>Direction</span>
+            <a class="eachLocationDirection" onclick="changeSidebar('#directionContainer')"><i class='bx bxs-direction-right'></i></a><span>Direction</span>
           </div> 
         </div>
 
