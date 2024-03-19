@@ -187,8 +187,6 @@ async function displayDirections(directionLayer, locationName, locationLat, loca
 
   let userStartInput = await getOMSearch(directionStartInput.value);
   let userEndInput = await getOMSearch(directionEndInput.value);
-  console.log("userStartInput", userStartInput);
-  console.log("userEndInput", userEndInput);
 
   let userStartCoordinates = USER_COORDINATES;
   let userEndCoordinates = [locationLat,locationLng];

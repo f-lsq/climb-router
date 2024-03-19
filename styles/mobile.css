@@ -308,6 +308,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 /* Map Page Styling */
+
 #mapContainer, 
 #resultsContainer {
   position: relative;

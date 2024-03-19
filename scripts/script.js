@@ -2,17 +2,12 @@
 
 let USER_COORDINATES = [1.3548, 103.7763];
 let markerAll = [];
-getLocation();
-
-
 
 document.addEventListener('DOMContentLoaded', async function(){
-  await getOMAuthorization();
+  await loading();
+
   const locationData = await getLocationData();
   const countryData = await getCountryData();
-  
-  // Generate Random Location Suggestion in Home Page
-  // generateLocationSuggestion(locationData);
 
   // Create Leaflet Map
   const mapItems = createMap('map', USER_COORDINATES);
@@ -45,6 +40,7 @@ document.addEventListener('DOMContentLoaded', async function(){
   const directionLayer = L.layerGroup(); 
   directionLayer.addTo(map)
   
+  // Get API information for each marker
   for (let eachMarker of markerAll) {
     eachMarker.addEventListener("click", async function(){
       directionLayer.clearLayers();
@@ -73,10 +69,14 @@ document.addEventListener('DOMContentLoaded', async function(){
 
       await displayDirections(directionLayer, locationName, markerLatLng.lat, markerLatLng.lng);
       displayNearbySpots(map, locationName, markerLatLng.lat, markerLatLng.lng);
-      displayLocationWeather(locationName, currentWeatherData, forecastWeatherData)
+      displayLocationWeather(locationName, currentWeatherData, forecastWeatherData);
+      
     })
-  }
+  } 
 
+  document.querySelector(".closeSidebarBtn").onclick(directionLayer.clearLayers());
+
+  // For mobile responsive search container
   const navSearchDiv = document.querySelector(".searchContainer");
   document.querySelector("#navSearchBtn").addEventListener("click", function(){
     document.querySelector(".homeBtn").classList.toggle("active");
@@ -88,3 +88,10 @@ document.addEventListener('DOMContentLoaded', async function(){
   })
   
 })  
+
+async function loading(){
+  const mapPageContainer = document.querySelector("#mapPage");
+  mapPageContainer.style.background = `url("./assets/loading.gif") no-repeat right center`;
+  await getLocation();
+  await getOMAuthorization();
+};
