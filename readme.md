@@ -5,10 +5,9 @@ Climbdoko - your ONE-STOP climbing platform. Designed by climbers, for climbers,
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Features](#features)
-3. [Usage and Screenshots](#usage-and-screenshots)
-4. [Technologies Used](#technologies-used)
-5. [References](#references)
+2. [Usage and Screenshots](#usage-and-screenshots)
+3. [Technologies Used](#technologies-used)
+4. [References](#references)
 
 
 ## Overview
