@@ -50,9 +50,6 @@ async function getOMAccessToken() {
  * @returns Route information object
  */
 async function getOMRouteWDC(start, end, routeType) {
-  console.log("start", start);
-  console.log("end", end);
-
   try {
     let response = await axios.get(`${OM_BASE_API_URL}${OM_ROUTE_API}`, {
       headers: OM_HEADER,
@@ -254,12 +251,20 @@ function relativeHaversineDistance(aLat, aLng, bLat, bLng) {
 function capitaliseString(string) {
   const spacedString = string.split("-").join(" ");
   const splitString = spacedString.split(" ").map((eachString)=>{
-    return eachString.charAt(0).toUpperCase() + eachString.slice(1);
+    return eachString.charAt(0).toUpperCase() + eachString.slice(1).toLowerCase();
   })
   const capitalisedString = splitString.join(" ");
   
   return capitalisedString;
 }
+
+// Kebab a string
+function kebabString(string) {
+  const lowercastString = string.toLowerCase();
+  const kebabString = lowercastString.split(" ").join("-");
+  return kebabString;
+}
+
 
 
 // Generate random integer

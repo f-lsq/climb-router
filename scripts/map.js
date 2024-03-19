@@ -360,14 +360,10 @@ function createPopupTypeTags(marker, eachLocation) {
 }
 
 function addRouteToMap(routeData, directionLayer) {
-  directionLayer.clearLayer();
-  const polylineNew = L.Polyline.fromEncoded(routeData.route_geometry);
-  polylineNew.setStyle({
-    "color": "red"
-  })
+  directionLayer.clearLayers();
+  const polylineNew = L.Polyline.fromEncoded(routeData.route_geometry,{
+    color: '#a43a00',
+    weight: 3
+});
   polylineNew.addTo(directionLayer);
-}
-
-function addDirectionMarkers(start, directionLayer, directionType) {
-
 }

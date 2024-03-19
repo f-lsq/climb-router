@@ -515,6 +515,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   box-shadow: none !important;
 }
 
+/* Map Page Direction Sidebar Styling*/
+#directionDriveBtn,
+#directionWalkBtn,
+#directionCycleBtn {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#directionDriveBtn.selected,
+#directionWalkBtn.selected,
+#directionCycleBtn.selected {
+  color: red;
+}
+
 /* Map Page Nearby Sidebar Styling*/
 .closeSidebarBtn{
   border: none;

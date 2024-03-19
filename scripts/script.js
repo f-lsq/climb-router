@@ -41,8 +41,13 @@ document.addEventListener('DOMContentLoaded', async function(){
     })
   }
 
+  // Create a layer group for directions
+  const directionLayer = L.layerGroup(); 
+  directionLayer.addTo(map)
+  
   for (let eachMarker of markerAll) {
     eachMarker.addEventListener("click", async function(){
+      directionLayer.clearLayers();
       markerLatLng = eachMarker.getLatLng();
       const currentWeatherData = await getCurrentWeatherData([markerLatLng.lat, markerLatLng.lng]);
       const forecastWeatherData = await getForecastWeatherData([markerLatLng.lat, markerLatLng.lng]);
@@ -66,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async function(){
 
       }
 
-      await displayDirections(map, locationName, markerLatLng.lat, markerLatLng.lng);
+      await displayDirections(directionLayer, locationName, markerLatLng.lat, markerLatLng.lng);
       displayNearbySpots(map, locationName, markerLatLng.lat, markerLatLng.lng);
       displayLocationWeather(locationName, currentWeatherData, forecastWeatherData)
     })
