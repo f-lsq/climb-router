@@ -1,15 +1,34 @@
 # ClimbDoko
-# Table of Contents
-1. [Example](#example)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+Climbdoko - your ONE-STOP climbing platform. Designed by climbers, for climbers, you can quickly look up for your favourite climbing locations with just a click of a button. Looking for directions on how to get to that one climbing gym? Craving some late night snacks after a long and fufilling day of climbing? Or better - trying to beat the weather for your next ascent? ClimbDoko is the perfect solution to all your needs!
+
+![alt text](assets/readme/overview.png)
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Usage and Screenshots](#usage-and-screenshots)
+4. [Technologies Used](#technologies-used)
+5. [References](#references)
 
 
-## Example
-## Example2
-## Third Example
-## [Fourth Example](http://www.fourthexample.com) 
+
+## Overview
+## Features
+## Usage and Screenshots
+## Technologies Used
+* HTML/CSS
+* JavaScript
+* LeafletJS
+* FourSquare API - Search & Data (Place Search and Get Place Photos)
+* OpenWeather API - Current Weather Data and 5 Day / 3 Hour Forecast
+* OneMap API - Authentication, Search, Reverse Geocode and Routing (Walk/Drive/Cycle)
+
+## References
+This project was made possible with these resources.
+* Boxicon (https://boxicons.com/)
+* Images Resources
+  * Logo
+
 
 ## API Resources
 1. Search & display nearest amendities: https://foursquare.com/developers/home
