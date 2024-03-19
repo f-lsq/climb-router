@@ -70,11 +70,19 @@ document.addEventListener('DOMContentLoaded', async function(){
       await displayDirections(directionLayer, locationName, markerLatLng.lat, markerLatLng.lng);
       displayNearbySpots(map, locationName, markerLatLng.lat, markerLatLng.lng);
       displayLocationWeather(locationName, currentWeatherData, forecastWeatherData);
+
+      const closeSideBtn = document.querySelectorAll(".closeSidebarBtn");
+      closeSideBtn.forEach((eachCloseSideBtn) => {
+        eachCloseSideBtn.onclick = () => {
+          changeSidebar('#resultsContainer');
+          directionLayer.clearLayers();
+        };
+      })
       
     })
   } 
 
-  document.querySelector(".closeSidebarBtn").onclick(directionLayer.clearLayers());
+
 
   // For mobile responsive search container
   const navSearchDiv = document.querySelector(".searchContainer");

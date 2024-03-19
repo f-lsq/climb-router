@@ -11,7 +11,7 @@ Climbdoko - your ONE-STOP climbing platform. Designed by climbers, for climbers,
 
 
 ## Overview
-Climboko aims to be an alternative to major climbing websites such as TheCrag and MountainProject, providing users with a simplified way to search for information on their favourite climbing spots. 
+ClimbDoko aims to be an alternative to major climbing websites such as TheCrag and MountainProject, providing users with a simplified way to search for information on their favourite climbing spots. 
 
 ### Home Page
 The home page contains a catch phrase that entices users who visits the webpage. It aims to redirect the users to the route map page with one click.
@@ -43,6 +43,7 @@ This project was made possible with these resources.
   * Logo ([Sunset Mountain Logo Design, Baun Studios](https://dribbble.com/shots/14917636-Sunset-Mountain-Logo-Design))
   * Hero ([selective focus photography of person hiking during daytime, Patrick Hendry](https://unsplash.com/photos/selective-focus-photography-of-person-hiking-during-daytime-WrCvD2Cgb4c))
   * Directions ([BrandEPS](https://brandeps.com/)
+  * Loading Screen ([Climbing, Dribble](https://www.pinterest.com/pin/546765211013767837/))
   * Footer [Monochrome hand drawn mountain outline illustration, freepik](https://www.freepik.com/free-vector/monochrome-hand-drawn-mountain-outline-illustration_41155995.htm))
 * Map
   * Interactive map ([Leaflet](https://leafletjs.com/))

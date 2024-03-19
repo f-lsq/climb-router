@@ -147,12 +147,12 @@ async function displayDirections(directionLayer, locationName, locationLat, loca
   directionLayer.clearLayers();
 
   document.querySelector("#directionContainer").innerHTML = `
-  <button class="closeSidebarBtn" onclick="changeSidebar('#resultsContainer')">
+  <button class="closeSidebarBtn" >
     <i class='bx bx-x'></i>
   </button>
   <div id="directionTitle">
     <div id="directionModeBtn">
-      <a id="directionDriveBtn" class="selected"><i class='bx bx-car'></i><span>Drive</span></a>
+      <a id="directionDriveBtn"><i class='bx bx-car'></i><span>Drive</span></a>
       <a id="directionWalkBtn"><i class='bx bx-walk'></i><span>Walk</span></a>
       <a id="directionCycleBtn"><i class='bx bx-cycling'></i><span>Cycle</span></a>
     </div>
@@ -162,6 +162,7 @@ async function displayDirections(directionLayer, locationName, locationLat, loca
     </div>
   </div>
   <div id="directionResults">
+    <p>Please select a mode of transport.<p>
   </div>
   `
   const userAddress = await getOMRevGeocode(USER_COORDINATES[0], USER_COORDINATES[1]);
@@ -238,18 +239,13 @@ async function displayDirections(directionLayer, locationName, locationLat, loca
     addRouteToMap(routeData, directionLayer);
     getDirectionResults(routeData);
   });
-  
-  // Default to showing 'Drive' information
-  directionDriveBtn.click();
-
-  
 
 
 }
 
 function displayNearbySpots(map, locationName, locationLat, locationLng) {
   document.querySelector("#nearbyContainer").innerHTML = `
-  <button class="closeSidebarBtn" onclick="changeSidebar('#resultsContainer')">
+  <button class="closeSidebarBtn" >
     <i class='bx bx-x'></i>
   </button>
   <div id="nearbySearchTitle">
@@ -265,6 +261,7 @@ function displayNearbySpots(map, locationName, locationLat, locationLng) {
     </div>
   </div>
   <div id="nearbySearchResults">
+    <p>Please search for a spot.</p>
   </div>
   `
   const nearbySpotLayer = L.markerClusterGroup();
@@ -322,7 +319,7 @@ function displayLocationWeather(locationName, currentWeatherData, forecastWeathe
   });
   let currentWeatherDescription = currentWeatherData.weather[0].description;
   document.querySelector("#weatherContainer").innerHTML = `
-  <button class="closeSidebarBtn" onclick="changeSidebar('#resultsContainer')">
+  <button class="closeSidebarBtn" >
     <i class='bx bx-x'></i>
   </button>
   <div id="currentWeatherContainer">

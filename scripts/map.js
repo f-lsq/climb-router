@@ -267,78 +267,85 @@ async function createNearbyMarkers(map, nearbySpotLayer, searchTerm, locationLat
   if (searchTerm == "toilet" || searchTerm == "restaurant" || searchTerm == "hotel" ) {
     newSearchTerm = searchTerm;
   }
-  
-  for (let eachNearbySpot of nearbySpotData.results) {
-    let nearbySpotIcon = L.icon({
-      iconUrl: `assets/${newSearchTerm}.webp`,
-      shadowUrl: 'assets/amenities-shadow.webp',
-  
-      iconSize:     [26, 26], // size of the icon
-      shadowSize:   [26, 26], // size of the shadow
-      iconAnchor:   [13, 26], // point of the icon which will correspond to marker's location
-      shadowAnchor: [13, 26],  // the same for the shadow
-      popupAnchor:  [0, -28] // point from which the popup should open relative to the iconAnchor
-    });
-    const marker = L.marker([
-      eachNearbySpot.geocodes.main.latitude, 
-      eachNearbySpot.geocodes.main.longitude
-    ], {
-      icon: nearbySpotIcon
-    }).addTo(nearbySpotLayer);
+
+  // Checks if there are results for each nearby spot search
+  if (nearbySpotData.results.length > 0) {
+    for (let eachNearbySpot of nearbySpotData.results) {
+      let nearbySpotIcon = L.icon({
+        iconUrl: `assets/${newSearchTerm}.webp`,
+        shadowUrl: 'assets/amenities-shadow.webp',
     
-    const nearbySpotPhoto = await getFourSquarePhotos(eachNearbySpot.fsq_id);
-
-    console.log("nearbySpotData", nearbySpotData);
-    console.log("nearbySpotPhoto", nearbySpotPhoto);
-
-    let nearbySpotPhotoUrl = "assets/no-image.webp"
-    if (nearbySpotPhoto != "not found" && nearbySpotPhoto.length > 0) {
-      nearbySpotPhotoUrl = nearbySpotPhoto[0].prefix + nearbySpotPhoto[0].width + "x" + nearbySpotPhoto[0].height + nearbySpotPhoto[0].suffix;
-    }
-
-    let nearbyCategoryName = "";
-    // Checks in category is undefined or an empty array
-
-    if (eachNearbySpot.categories && eachNearbySpot.categories.length > 0) {
-      nearbyCategoryName = eachNearbySpot.categories[0].name;
-    }
-
-    marker.bindPopup(`
-    <div class="eachPopup eachNearbyPopup">
-      <img src="${nearbySpotPhotoUrl}">
-      <div class="eachPopupContentTitle">
-        <h1>${eachNearbySpot.name}</h1>
-        <h2>${nearbyCategoryName}</h2>
-      </div>
-      <div class="eachPopupContentSection">
-        <div class="eachPopupOverviewBtn">Overview</div>
-      </div>
-      <div class="eachPopupOverview active">
-        <div>
-          <i class='bx bxs-map' ></i><span>${eachNearbySpot.location.formatted_address}</span>
+        iconSize:     [26, 26], // size of the icon
+        shadowSize:   [26, 26], // size of the shadow
+        iconAnchor:   [13, 26], // point of the icon which will correspond to marker's location
+        shadowAnchor: [13, 26],  // the same for the shadow
+        popupAnchor:  [0, -28] // point from which the popup should open relative to the iconAnchor
+      });
+      const marker = L.marker([
+        eachNearbySpot.geocodes.main.latitude, 
+        eachNearbySpot.geocodes.main.longitude
+      ], {
+        icon: nearbySpotIcon
+      }).addTo(nearbySpotLayer);
+      
+      const nearbySpotPhoto = await getFourSquarePhotos(eachNearbySpot.fsq_id);
+  
+      console.log("nearbySpotData", nearbySpotData);
+      console.log("nearbySpotPhoto", nearbySpotPhoto);
+  
+      let nearbySpotPhotoUrl = "assets/no-image.webp"
+      if (nearbySpotPhoto != "not found" && nearbySpotPhoto.length > 0) {
+        nearbySpotPhotoUrl = nearbySpotPhoto[0].prefix + nearbySpotPhoto[0].width + "x" + nearbySpotPhoto[0].height + nearbySpotPhoto[0].suffix;
+      }
+  
+      let nearbyCategoryName = "";
+      // Checks in category is undefined or an empty array
+  
+      if (eachNearbySpot.categories && eachNearbySpot.categories.length > 0) {
+        nearbyCategoryName = eachNearbySpot.categories[0].name;
+      }
+  
+      marker.bindPopup(`
+      <div class="eachPopup eachNearbyPopup">
+        <img src="${nearbySpotPhotoUrl}">
+        <div class="eachPopupContentTitle">
+          <h1>${eachNearbySpot.name}</h1>
+          <h2>${nearbyCategoryName}</h2>
         </div>
-        <div>
-          <i class='bx bxs-timer' ></i><span>${eachNearbySpot.closed_bucket}</span>
+        <div class="eachPopupContentSection">
+          <div class="eachPopupOverviewBtn">Overview</div>
+        </div>
+        <div class="eachPopupOverview active">
+          <div>
+            <i class='bx bxs-map' ></i><span>${eachNearbySpot.location.formatted_address}</span>
+          </div>
+          <div>
+            <i class='bx bxs-timer' ></i><span>${eachNearbySpot.closed_bucket}</span>
+          </div>
         </div>
       </div>
-    </div>
-    `)
-
-    const eachNearbySearchResultDiv = document.createElement("div");
-    eachNearbySearchResultDiv.setAttribute("class", "eachNearbySearchResult");
-    eachNearbySearchResultDiv.innerHTML = `
-    <div class="eachNearbySearchTitle">
-      <h1 class="eachNearbySearchTitle">${eachNearbySpot.name}</h1>
-      <span class="${eachNearbySpot.closed_bucket}">${eachNearbySpot.closed_bucket}</span>
-    </div>
-    <div class="eachNearbySearchContent">
-      <span>${nearbyCategoryName}</span> &#183;
-      <span>${eachNearbySpot.location.address}</span>
-    </div>
-    `
-
-    nearbySearchResultsDiv.append(eachNearbySearchResultDiv);
+      `)
+  
+      const eachNearbySearchResultDiv = document.createElement("div");
+      eachNearbySearchResultDiv.setAttribute("class", "eachNearbySearchResult");
+      eachNearbySearchResultDiv.innerHTML = `
+      <div class="eachNearbySearchTitle">
+        <h1 class="eachNearbySearchTitle">${eachNearbySpot.name}</h1>
+        <span class="${eachNearbySpot.closed_bucket}">${eachNearbySpot.closed_bucket}</span>
+      </div>
+      <div class="eachNearbySearchContent">
+        <span>${nearbyCategoryName}</span> &#183;
+        <span>${eachNearbySpot.location.address}</span>
+      </div>
+      `
+  
+      nearbySearchResultsDiv.append(eachNearbySearchResultDiv);
+    }
+  } else {
+    nearbySearchResultsDiv.innerHTML = `No nearby ${searchTerm} found.`;
   }
+  
+  
 
 
 }
@@ -362,8 +369,9 @@ function createPopupTypeTags(marker, eachLocation) {
 function addRouteToMap(routeData, directionLayer) {
   directionLayer.clearLayers();
   const polylineNew = L.Polyline.fromEncoded(routeData.route_geometry,{
-    color: '#a43a00',
-    weight: 3
+    color: '#b5050f',
+    weight: 3,
+    opacity: 0.6
 });
   polylineNew.addTo(directionLayer);
 }

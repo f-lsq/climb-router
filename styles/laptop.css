@@ -1,0 +1,128 @@
+/* STYLES FOR LAPTOPS AND TABLETS IN LANDSCAPE MODE (769PX TO 1279PX) */
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  /* ============================================================ */
+  /*                        HEADER STYLES                         */
+  /* ============================================================ */
+
+  /*------------------------- Nav Bar --------------------------- */
+  #navLeft img{
+    width: 40px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+
+  #navRight span {
+    display: inline-block;
+    font-size: 0.95rem;
+  }
+  
+  #navRight i {
+    display: none;
+  }
+
+  .searchContainer {
+    display: block;
+  }
+
+  .searchContainer.active {
+    width: 70%;
+    margin: auto;
+  }
+
+  .searchContainer.active 
+  +  {
+    width: 70%;
+  }
+
+  .autocom-box.inactive {
+    display: block;
+  }
+
+  #navSearchBtn {
+    display: none;
+  }
+
+  .homeBtn, .mapBtn{
+  display: block;
+  }
+
+  .autocom-box {
+    top: 30px;
+  }
+
+
+  /* ============================================================ */
+  /*                         MAIN STYLES                          */
+  /* ============================================================ */
+
+  /*------------------------ Hero Image ------------------------- */
+  #homeHero h1{
+    font-size: 4rem;
+  }
+
+  #searchBtn {
+    padding: 13px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0px 5px 30px -20px #201f2c;
+  }
+
+  #searchBtn:active {
+    margin-top: calc(20px + 2px);
+    margin-bottom: -2px;
+  }
+
+  #searchBtnSM {
+    display: none;
+  }
+  
+  #searchBtnLG {
+    display: block;
+  }
+
+
+  /*-------------------- Map Page General ----------------------- */
+  #toggleMapBtn {display: none;}
+
+  #mapContainer, 
+  #resultsContainer {
+  width: 50vw;
+  }
+  #resultsContainer,
+  #mapContainer {
+    margin-top: calc(40px + 2*0.5rem);
+    height: calc(100vh - 40px - 2*0.5rem);
+  }
+
+  /*----------- Map Page Sidebar (Location Results) ------------- */
+  #locationContainer {
+    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*10px);
+  }
+
+  #locationSelectContainer label {
+    display: inline-block;
+  }
+
+
+  /* ============================================================ */
+  /*                         FOOTER STYLES                        */
+  /* ============================================================ */
+  footer {
+    font-size: 0.95rem;
+    align-items: center;
+  }
+
+  footer div {
+    width: 350px;
+  }
+
+  footer img {
+    width: 300px;
+    object-fit: cover;
+    display: inline-block;
+  }
+}
+
+
+

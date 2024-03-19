@@ -1,4 +1,8 @@
-/* GENERAL STYLES */
+/* STYLES FOR MOBILE DEVICES (0 TO 480PX) */
+
+/* ============================================================ */
+/*                        GENERAL STYLES                        */
+/* ============================================================ */
 * {
   margin: 0;
   padding: 0;
@@ -48,8 +52,11 @@ a:hover {
   color: #f58732;
 }
 
-/* HEADER STYLES */
-/* Nav Bar */
+/* ============================================================ */
+/*                        HEADER STYLES                         */
+/* ============================================================ */
+
+/*------------------------- Nav Bar --------------------------- */
 nav {
   position: fixed;
   top: 0;
@@ -243,8 +250,11 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
-/* MAIN STYLES */
-/* Hero Image Styling */
+/* ============================================================ */
+/*                         MAIN STYLES                          */
+/* ============================================================ */
+
+/*------------------------ Hero Image ------------------------- */
 .parallax {
   height: 100vh;
   background: url('../assets/hero.webp') no-repeat top right;
@@ -307,7 +317,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding: 1.5rem;
 }
 
-/* Map Page Styling */
+
+/*-------------------- Map Page General ----------------------- */
 
 #mapContainer, 
 #resultsContainer {
@@ -368,7 +379,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   height: calc(100vh - 30px - 2*0.5rem);
 }
 
-/* Map Page Result Sidebar Styling*/
+
+/*----------- Map Page Sidebar (Location Results) ------------- */
+
 .mapSideBar {
   width: 100%;
   background-color: #fafcfc;
@@ -516,7 +529,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   box-shadow: none !important;
 }
 
-/* Map Page Direction Sidebar Styling*/
+
+/*----------- Map Page Sidebar (Direction Results) ------------ */
+
 #directionDriveBtn,
 #directionWalkBtn,
 #directionCycleBtn {
@@ -530,7 +545,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   color: red;
 }
 
-/* Map Page Nearby Sidebar Styling*/
+
+/*---------- Map Page Sidebar (Nearby Spots Results) ----------- */
+
 .closeSidebarBtn{
   border: none;
   right: 10px;
@@ -676,11 +693,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 
+/*-------- Map Page Sidebar (Weather Forecast Results) ----------- */
 
-
-
-
-/* Map Page Weather Sidebar Styling*/
 #weatherContainer{
   position: relative;
   overflow-y: scroll;
@@ -800,7 +814,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 
-/* Leaflet Map Styling */
+/*---------------- Map Page Main Map (Leaflet Map) --------------- */
+
 #map {
   height: 100%;
   width: 100%;
@@ -847,7 +862,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background: #ffd7a2;
 }
 
-/* Leaflet Marker Popup Styling */
+
+/*------------ Map Page Main Map (Leaflet Marker Popup) ---------- */
+
 .leaflet-popup-content-wrapper {
   padding: 0;
   overflow: hidden;
@@ -892,8 +909,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .eachPopupContent {
   padding: 6%;
 }
-
-
 
 .eachPopupContentTitle h1 {
  color: black;
@@ -967,7 +982,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: block;
 }
 
-/* FOOTER STYLES */
+
+/* ============================================================ */
+/*                         FOOTER STYLES                        */
+/* ============================================================ */
 footer {
   display: flex;
   justify-content: space-around;
@@ -1001,291 +1019,5 @@ footer img {
   display: none;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /* HEADER STYLES */
-  /* Nav Bar */
-  #navRight span {
-    display: inline-block;
-  }
-  #navRight i {
-    display: none;
-  }
-  
-  /* MAIN STYLES */
-  /* Hero Image Styling */
-  #homeHero h1{
-    font-size: 2.6rem;
-  }
-
-  #searchBtn {
-    padding: 12px 24px;
-    margin-top: 20px;
-    font-size: 1.1rem;
-  }
-
-  #searchBtn:active {
-    margin-top: calc(20px + 2px);
-  }
-
-  /* Map Page Styling */
-
-  #toggleMapBtn {display: none;}
-
-  #mapContainer, 
-  #resultsContainer {
-  width: 50vw;
-  }
-
-  /* FOOTER STYLES */
-  footer {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  /* HEADER STYLES */
-  /* Nav Bar */
-  #navLeft img{
-    width: 40px;
-    margin-right: 0.5rem;
-    border-radius: 50%;
-  }
-
-  #navRight span {
-    display: inline-block;
-    font-size: 0.95rem;
-  }
-  
-  #navRight i {
-    display: none;
-  }
-
-  .searchContainer {
-    display: block;
-  }
-
-  .searchContainer.active {
-    width: 70%;
-    margin: auto;
-  }
-
-  .searchContainer.active 
-  +  {
-    width: 70%;
-  }
-
-  .autocom-box.inactive {
-    display: block;
-  }
-
-  #navSearchBtn {
-    display: none;
-  }
-
-  .homeBtn, .mapBtn{
-  display: block;
-  }
-
-  .autocom-box {
-    top: 30px;
-  }
 
 
-  /* MAIN STYLES */
-  /* Hero Image Styling */
-  #homeHero h1{
-    font-size: 4rem;
-  }
-
-  #searchBtn {
-    padding: 13px 30px;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    box-shadow: 0px 5px 30px -20px #201f2c;
-  }
-
-  #searchBtn:active {
-    margin-top: calc(20px + 2px);
-    margin-bottom: -2px;
-  }
-
-  #searchBtnSM {
-    display: none;
-  }
-  
-  #searchBtnLG {
-    display: block;
-  }
-
-
-  /* Map Page Styling */
-  #toggleMapBtn {display: none;}
-
-  #mapContainer, 
-  #resultsContainer {
-  width: 50vw;
-  }
-  #resultsContainer,
-  #mapContainer {
-    margin-top: calc(40px + 2*0.5rem);
-    height: calc(100vh - 40px - 2*0.5rem);
-  }
-
-  /* Map Page Result Sidebar Styling*/
-  #locationContainer {
-    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*10px);
-  }
-
-  #locationSelectContainer label {
-    display: inline-block;
-  }
-
-  /* FOOTER STYLES */
-  footer {
-    font-size: 0.95rem;
-    align-items: center;
-  }
-
-  footer div {
-    width: 350px;
-  }
-
-  footer img {
-    width: 300px;
-    object-fit: cover;
-    display: inline-block;
-  }
-}
-
-
-
-@media screen and (min-width: 1280px) {
-  /* HEADER STYLES */
-  /* Nav Bar */
-  nav span {
-    display: inline-block;
-    text-align: center;
-  }
-
-  #navLeft img{
-    width: 50px;
-    margin-right: 0.2rem;
-    border-radius: 50%;
-  }
-
-  #navLeft, 
-  #navRight {
-    font-size: 1.5rem;
-  }
-  
-  #navRight span {
-    font-size: 1rem;
-    display: inline-block;
-  }
-
-  #navRight i {
-    display: none;
-  }
-
-  .searchContainer {
-    display: block;
-  }
-
-  .searchContainer.active {
-    width: 70%;
-    margin: auto;
-  }
-
-  #navSearchBtn {
-    display: none;
-  }
-
-  .homeBtn, .mapBtn{
-  display: block;
-  }
-
-  .autocom-box li span {
-    display: inline-block;
-  }
-  
-  .autocom-box.active {
-    opacity: 1;
-    pointer-events: auto;
-    padding: calc(0.5rem + 5px) 1rem 0.5rem 1rem;
-  }
-
-  .searchContainer.active 
-+ .autocom-box {
-  width: 70%;
-  top: 45px;
-  }
-
-  .autocom-box.inactive {
-    display: block;
-  }
-
-  
-  /* MAIN STYLES */
-  /* Hero Image Styling */
-  #homeHero h1{
-    font-size: 6rem;
-  }
-
-  #searchBtn {
-    padding: 15px 30px;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    box-shadow: 0px 5px 30px -20px #201f2c;
-  }
-
-  #searchBtn:active {
-    margin-top: calc(20px + 2px);
-    margin-bottom: -2px;
-  }
-
-  #searchBtnSM {
-    display: none;
-  }
-  
-  #searchBtnLG {
-    display: block;
-  }
-
-  /* Map Page Styling */
-  #toggleMapBtn {display: none;}
-
-  #mapContainer, 
-  #resultsContainer {
-  width: 50vw;
-  }
-  #resultsContainer,
-  #mapContainer {
-    margin-top: calc(50px + 2*0.5rem);
-    height: calc(100vh - 50px - 2*0.5rem);
-  }
-
-  /* Map Page Result Sidebar Styling*/
-  #locationContainer {
-    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*13px);
-  }
-  #locationSelectContainer label {
-    display: inline-block;
-  }
-
-  /* FOOTER STYLES */
-  footer {
-    font-size: 1rem;
-    align-items: center;
-  }
-
-  footer div {
-    width: 500px;
-  }
-  footer img {
-    width: 300px;
-    object-fit: cover;
-    margin-left: 200px;
-    display: inline-block;
-  }
-  
-}

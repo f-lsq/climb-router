@@ -1,0 +1,51 @@
+/* STYLES FOR TABLETS (481PX TO 768PX) */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* ============================================================ */
+  /*                        HEADER STYLES                         */
+  /* ============================================================ */
+
+  /*------------------------- Nav Bar --------------------------- */
+  #navRight span {
+    display: inline-block;
+  }
+  #navRight i {
+    display: none;
+  }
+  
+
+  /* ============================================================ */
+  /*                         MAIN STYLES                          */
+  /* ============================================================ */
+
+  /*------------------------ Hero Image ------------------------- */
+  #homeHero h1{
+    font-size: 2.6rem;
+  }
+
+  #searchBtn {
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+
+  #searchBtn:active {
+    margin-top: calc(20px + 2px);
+  }
+
+  /*-------------------- Map Page General ----------------------- */
+
+  #toggleMapBtn {display: none;}
+
+  #mapContainer, 
+  #resultsContainer {
+  width: 50vw;
+  }
+
+  /* ============================================================ */
+  /*                         FOOTER STYLES                        */
+  /* ============================================================ */
+  footer {
+    font-size: 0.9rem;
+  }
+}

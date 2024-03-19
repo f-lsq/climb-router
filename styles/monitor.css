@@ -1,0 +1,140 @@
+/* STYLES FOR WIDESCREEN MONIOR (1280PX ONWARDS) */
+
+@media screen and (min-width: 1280px) {
+  /* ============================================================ */
+  /*                        HEADER STYLES                         */
+  /* ============================================================ */
+
+  /*------------------------- Nav Bar --------------------------- */
+  nav span {
+    display: inline-block;
+    text-align: center;
+  }
+
+  #navLeft img{
+    width: 50px;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+  }
+
+  #navLeft, 
+  #navRight {
+    font-size: 1.5rem;
+  }
+  
+  #navRight span {
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  #navRight i {
+    display: none;
+  }
+
+  .searchContainer {
+    display: block;
+  }
+
+  .searchContainer.active {
+    width: 70%;
+    margin: auto;
+  }
+
+  #navSearchBtn {
+    display: none;
+  }
+
+  .homeBtn, .mapBtn{
+  display: block;
+  }
+
+  .autocom-box li span {
+    display: inline-block;
+  }
+  
+  .autocom-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    padding: calc(0.5rem + 5px) 1rem 0.5rem 1rem;
+  }
+
+  .searchContainer.active 
++ .autocom-box {
+  width: 70%;
+  top: 45px;
+  }
+
+  .autocom-box.inactive {
+    display: block;
+  }
+
+  
+  /* ============================================================ */
+  /*                         MAIN STYLES                          */
+  /* ============================================================ */
+
+  /*------------------------ Hero Image ------------------------- */
+  #homeHero h1{
+    font-size: 6rem;
+  }
+
+  #searchBtn {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0px 5px 30px -20px #201f2c;
+  }
+
+  #searchBtn:active {
+    margin-top: calc(20px + 2px);
+    margin-bottom: -2px;
+  }
+
+  #searchBtnSM {
+    display: none;
+  }
+  
+  #searchBtnLG {
+    display: block;
+  }
+
+  /*-------------------- Map Page General ----------------------- */
+  #toggleMapBtn {display: none;}
+
+  #mapContainer, 
+  #resultsContainer {
+  width: 50vw;
+  }
+  #resultsContainer,
+  #mapContainer {
+    margin-top: calc(50px + 2*0.5rem);
+    height: calc(100vh - 50px - 2*0.5rem);
+  }
+
+  /*----------- Map Page Sidebar (Location Results) ------------- */
+  #locationContainer {
+    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*13px);
+  }
+  #locationSelectContainer label {
+    display: inline-block;
+  }
+
+  /* ============================================================ */
+  /*                         FOOTER STYLES                        */
+  /* ============================================================ */
+  footer {
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  footer div {
+    width: 500px;
+  }
+  footer img {
+    width: 300px;
+    object-fit: cover;
+    margin-left: 200px;
+    display: inline-block;
+  }
+  
+}
