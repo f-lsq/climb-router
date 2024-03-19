@@ -27,7 +27,11 @@ Climbdoko - your ONE-STOP climbing platform. Designed by climbers, for climbers,
 This project was made possible with these resources.
 * Boxicon (https://boxicons.com/)
 * Images Resources
-  * Logo
+  * Logo [Sunset Mountain Logo Design, Baun Studios](https://dribbble.com/shots/14917636-Sunset-Mountain-Logo-Design)
+  * Hero [selective focus photography of person hiking during daytime, Patrick Hendry](https://unsplash.com/photos/selective-focus-photography-of-person-hiking-during-daytime-WrCvD2Cgb4c)
+  * Directions [BrandEPS](https://brandeps.com/)
+  * Footer [Monochrome hand drawn mountain outline illustration, freepik](https://www.freepik.com/free-vector/monochrome-hand-drawn-mountain-outline-illustration_41155995.htm)
+* Leaflet Polyline Encoder [Leaflet.encoded, jieter](https://github.com/jieter/Leaflet.encoded/tree/master)
 
 
 ## API Resources
@@ -39,18 +43,6 @@ This project was made possible with these resources.
 * Country, State, City: https://github.com/dr5hn/countries-states-cities-database
 * California Routes Data Set: https://docs.openbeta.io/
 
-
-
-## Image Resources
-**Logo**
-* https://dribbble.com/shots/14917636-Sunset-Mountain-Logo-Design
-
-
-**Hero**
-1. https://unsplash.com/photos/selective-focus-photography-of-person-hiking-during-daytime-WrCvD2Cgb4c
-
-**Footer**
-1. https://img.freepik.com/free-vector/monochrome-hand-drawn-mountain-outline-illustration_23-2150347966.jpg
 
 * Carousel Reference: https://getbootstrap.com/docs/5.3/components/carousel/
 * Slider: https://www.codingnepalweb.com/responsive-card-slider-javascript/
@@ -67,5 +59,3 @@ This project was made possible with these resources.
 * Haversine Distance: https://www.movable-type.co.uk/scripts/latlong.html , https://stackoverflow.com/questions/26836146/how-to-sort-array-items-by-longitude-latitude-distance-in-javascripts 
 * One Map Routing Decoder: https://github.com/lurbh/Project-1/tree/main 
 
-direction icons:
-https://brandeps.com/
