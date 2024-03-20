@@ -2,6 +2,7 @@
 
 let USER_COORDINATES = [1.3548, 103.7763];
 let markerAll = [];
+getLocation();
 
 document.addEventListener('DOMContentLoaded', async function(){
   await loading();
@@ -131,6 +132,5 @@ document.addEventListener('DOMContentLoaded', async function(){
 async function loading(){
   const mapPageContainer = document.querySelector("#mapPage");
   mapPageContainer.style.background = `url("./assets/loading.gif") no-repeat right center`;
-  await getLocation();
   await getOMAuthorization();
 };
