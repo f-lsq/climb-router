@@ -661,6 +661,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #directionResultsTxt,
 #nearbyResultsTxt {
+  margin-top: 10px;
   text-decoration-style: italic;
   color: rgb(78, 78, 78);
   font-weight: 300;
