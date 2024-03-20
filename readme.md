@@ -5,7 +5,7 @@ Climbdoko - your ONE-STOP climbing platform. Designed by climbers, for climbers,
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Usage and Screenshots](#usage-and-screenshots)
+2. [Usage](#usage)
 3. [Technologies Used](#technologies-used)
 4. [References](#references)
 
@@ -18,12 +18,12 @@ The home page contains a catch phrase that entices users who visits the webpage.
 
 ### Route Map Page
 Within the route map page, users can access the sidebars and markers on the interactive map to find their favourite climbing places. They can look up the
-* *Nearby Climbing Locations* Skim through the nearest climbing gyms and routes in the default sidebar
-* *Directions to Climbing Locations* Get route information from their current location
-* *Nearby Amenities* Search for amenities near each climbing location, such as toilets, restaurant and accomodation
-* *Weather Forecast* Get updated weather information for the current and next 4 days.
+* `Nearby Climbing Locations` Skim through the nearest climbing gyms and routes in the default sidebar
+* `Directions to Climbing Locations` Get route information from their current location
+* `Nearby Amenities` Search for amenities near each climbing location, such as toilets, restaurant and accomodation
+* `Weather Forecast` Get updated weather information for the current and next 4 days.
 
-## Usage and Screenshots
+## Usage
 1. Open the main index.html file, and switch to the route map page.
 2. Use the search bar on top, or the sidebar, to search for your favourite climbing spots
 3. Click on each markers to access the key features, such as the directions, nearby amenities and weather to/at each climbing location
@@ -42,6 +42,7 @@ This project was made possible with these resources.
 * Images Resources
   * Logo ([Sunset Mountain Logo Design, Baun Studios](https://dribbble.com/shots/14917636-Sunset-Mountain-Logo-Design))
   * Hero ([selective focus photography of person hiking during daytime, Patrick Hendry](https://unsplash.com/photos/selective-focus-photography-of-person-hiking-during-daytime-WrCvD2Cgb4c))
+  * Results ([Mountaineer Confused, senoa studio](https://iconscout.com/free-illustration/mountaineer-looking-at-direction-board-8668747), [Mountaineer Binoculars, senoa studio](https://iconscout.com/free-illustration/mountaineer-looking-in-binoculars-8668753))
   * Directions ([BrandEPS](https://brandeps.com/)
   * Loading Screen ([Climbing, Dribble](https://www.pinterest.com/pin/546765211013767837/))
   * Footer [Monochrome hand drawn mountain outline illustration, freepik](https://www.freepik.com/free-vector/monochrome-hand-drawn-mountain-outline-illustration_41155995.htm))

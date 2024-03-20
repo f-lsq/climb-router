@@ -126,7 +126,6 @@ function displayClickedLocation(map, locationId){
   for (let eachMarker in markerAll) {
     if (locationId == markerAll[eachMarker].options.title) {
       markerCoordinates = markerAll[eachMarker].getLatLng();
-      console.log(markerCoordinates);
       map.flyTo([markerCoordinates.lat+0.002,markerCoordinates.lng], 17);
       map.on("zoomend", ()=>{
         markerAll[eachMarker].openPopup();
@@ -141,6 +140,7 @@ function changeSidebar(eachSideBarDivId) {
     eachSideBarDiv.classList.remove("active");
   }
   document.querySelector(eachSideBarDivId).classList.add("active");
+  document.querySelector("#mapContainer").classList.add("active");
 }
 
 async function displayDirections(directionLayer, locationName, locationLat, locationLng) {
@@ -157,12 +157,17 @@ async function displayDirections(directionLayer, locationName, locationLat, loca
       <a id="directionCycleBtn"><i class='bx bx-cycling'></i><span>Cycle</span></a>
     </div>
     <div id="directionInput">
-      <label><i class='bx bx-radio-circle-marked' ></i></label><input class="directionStartInput" type="text" readonly/>
+      <div>
+        <label><i class='bx bx-radio-circle-marked' ></i></label><input class="directionStartInput" type="text" readonly/>
+      </div>
+      <div>
       <label><i class='bx bx-map' ></i></label><input class="directionEndInput" type="text" readonly/>
+      </div>
     </div>
   </div>
   <div id="directionResults">
-    <p>Please select a mode of transport.<p>
+    <p id="directionResultsTxt">Please select a mode of transport.</p>
+    <img id="directionResultsImg"src="assets/results-before.webp"/>
   </div>
   `
   const userAddress = await getOMRevGeocode(USER_COORDINATES[0], USER_COORDINATES[1]);
@@ -243,7 +248,7 @@ async function displayDirections(directionLayer, locationName, locationLat, loca
 
 }
 
-function displayNearbySpots(map, locationName, locationLat, locationLng) {
+function displayNearbySpots(map, nearbyLayer, locationName, locationLat, locationLng) {
   document.querySelector("#nearbyContainer").innerHTML = `
   <button class="closeSidebarBtn" >
     <i class='bx bx-x'></i>
@@ -261,21 +266,21 @@ function displayNearbySpots(map, locationName, locationLat, locationLng) {
     </div>
   </div>
   <div id="nearbySearchResults">
-    <p>Please search for a spot.</p>
+    <p id="nearbyResultsTxt">Please search for a spot.</p>
+    <img id="nearbyResultsImg"src="assets/results-before.webp"/>
   </div>
   `
-  const nearbySpotLayer = L.markerClusterGroup();
-  nearbySpotLayer.addTo(map);
+
   document.querySelector(".nearbyToiletBtn").addEventListener("click", async function(){
-    createNearbyMarkers(map, nearbySpotLayer, "toilet", locationLat, locationLng);
+    createNearbyMarkers(map, nearbyLayer, "toilet", locationLat, locationLng);
   });
 
   document.querySelector(".nearbyRestaurantBtn").addEventListener("click", function(){
-    createNearbyMarkers(map, nearbySpotLayer, "restaurant", locationLat, locationLng);
+    createNearbyMarkers(map, nearbyLayer, "restaurant", locationLat, locationLng);
   });
 
   document.querySelector(".nearbyAccomodationBtn").addEventListener("click", function(){
-    createNearbyMarkers(map, nearbySpotLayer, "hotel", locationLat, locationLng);
+    createNearbyMarkers(map, nearbyLayer, "hotel", locationLat, locationLng);
   });
 
   const nearbySearchTermInput = document.querySelector(".nearbySearchTerm");
@@ -283,7 +288,7 @@ function displayNearbySpots(map, locationName, locationLat, locationLng) {
   nearbySearchTermBtn.addEventListener("click", function(){
     const nearbySearchTerm = nearbySearchTermInput.value;
     if (nearbySearchTerm) {
-      createNearbyMarkers(map, nearbySpotLayer, nearbySearchTerm, locationLat, locationLng);
+      createNearbyMarkers(map, nearbyLayer, nearbySearchTerm, locationLat, locationLng);
     } else {
       Swal.fire({
         icon: "warning",
@@ -304,12 +309,17 @@ function displayNearbySpots(map, locationName, locationLat, locationLng) {
   
 }
 
-function changeNearbyPopup(eachNearbyDivClass) {
+function changeNearbyPopup(eachNearbyDivClass, eachNearbyBtnClass) {
   const nearbyPopupDiv = document.querySelectorAll(".eachPopupContentInfo div");
+  const nearbyPopupBtn = document.querySelectorAll(".eachPopupContentSection div");
   for (let eachNearbyPopupDiv of nearbyPopupDiv) {
     eachNearbyPopupDiv.classList.remove("active");
   }
+  for (let eachNearbyPopupBtn of nearbyPopupBtn) {
+    eachNearbyPopupBtn.classList.remove("active");
+  }
   document.querySelector(eachNearbyDivClass).classList.add("active");
+  document.querySelector(eachNearbyBtnClass).classList.add("active");
 }
 
 function displayLocationWeather(locationName, currentWeatherData, forecastWeatherData) {
@@ -417,16 +427,23 @@ async function getDirectionResults(routeData){
     <div class="eachDirectionResultContent">
       <p>${eachRouteInstruction[9]}</p>
       <p>${travelTimeString} (${travelDistString})</p>
-      <p>${eachRouteInstruction[4]} (${eachRouteInstruction[2]})</p>
     </div>
     `
     directionResultsDiv.appendChild(eachRouteInstructionDiv);
   }
 }
 
+// For mobile view
 function changeMapView() {
+  document.querySelectorAll("#mapContainer select").forEach((eachCountrySelect) => {
+    eachCountrySelect.classList.toggle('map-active');
+  });
+  
   document.querySelector("#resultsContainer").classList.toggle('map-active');
   document.querySelector("#mapContainer").classList.toggle('map-active');
+  document.querySelector("#directionContainer").classList.toggle('map-active');
+  document.querySelector("#nearbyContainer").classList.toggle('map-active');
+  document.querySelector("#weatherContainer").classList.toggle('map-active');
   document.querySelector("#viewMapBtn").classList.toggle('map-active');
   document.querySelector("#exitMapBtn").classList.toggle('map-active');
 }

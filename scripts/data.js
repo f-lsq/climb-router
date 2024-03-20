@@ -1,6 +1,28 @@
 // AXIOS GET FUNCTIONS AND DATA MANUPULATION
 
 // ============================================================================
+//                              JSON FILES DATA
+// ============================================================================
+/**
+ * Get route and gym information from 'location.json'
+ * @returns Array of routes and gyms in each country
+ */
+async function getLocationData() {
+  const response = await axios.get("json-files/location.json");
+  return response.data;
+}
+
+/**
+ * Get country and states information from 'countries.json'
+ * @returns Array of country information
+ */
+async function getCountryData() {
+  const response = await axios.get("json-files/countries.json");
+  return response.data;
+}
+
+
+// ============================================================================
 //                                 ONE MAP API
 // ============================================================================
 const OM_CREDENTIALS = JSON.stringify({
@@ -155,23 +177,6 @@ async function getOMRevGeocode(lat, lng) {
 const FSQ_BASE_API_URL = "https://api.foursquare.com/v3";
 const FSQ_API_KEY = 'fsq32re8uvt4gru84t8jz7gpYJ/PikEcEJmZnlYYKH75Zuc=';
 
-/**
- * Get route and gym information from 'location.json'
- * @returns Array of routes and gyms in each country
- */
-async function getLocationData() {
-  const response = await axios.get("json-files/location.json");
-  return response.data;
-}
-
-/**
- * Get country and states information from 'countries.json'
- * @returns Array of country information
- */
-async function getCountryData() {
-  const response = await axios.get("json-files/countries.json");
-  return response.data;
-}
 
 async function getFourSquareData(locationLat, locationLng, searchTerms) {
   const response = await axios.get(`${FSQ_BASE_API_URL}/places/search`, {
@@ -180,7 +185,7 @@ async function getFourSquareData(locationLat, locationLng, searchTerms) {
       ll: locationLat + "," + locationLng,
       sort: "DISTANCE",
       radius: 1000,
-      limit: 50
+      limit: 10
     }, 
     headers: {
       accept: 'application/json',

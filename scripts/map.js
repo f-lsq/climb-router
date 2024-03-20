@@ -96,13 +96,13 @@ function createMarkers(data, locationType) {
                   <h2>Climbing Gym</h2>
                 </div>
                 <div class="eachPopupContentSection">
-                  <div class="eachPopupOverviewButton" onclick='changeNearbyPopup(".eachPopupOverviewInfo")'>Overview</div>
-                  <div class="eachPopupAboutButton" onclick='changeNearbyPopup(".eachPopupAboutInfo")'>About</div>
+                  <div class="eachPopupOverviewButton active" onclick='changeNearbyPopup(".eachPopupOverviewInfo",".eachPopupOverviewButton")'>Overview</div>
+                  <div class="eachPopupAboutButton" onclick='changeNearbyPopup(".eachPopupAboutInfo",".eachPopupAboutButton")'>About</div>
                 </div>
                 <div class="eachPopupContentButton">
-                  <a class="eachPopupDirection" onclick="changeSidebar('#directionContainer')"><div><i class='bx bxs-direction-right'></i></div><p>Directions</p></a>
-                  <a class="eachPopupNearby" onclick="changeSidebar('#nearbyContainer')"><div><i class='bx bx-reset'></i></div><p>Nearby</p></a>
-                  <a class="eachPopupWeather" onclick="changeSidebar('#weatherContainer')"><div><i class='bx bxs-sun'></i></div><p>Weather</p></a>
+                  <a class="eachPopupDirection" ><div><i class='bx bxs-direction-right'></i></div><p>Directions</p></a>
+                  <a class="eachPopupNearby"><div><i class='bx bx-reset'></i></div><p>Nearby</p></a>
+                  <a class="eachPopupWeather" ><div><i class='bx bxs-sun'></i></div><p>Weather</p></a>
                 </div>
                 <div class="eachPopupContentInfo">
                   <div class="eachPopupOverviewInfo active"> 
@@ -110,8 +110,8 @@ function createMarkers(data, locationType) {
                       <i class='bx bxs-map' ></i><span>${eachLocation.address}</span>
                     </div>
                     <div>
-                      <i class='bx bxs-time' ></i>
-                      <div>
+                      <i class='bx bxs-time eachPopupOperatingIcon' ></i>
+                      <div class="eachPopupOperatingHr">
                         <p>Monday: ${eachLocation["opening-hours"].monday}</p>
                         <p>Tuesday: ${eachLocation["opening-hours"].tuesday}</p>
                         <p>Wednesday: ${eachLocation["opening-hours"].wednesday}</p>
@@ -179,13 +179,13 @@ function createMarkers(data, locationType) {
                   <h2>Climbing Route</h2>
                 </div>
                 <div class="eachPopupContentSection">
-                  <div class="eachPopupOverviewButton" onclick='changeNearbyPopup(".eachPopupOverviewInfo")'>Overview</div>
-                  <div class="eachPopupAboutButton" onclick='changeNearbyPopup(".eachPopupAboutInfo")'>About</div>
+                  <div class="eachPopupOverviewButton active" onclick='changeNearbyPopup(".eachPopupOverviewInfo", ".eachPopupOverviewButton")'>Overview</div>
+                  <div class="eachPopupAboutButton" onclick='changeNearbyPopup(".eachPopupAboutInfo", ".eachPopupAboutButton")'>About</div>
                 </div>
                 <div class="eachPopupContentButton">
-                  <a class="eachPopupDirection" onclick="changeSidebar('#directionContainer')"><div><i class='bx bxs-direction-right'></i></div><p>Directions</p></a>
-                  <a class="eachPopupNearby" onclick="changeSidebar('#nearbyContainer')"><div><i class='bx bx-reset'></i></div><p>Nearby</p></a>
-                  <a class="eachPopupWeather" onclick="changeSidebar('#weatherContainer')"><div><i class='bx bxs-sun'></i></div><p>Weather</p></a>
+                  <a class="eachPopupDirection" ><div><i class='bx bxs-direction-right'></i></div><p>Directions</p></a>
+                  <a class="eachPopupNearby"><div><i class='bx bx-reset'></i></div><p>Nearby</p></a>
+                  <a class="eachPopupWeather" ><div><i class='bx bxs-sun'></i></div><p>Weather</p></a>
                 </div>
                 <div class="eachPopupContentInfo">
                   <div class="eachPopupOverviewInfo active"> 
@@ -290,9 +290,6 @@ async function createNearbyMarkers(map, nearbySpotLayer, searchTerm, locationLat
       
       const nearbySpotPhoto = await getFourSquarePhotos(eachNearbySpot.fsq_id);
   
-      console.log("nearbySpotData", nearbySpotData);
-      console.log("nearbySpotPhoto", nearbySpotPhoto);
-  
       let nearbySpotPhotoUrl = "assets/no-image.webp"
       if (nearbySpotPhoto != "not found" && nearbySpotPhoto.length > 0) {
         nearbySpotPhotoUrl = nearbySpotPhoto[0].prefix + nearbySpotPhoto[0].width + "x" + nearbySpotPhoto[0].height + nearbySpotPhoto[0].suffix;
@@ -308,19 +305,23 @@ async function createNearbyMarkers(map, nearbySpotLayer, searchTerm, locationLat
       marker.bindPopup(`
       <div class="eachPopup eachNearbyPopup">
         <img src="${nearbySpotPhotoUrl}">
-        <div class="eachPopupContentTitle">
-          <h1>${eachNearbySpot.name}</h1>
-          <h2>${nearbyCategoryName}</h2>
-        </div>
-        <div class="eachPopupContentSection">
-          <div class="eachPopupOverviewBtn">Overview</div>
-        </div>
-        <div class="eachPopupOverview active">
-          <div>
-            <i class='bx bxs-map' ></i><span>${eachNearbySpot.location.formatted_address}</span>
+        <div class="eachPopupContent">
+          <div class="eachPopupContentTitle">
+            <h1>${eachNearbySpot.name}</h1>
+            <h2>${nearbyCategoryName}</h2>
           </div>
-          <div>
-            <i class='bx bxs-timer' ></i><span>${eachNearbySpot.closed_bucket}</span>
+          <div class="eachPopupContentSection">
+            <div class="eachPopupOverviewButton active">Overview</div>
+          </div>
+          <div class="eachPopupContentInfo">
+            <div class="eachPopupOverviewInfo active">
+              <div>
+                <i class='bx bxs-map' ></i><span>${eachNearbySpot.location.formatted_address}</span>
+              </div>
+              <div>
+                <i class='bx bxs-timer' ></i><span>${eachNearbySpot.closed_bucket}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -334,15 +335,18 @@ async function createNearbyMarkers(map, nearbySpotLayer, searchTerm, locationLat
         <span class="${eachNearbySpot.closed_bucket}">${eachNearbySpot.closed_bucket}</span>
       </div>
       <div class="eachNearbySearchContent">
-        <span>${nearbyCategoryName}</span> &#183;
-        <span>${eachNearbySpot.location.address}</span>
+        <span>${nearbyCategoryName || ""}</span> &#183;
+        <span>${eachNearbySpot.location.address || ""}</span>
       </div>
       `
   
       nearbySearchResultsDiv.append(eachNearbySearchResultDiv);
     }
   } else {
-    nearbySearchResultsDiv.innerHTML = `No nearby ${searchTerm} found.`;
+    nearbySearchResultsDiv.innerHTML = `
+    <p id="nearbyResultsTxt">No nearby ${searchTerm} found.</p>
+    <img id="nearbyResultsImg"src="assets/results-none.webp"/>
+    `;
   }
   
   

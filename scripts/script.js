@@ -38,12 +38,15 @@ document.addEventListener('DOMContentLoaded', async function(){
 
   // Create a layer group for directions
   const directionLayer = L.layerGroup(); 
+  const nearbyLayer = L.layerGroup(); 
   directionLayer.addTo(map)
+  nearbyLayer.addTo(map)
   
   // Get API information for each marker
   for (let eachMarker of markerAll) {
     eachMarker.addEventListener("click", async function(){
       directionLayer.clearLayers();
+      nearbyLayer.clearLayers();
       markerLatLng = eachMarker.getLatLng();
       const currentWeatherData = await getCurrentWeatherData([markerLatLng.lat, markerLatLng.lng]);
       const forecastWeatherData = await getForecastWeatherData([markerLatLng.lat, markerLatLng.lng]);
@@ -68,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async function(){
       }
 
       await displayDirections(directionLayer, locationName, markerLatLng.lat, markerLatLng.lng);
-      displayNearbySpots(map, locationName, markerLatLng.lat, markerLatLng.lng);
+      displayNearbySpots(map, nearbyLayer, locationName, markerLatLng.lat, markerLatLng.lng);
       displayLocationWeather(locationName, currentWeatherData, forecastWeatherData);
 
       const closeSideBtn = document.querySelectorAll(".closeSidebarBtn");
@@ -76,9 +79,36 @@ document.addEventListener('DOMContentLoaded', async function(){
         eachCloseSideBtn.onclick = () => {
           changeSidebar('#resultsContainer');
           directionLayer.clearLayers();
+          nearbyLayer.clearLayers();
+          document.querySelector("#mapContainer").classList.remove("active");
+          document.querySelector("#viewMapBtn").classList.remove('map-active');
+          document.querySelector("#exitMapBtn").classList.remove('map-active');
+          document.querySelector("#viewMapBtn").classList.add('map-active');
         };
       })
-      
+
+      const directionBtn = document.querySelectorAll(".eachPopupDirection");
+      const nearbyBtn = document.querySelectorAll(".eachPopupNearby");
+      const weatherBtn = document.querySelectorAll(".eachPopupWeather");
+      directionBtn.forEach((eachDirectionBtn) => {
+        eachDirectionBtn.onclick = () => {
+          nearbyLayer.clearLayers();
+          changeSidebar('#directionContainer');
+        }
+      });
+      nearbyBtn.forEach((eachNearbyBtn) => {
+        eachNearbyBtn.onclick = () => {
+          directionLayer.clearLayers();
+          changeSidebar('#nearbyContainer');
+        }
+      });
+      weatherBtn.forEach((eachWeatherBtn) => {
+        eachWeatherBtn.onclick = () => {
+          directionLayer.clearLayers();
+          nearbyLayer.clearLayers();
+          changeSidebar('#weatherContainer');
+        }
+      });
     })
   } 
 
@@ -87,6 +117,7 @@ document.addEventListener('DOMContentLoaded', async function(){
   // For mobile responsive search container
   const navSearchDiv = document.querySelector(".searchContainer");
   document.querySelector("#navSearchBtn").addEventListener("click", function(){
+    document.querySelector("#navLeft span").classList.toggle("active");
     document.querySelector(".homeBtn").classList.toggle("active");
     document.querySelector(".mapBtn").classList.toggle("active");
     document.querySelector("#navSearchBtn .bx-search-alt").classList.toggle("active");

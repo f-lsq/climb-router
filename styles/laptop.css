@@ -63,13 +63,13 @@
 
   #searchBtn {
     padding: 13px 30px;
-    margin-top: 20px;
+    margin-top: 45px;
     font-size: 1.2rem;
-    box-shadow: 0px 5px 30px -20px #201f2c;
+    box-shadow: 3px 3px #a55412;
   }
 
   #searchBtn:active {
-    margin-top: calc(20px + 2px);
+    margin-top: calc(45px + 2px);
     margin-bottom: -2px;
   }
 
@@ -85,25 +85,58 @@
   /*-------------------- Map Page General ----------------------- */
   #toggleMapBtn {display: none;}
 
-  #mapContainer, 
-  #resultsContainer {
-  width: 50vw;
-  }
   #resultsContainer,
+  #resultsContainer.map-active,
+  #directionContainer,
+  #directionContainer.map-active,
+  #nearbyContainer,
+  #nearbyContainer.map-active,
+  #weatherContainer,
+  #weatherContainer.map-active,
+  #directionContainer.active,
+  #nearbyContainer.active,
+  #weatherContainer.active  {
+    min-width: 310px;
+    width: 35vw;
+    }
+  
+  #mapContainer,
+  #mapContainer.map-active {
+  width: 65vw;
+  }
+
   #mapContainer {
     margin-top: calc(40px + 2*0.5rem);
     height: calc(100vh - 40px - 2*0.5rem);
   }
 
+  #mapContainer select.map-active {
+    display: block;
+  }
+
+  /*----------- Map Page Sidebar General ------------- */
+  .closeSidebarBtn{
+    right: 20px;
+    top: 20px;
+  }
+  
+  
+  /*----------- Map Page Sidebar (Location Results) ------------- */
+  #locationSelectContainer {
+    display: flex;
+  }
+
   /*----------- Map Page Sidebar (Location Results) ------------- */
   #locationContainer {
-    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*10px);
+    height: calc(100vh - 145px);
   }
 
   #locationSelectContainer label {
     display: inline-block;
   }
-
+  #nearbySearchResults {
+    height: calc(100vh - 275px);
+  }
 
   /* ============================================================ */
   /*                         FOOTER STYLES                        */
