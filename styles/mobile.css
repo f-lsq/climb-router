@@ -670,7 +670,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 #directionResultsImg,
 #nearbyResultsImg {
-  width: 30%;
+  width: 50%;
 }
 
 .eachDirectionResult {

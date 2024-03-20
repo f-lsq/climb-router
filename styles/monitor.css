@@ -139,7 +139,7 @@
   /*----------- Map Page Sidebar (Location Results) ------------- */
   
   #locationContainer {
-    height: calc(100vh - 30px - 2*0.5rem - 20px - 5px - 2*1rem - 3*13px);
+    height: calc(100vh - 165px);
   }
   #locationSelectContainer label {
     display: inline-block;
@@ -150,6 +150,10 @@
   }
 
   /*---------- Map Page Sidebar (Nearby Spots Results) ----------- */
+  #nearbySearchResults {
+    height: calc(100vh - 280px)
+  }
+
   #nearbySearchTitle h1 {
     width: 80%;
     margin: auto;
