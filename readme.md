@@ -1,5 +1,5 @@
 # ClimbDoko
-Climbdoko - your ONE-STOP climbing platform. Designed by climbers, for climbers, you can quickly look up for your favourite climbing locations with just a click of a button. Looking for directions on how to get to that one climbing gym? Craving some late night snacks after a long and fufilling day of climbing? Or better - trying to beat the weather for your next ascent? ClimbDoko is the perfect solution to all your needs!
+Climbdoko - your ONE-STOP climbing platform. Designed by climbers, for climbers, you can quickly look up for your favourite climbing locations with just a click of a button. Looking for directions on how to get to that one climbing gym? Craving some late night snacks after a long and fufilling day of climbing? Or better - trying to beat the weather for your next ascent? ClimbDoko is the perfect solution to all your needs! [Check it out now](https://main--climbdoko.netlify.app/home)
 
 ![alt text](assets/readme/overview.png)
 
