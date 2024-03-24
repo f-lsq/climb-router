@@ -112,13 +112,29 @@ function createMarkers(data, locationType) {
                     <div>
                       <i class='bx bxs-time eachPopupOperatingIcon' ></i>
                       <div class="eachPopupOperatingHr">
-                        <p>Monday: ${eachLocation["opening-hours"].monday}</p>
-                        <p>Tuesday: ${eachLocation["opening-hours"].tuesday}</p>
-                        <p>Wednesday: ${eachLocation["opening-hours"].wednesday}</p>
-                        <p>Thursday: ${eachLocation["opening-hours"].thursday}</p>
-                        <p>Friday: ${eachLocation["opening-hours"].friday}</p>
-                        <p>Saturday: ${eachLocation["opening-hours"].saturday}</p>
-                        <p>Sunday: ${eachLocation["opening-hours"].sunday}</p>
+                        <table>
+                          <tr>
+                            <td>Monday</td><td>${eachLocation["opening-hours"].monday}</td>
+                          </tr>
+                          <tr>
+                            <td>Tuesday</td><td>${eachLocation["opening-hours"].tuesday}</td>
+                          </tr>
+                          <tr>
+                            <td>Wednesday</td><td>${eachLocation["opening-hours"].wednesday}</td>
+                          </tr>
+                          <tr>
+                            <td>Thursday</td><td>${eachLocation["opening-hours"].thursday}</td>
+                          </tr>
+                          <tr>
+                            <td>Friday</td><td>${eachLocation["opening-hours"].friday}</td>
+                          </tr>
+                          <tr>
+                            <td>Saturday</td><td>${eachLocation["opening-hours"].saturday}</td>
+                          </tr>
+                          <tr>
+                            <td>Sunday</td><td>${eachLocation["opening-hours"].sunday}</td>
+                          </tr>
+                        </table>
                       </div>
                     </div>
                     <div>
@@ -133,7 +149,7 @@ function createMarkers(data, locationType) {
                       <i class='bx bxs-select-multiple'></i>
                     </div>
                     <div>
-                      <p><i class='bx bx-credit-card'></i>Price Breakdown</p>
+                      <i class='bx bx-credit-card'></i>
                       <table>
                         <tr>
                           <th>Type of Pass</th>
@@ -207,10 +223,10 @@ function createMarkers(data, locationType) {
                       <i class='bx bxs-info-circle'></i><span>${eachLocation.description || "<i>No description available</i>"}</span>
                     </div>
                     <div>
-                      <i class='bx bxs-group'></i>Route Setter: ${eachLocation["route-setter"] || "<i>Nil</i>"}</span>
+                      <i class='bx bxs-group'></i>Route Setter: ${eachLocation["route-setter"] || "<i>&nbsp;Nil</i>"}</span>
                     </div>
                     <div>
-                      <i class='bx bxs-upvote'></i>First Ascent: ${eachLocation["first-ascent"] || "<i>Nil</i>"}</span>
+                      <i class='bx bxs-upvote'></i>First Ascent: ${eachLocation["first-ascent"] || "<i>&nbsp;Nil</i>"}</span>
                     </div>
                   </div> 
                 </div>

@@ -476,6 +476,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border-bottom: 1px solid rgb(233, 233, 233);
 }
 
+.eachLocationResult:hover {
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
+}
+
 .eachLocationTitle {
   display: flex;
   justify-content: space-between;
@@ -1187,6 +1192,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background: rgb(241, 138, 255);
 }
 
+.eachTypeAvailable span.trad {
+  background: rgb(255, 153, 153);
+}
 
 /* ============================================================ */
 /*                         FOOTER STYLES                        */
